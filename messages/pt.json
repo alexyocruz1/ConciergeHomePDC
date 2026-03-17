@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Casa Concierge PDC — Gestão de Propriedades em Playa del Carmen",
+    "description": "Gestão profissional de propriedades de férias em Playa del Carmen e Riviera Maya. Equipe bilíngue, transparência total, tecnologia moderna."
+  },
+  "nav": {
+    "services": "Serviços",
+    "properties": "Propriedades",
+    "about": "Sobre Nós",
+    "blog": "Blog",
+    "contact": "Contato",
+    "cta": "Começar",
+    "owner_login": "Portal do Proprietário"
+  },
+  "hero": {
+    "headline": "Sua propriedade no paraíso, totalmente administrada.",
+    "subheadline": "Gestão profissional de propriedades de férias em Playa del Carmen e Riviera Maya. Transparência total, tecnologia moderna, equipe local.",
+    "cta_primary": "Ver Planos",
+    "cta_secondary": "Registrar Minha Propriedade",
+    "badge_bilingual": "Equipe Bilíngue",
+    "badge_local": "Baseados em PDC",
+    "badge_transparent": "100% Transparente"
+  },
+  "problem": {
+    "title": "Por que investidores precisam de nós",
+    "subtitle": "O problema que resolvemos todos os dias.",
+    "pain1_title": "Sem contato local",
+    "pain1_desc": "Quando algo quebra ou um hóspede tem um problema, não há ninguém para ligar.",
+    "pain2_title": "Sem visibilidade",
+    "pain2_desc": "Os proprietários não têm forma confiável de saber a ocupação, renda ou condição de sua propriedade.",
+    "pain3_title": "Sem promoção",
+    "pain3_desc": "Muitas propriedades ficam ociosas por semanas porque os donos não sabem como listar no Airbnb.",
+    "pain4_title": "Sem confiança",
+    "pain4_desc": "Histórias de gerentes locais que desaparecem com depósitos são comuns neste mercado.",
+    "transition": "É exatamente por isso que existimos.",
+    "solution": "Somos sua equipe dedicada, bilíngue e local. Administramos, promovemos e cuidamos da sua propriedade como se fosse nossa."
+  },
+  "services": {
+    "title": "Nossos Planos",
+    "subtitle": "Escolha o nível de serviço que melhor se adapta ao seu investimento.",
+    "popular": "Mais Popular",
+    "per_month": "/mês",
+    "per_property": "por propriedade",
+    "plus_commission": "+ 20% da renda bruta de aluguel",
+    "subscribe": "Assinar",
+    "tier1": {
+      "name": "Essencial",
+      "price": "$150 USD",
+      "description": "Para proprietários que precisam de tranquilidade e olhos locais.",
+      "features": [
+        "Inspeção mensal (1 visita/mês com relatório fotográfico)",
+        "Coordenação básica de manutenção",
+        "Relatório mensal ao proprietário",
+        "Contato WhatsApp/email com resposta garantida em 24h",
+        "Consultoria de listagem (Airbnb/Booking)"
+      ]
+    },
+    "tier2": {
+      "name": "Gestão Completa",
+      "price": "$350 USD",
+      "description": "Operação completa sem preocupações. Nosso plano mais popular.",
+      "features": [
+        "Tudo incluído no Essencial",
+        "Gestão ativa de anúncios (Airbnb, VRBO, Booking)",
+        "Comunicação com hóspedes",
+        "Coordenação de check-in e check-out",
+        "Coordenação de limpeza",
+        "Gestão dinâmica de preços",
+        "Resposta de manutenção",
+        "Propriedade destacada no nosso portal"
+      ]
+    },
+    "tier3": {
+      "name": "Premium Concierge",
+      "price": "$600 USD",
+      "description": "Retornos máximos com serviço totalmente personalizado.",
+      "features": [
+        "Tudo incluído na Gestão Completa",
+        "Resposta prioritária (4 horas, 7 dias por semana)",
+        "Sessão fotográfica profissional (1 por ano)",
+        "Pacote de marketing completo",
+        "Programa de upsell para hóspedes",
+        "Videochamada trimestral + revisão de desempenho",
+        "Página dedicada com URL personalizada",
+        "Acesso à nossa rede de consultoria de aquisições"
+      ]
+    },
+    "addons_title": "Serviços Adicionais",
+    "addons_subtitle": "Disponíveis para todos os planos.",
+    "addons": [
+      { "name": "Limpeza profunda", "price": "$80 – $150 USD" },
+      { "name": "Sessão fotográfica profissional", "price": "$200 USD" },
+      { "name": "Visita de manutenção de emergência", "price": "$50 USD + custo do empreiteiro" },
+      { "name": "Configuração de anúncio (Airbnb, VRBO, Booking)", "price": "$150 USD (único)" },
+      { "name": "Kit de boas-vindas para hóspedes", "price": "$40 USD por kit" },
+      { "name": "Publicação em redes sociais", "price": "$30 USD por publicação" }
+    ]
+  },
+  "about": {
+    "title": "Quem Somos",
+    "subtitle": "Uma equipe dedicada, local e bilíngue.",
+    "description": "Somos um casal que vive em Playa del Carmen. Combinamos expertise em tecnologia e hospitalidade para oferecer um serviço de gestão de propriedades que realmente funciona.",
+    "husband_role": "Engenheiro de Software — Desenvolvimento de plataforma, infraestrutura digital e relatórios.",
+    "wife_role": "Relações com Clientes — Comunicação com proprietários, coordenação de hóspedes, limpeza e supervisão.",
+    "value1_title": "Transparência",
+    "value1_desc": "Sem taxas ocultas. Relatórios mensais detalhados.",
+    "value2_title": "Confiabilidade",
+    "value2_desc": "Estamos aqui. Respondemos. Aparecemos.",
+    "value3_title": "Conhecimento Local",
+    "value3_desc": "Conhecemos cada rua, cada empreiteiro, cada tendência do mercado da Riviera Maya."
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Em 5 passos simples, sua propriedade estará gerando renda.",
+    "step1_title": "Escolha seu plano",
+    "step1_desc": "Selecione o nível de serviço que melhor se adapta às suas necessidades.",
+    "step2_title": "Assine online",
+    "step2_desc": "Pagamento rápido e seguro pela nossa plataforma.",
+    "step3_title": "Visitamos sua propriedade",
+    "step3_desc": "Realizamos uma inspeção inicial e preparamos tudo.",
+    "step4_title": "Administramos e promovemos",
+    "step4_desc": "Listamos, gerenciamos hóspedes, coordenamos limpezas e manutenção.",
+    "step5_title": "Você recebe renda e relatórios",
+    "step5_desc": "Todo mês você recebe um relatório detalhado e seus ganhos de aluguel."
+  },
+  "testimonials": {
+    "title": "O Que Dizem Nossos Clientes",
+    "subtitle": "A confiança dos nossos proprietários é nosso melhor cartão de visita.",
+    "coming_soon": "Estamos coletando depoimentos dos nossos primeiros clientes. Em breve estarão aqui!"
+  },
+  "acquisition": {
+    "title": "Pensando em investir na Riviera Maya?",
+    "subtitle": "Ajudamos você a encontrar a propriedade perfeita.",
+    "description": "Oferecemos consultoria e indicações de agências locais verificadas. Acompanhamos em visitas e aconselhamos sobre bairros e potencial de retorno.",
+    "cta": "Fale Conosco",
+    "benefit1": "Orientação local especializada",
+    "benefit2": "Agências verificadas",
+    "benefit3": "Visitas acompanhadas",
+    "benefit4": "Sem custo para o comprador"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Respondemos em menos de 24 horas.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefone (WhatsApp de preferência)",
+    "topic": "Assunto",
+    "topic_management": "Gestão de Propriedades",
+    "topic_acquisition": "Aquisição / Investimento",
+    "topic_guest": "Consulta de Hóspede",
+    "topic_other": "Outro",
+    "message": "Mensagem",
+    "submit": "Enviar Mensagem",
+    "whatsapp_cta": "Escreva-nos no WhatsApp",
+    "response_time": "Respondemos em menos de 24 horas"
+  },
+  "footer": {
+    "tagline": "Gestão profissional de propriedades em Playa del Carmen e Riviera Maya.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "cookies": "Política de Cookies",
+    "copyright": "© {year} Casa Concierge PDC. Todos os direitos reservados."
+  }
+}
