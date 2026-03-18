@@ -10,7 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const DEFAULT_OG_IMAGE = "/og-image-es.jpg";
+const DEFAULT_OG_IMAGE = "/og-image-default.jpg";
 
 async function getSiteUrl(): Promise<string> {
   const h = await headers();
@@ -21,29 +21,29 @@ async function getSiteUrl(): Promise<string> {
 }
 
 const baseMetadata: Metadata = {
-  title: "Casa Concierge PDC",
+  title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
   description:
-    "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
+    "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
   openGraph: {
-    title: "Casa Concierge PDC",
+    title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
     description:
-      "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
-    url: "/es",
+      "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
+    url: "/",
     type: "website",
     images: [
       {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Casa Concierge PDC",
+        alt: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Casa Concierge PDC",
+    title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
     description:
-      "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
+      "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
