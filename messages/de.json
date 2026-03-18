@@ -38,10 +38,10 @@
   },
   "services": {
     "title": "Unsere Pläne",
-    "subtitle": "Sie verdienen, wir verdienen. Wenn Ihre Immobilie nichts einbringt, zahlen Sie nichts außer dem Mindestbetrag.",
+    "subtitle": "Wählen Sie Ihren Plan und kontaktieren Sie uns.",
     "popular": "Am Beliebtesten",
     "of_income": "der Bruttomieteinnahmen",
-    "subscribe": "Abonnieren",
+    "subscribe": "Kontakt aufnehmen",
     "tier1": {
       "name": "Basis",
       "price": "18%",
@@ -89,7 +89,7 @@
     },
     "disclaimer": "* Die Ergebnisse können je nach Saison, Lage, Immobilieneigenschaften und Marktbedingungen variieren. Die gezeigten Zahlen sind Schätzungen basierend auf vergleichbaren Immobilien und stellen keine Einkommensgarantie dar.",
     "faq_alt_payment_q": "Kann ich per Überweisung oder bar bezahlen?",
-    "faq_alt_payment_a": "Unsere primäre Zahlungsmethode ist Kredit-/Debitkarte über unsere sichere Plattform. Wenn Sie alternative Zahlungsmethoden (SPEI-Überweisung, internationale Überweisung) nutzen möchten, kontaktieren Sie uns direkt für eine vorherige schriftliche Vereinbarung. Alternative Methoden unterliegen der Verfügbarkeit und Genehmigung, und es gelten die gleichen Tarife und Bedingungen des gewählten Plans.",
+    "faq_alt_payment_a": "Unser Zahlungsprozess ist einfach: Wählen Sie Ihren Plan, kontaktieren Sie uns, und wir vereinbaren die Zahlungsart — SPEI-Überweisung oder Bargeld. Kartenzahlung kommt bald.",
     "addons_title": "Zusatzleistungen",
     "addons_subtitle": "Verfügbar für alle Pläne.",
     "addons": [
@@ -187,7 +187,7 @@
     "step1_title": "Wählen Sie Ihren Plan",
     "step1_desc": "Wählen Sie das Serviceniveau, das Ihren Bedürfnissen entspricht.",
     "step2_title": "Online abonnieren",
-    "step2_desc": "Schnelle, sichere Zahlung über unsere Plattform.",
+    "step2_desc": "Wir einigen uns auf Plan und Zahlungsart per E-Mail oder WhatsApp.",
     "step3_title": "Wir besuchen Ihre Immobilie",
     "step3_desc": "Wir führen eine Erstinspektion durch und bereiten alles vor.",
     "step4_title": "Wir verwalten und bewerben",

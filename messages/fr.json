@@ -38,10 +38,10 @@
   },
   "services": {
     "title": "Nos Plans",
-    "subtitle": "Vous gagnez, nous gagnons. Si votre propriété ne génère rien, vous ne payez rien au-delà du minimum.",
+    "subtitle": "Choisissez votre plan et contactez-nous pour commencer.",
     "popular": "Le Plus Populaire",
     "of_income": "du revenu locatif brut",
-    "subscribe": "S'abonner",
+    "subscribe": "Nous contacter",
     "tier1": {
       "name": "Essentiel",
       "price": "18%",
@@ -89,7 +89,7 @@
     },
     "disclaimer": "* Les résultats peuvent varier selon la saison, l'emplacement, les caractéristiques du bien et les conditions du marché. Les chiffres présentés sont des estimations basées sur des propriétés similaires et ne constituent pas une garantie de revenus.",
     "faq_alt_payment_q": "Puis-je payer par virement ou en espèces ?",
-    "faq_alt_payment_a": "Notre méthode de paiement principale est la carte de crédit/débit via notre plateforme sécurisée. Si vous souhaitez explorer des méthodes de paiement alternatives (virement SPEI, virement international), contactez-nous directement pour convenir d'un accord écrit préalable. Les méthodes alternatives sont soumises à disponibilité et approbation, et les mêmes tarifs et conditions du plan sélectionné s'appliquent.",
+    "faq_alt_payment_a": "Notre processus de paiement est simple : choisissez votre plan, contactez-nous, et nous convenons du mode de paiement — virement SPEI ou espèces. Paiement par carte bientôt disponible.",
     "addons_title": "Services Supplémentaires",
     "addons_subtitle": "Disponibles pour tous les plans.",
     "addons": [
@@ -187,7 +187,7 @@
     "step1_title": "Choisissez votre plan",
     "step1_desc": "Sélectionnez le niveau de service adapté à vos besoins.",
     "step2_title": "Abonnez-vous en ligne",
-    "step2_desc": "Paiement rapide et sécurisé via notre plateforme.",
+    "step2_desc": "Nous convenons du plan et du mode de paiement par e-mail ou WhatsApp.",
     "step3_title": "Nous visitons votre propriété",
     "step3_desc": "Nous effectuons une inspection initiale et préparons tout.",
     "step4_title": "Nous gérons et promouvons",

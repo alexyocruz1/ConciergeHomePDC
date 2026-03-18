@@ -38,10 +38,10 @@
   },
   "services": {
     "title": "Our Plans",
-    "subtitle": "You earn, we earn. If your property earns nothing, you pay nothing beyond the minimum.",
+    "subtitle": "Choose your plan and contact us to get started.",
     "popular": "Most Popular",
     "of_income": "of gross rental income",
-    "subscribe": "Subscribe",
+    "subscribe": "Contact Us",
     "tier1": {
       "name": "Essential",
       "price": "18%",
@@ -89,7 +89,7 @@
     },
     "disclaimer": "* Results may vary by season, location, property features, and market conditions. Figures shown are estimates based on similar properties and do not constitute a guarantee of income.",
     "faq_alt_payment_q": "Can I pay by transfer or cash?",
-    "faq_alt_payment_a": "Our primary payment method is credit/debit card through our secure platform. If you'd like to explore alternative payment methods (SPEI transfer, international wire), contact us directly to arrange a prior written agreement. Alternative methods are subject to availability and approval, and the same plan rates and conditions apply.",
+    "faq_alt_payment_a": "Our payment process is simple: choose your plan, contact us, and we agree on the payment method — SPEI transfer or cash. Card payments coming soon.",
     "addons_title": "Add-On Services",
     "addons_subtitle": "Available to all plans.",
     "addons": [
@@ -187,7 +187,7 @@
     "step1_title": "Choose your plan",
     "step1_desc": "Select the service level that best fits your needs.",
     "step2_title": "Subscribe online",
-    "step2_desc": "Fast, secure payment through our platform.",
+    "step2_desc": "We agree on the plan and payment method via email or WhatsApp.",
     "step3_title": "We visit your property",
     "step3_desc": "We conduct an initial inspection and get everything ready.",
     "step4_title": "We manage and promote",
