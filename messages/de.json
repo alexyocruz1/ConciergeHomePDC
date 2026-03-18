@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Basis",
       "price": "18%",
-      "minimum": "Minimum $60 USD/Monat",
+      "minimum": "Minimum $80 USD/Monat",
       "description": "Für Eigentümer, die Sicherheit und lokale Augen brauchen.",
       "features": [
         "Monatliche Inspektion (1 Besuch/Monat mit Fotobericht)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Komplettverwaltung",
       "price": "22%",
-      "minimum": "Minimum $80 USD/Monat",
+      "minimum": "Minimum $100 USD/Monat",
       "description": "Kompletter Rundum-Service. Unser beliebtester Plan.",
       "features": [
         "Alles aus dem Basis-Plan",
@@ -88,6 +88,7 @@
       ]
     },
     "disclaimer": "* Die Ergebnisse können je nach Saison, Lage, Immobilieneigenschaften und Marktbedingungen variieren. Die gezeigten Zahlen sind Schätzungen basierend auf vergleichbaren Immobilien und stellen keine Einkommensgarantie dar.",
+    "mxn_note": "*Zahlungen in mexikanischen Pesos möglich. Der MXN-Betrag wird zum Banxico-Kurs am Zahlungsdatum berechnet.",
     "faq_alt_payment_q": "Kann ich per Überweisung oder bar bezahlen?",
     "faq_alt_payment_a": "Unser Zahlungsprozess ist einfach: Wählen Sie Ihren Plan, kontaktieren Sie uns, und wir vereinbaren die Zahlungsart — SPEI-Überweisung oder Bargeld. Kartenzahlung kommt bald.",
     "addons_title": "Zusatzleistungen",

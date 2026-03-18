@@ -154,6 +154,9 @@ export function Services() {
         <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-slate-400">
           {t("disclaimer")}
         </p>
+        <p className="mx-auto mt-2 max-w-2xl text-center text-xs leading-relaxed text-slate-400">
+          {t("mxn_note")}
+        </p>
       </div>
     </section>
   );

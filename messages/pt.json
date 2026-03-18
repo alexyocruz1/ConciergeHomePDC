@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Essencial",
       "price": "18%",
-      "minimum": "Mínimo $60 USD/mês",
+      "minimum": "Mínimo $80 USD/mês",
       "description": "Para proprietários que precisam de tranquilidade e olhos locais.",
       "features": [
         "Inspeção mensal (1 visita/mês com relatório fotográfico)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Gestão Completa",
       "price": "22%",
-      "minimum": "Mínimo $80 USD/mês",
+      "minimum": "Mínimo $100 USD/mês",
       "description": "Operação completa sem preocupações. Nosso plano mais popular.",
       "features": [
         "Tudo incluído no Essencial",
@@ -88,6 +88,7 @@
       ]
     },
     "disclaimer": "* Os resultados podem variar conforme temporada, localização, características do imóvel e condições de mercado. Os valores apresentados são estimativas baseadas em propriedades similares e não constituem garantia de renda.",
+    "mxn_note": "*Pagamentos em pesos mexicanos aceitos. O equivalente em MXN é calculado à taxa Banxico na data do pagamento.",
     "faq_alt_payment_q": "Posso pagar por transferência ou em dinheiro?",
     "faq_alt_payment_a": "Nosso processo de pagamento é simples: escolha seu plano, fale conosco e combinamos o método de pagamento — transferência SPEI ou dinheiro. Pagamento com cartão em breve.",
     "addons_title": "Serviços Adicionais",

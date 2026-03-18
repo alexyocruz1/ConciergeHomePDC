@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Essential",
       "price": "18%",
-      "minimum": "Minimum $60 USD/mo",
+      "minimum": "Minimum $80 USD/mo",
       "description": "For owners who need peace of mind and local eyes.",
       "features": [
         "Monthly property inspection (1 visit/month with photo report)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Full Management",
       "price": "22%",
-      "minimum": "Minimum $80 USD/mo",
+      "minimum": "Minimum $100 USD/mo",
       "description": "Full hands-off operation. Our most popular plan.",
       "features": [
         "Everything in Essential",
@@ -88,6 +88,7 @@
       ]
     },
     "disclaimer": "* Results may vary by season, location, property features, and market conditions. Figures shown are estimates based on similar properties and do not constitute a guarantee of income.",
+    "mxn_note": "*Mexican peso payments accepted. MXN equivalent calculated at the Banxico rate on the payment date.",
     "faq_alt_payment_q": "Can I pay by transfer or cash?",
     "faq_alt_payment_a": "Our payment process is simple: choose your plan, contact us, and we agree on the payment method — SPEI transfer or cash. Card payments coming soon.",
     "addons_title": "Add-On Services",

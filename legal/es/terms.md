@@ -52,8 +52,8 @@ Casa Concierge PDC ofrece tres planes de suscripción mensual:
 
 | Plan | Comisión sobre ingresos brutos | Cuota mínima mensual |
 |---|---|---|
-| Esencial | 18% | $60 USD/mes |
-| Gestor | 22% | $80 USD/mes |
+| Esencial | 18% | $80 USD/mes |
+| Gestor | 22% | $100 USD/mes |
 | Premium Concierge | 28% | $120 USD/mes |
 
 **Funcionamiento del cobro:**
@@ -63,6 +63,9 @@ Casa Concierge PDC ofrece tres planes de suscripción mensual:
 - Si los ingresos del mes resultan en un porcentaje inferior a la cuota mínima, no se realizan cobros adicionales.
 
 Los precios están denominados en **dólares americanos (USD)** y pueden actualizarse con previo aviso de **30 días**.
+
+**Política de bajo rendimiento (Gestor):**
+- Si una propiedad en el plan Gestor mantiene un bajo rendimiento durante **2 meses consecutivos** (por ejemplo, generando ingresos por debajo del umbral del mínimo del plan), Casa Concierge PDC podrá proponer **bajar el servicio** a Esencial o **terminar el servicio** con aviso por escrito, con el fin de mantener la calidad del servicio y la sostenibilidad operativa.
 
 ---
 
@@ -76,6 +79,10 @@ El método de pago estándar y preferido de Casa Concierge PDC es **tarjeta de c
 - En caso de fallo de pago por Stripe, se realizarán hasta tres intentos adicionales. Si el pago falla en los tres intentos consecutivos, el servicio será suspendido hasta regularizar el adeudo.
 
 Para métodos de pago alternativos, ver la cláusula §6 — Métodos de Pago Alternativos.
+
+**Plazo para disputar facturas:**
+- El Cliente cuenta con **5 días hábiles** a partir de la recepción de una factura o estado de cuenta mensual para disputarlo por escrito vía correo electrónico, adjuntando evidencia.
+- Después de ese plazo, la factura/estado de cuenta se considerará aceptada.
 
 ---
 
@@ -115,6 +122,9 @@ El Cliente puede cancelar su suscripción en cualquier momento desde su portal d
 - Casa Concierge PDC entregará al Cliente un reporte final de la propiedad dentro de los **10 días hábiles** posteriores a la cancelación.
 - Los listados de la propiedad en plataformas de renta serán dados de baja o transferidos al Cliente según su preferencia.
 - Las fotografías de la propiedad serán eliminadas del portal web de Casa Concierge PDC en un plazo máximo de **48 horas** tras la cancelación. El Cliente recibirá confirmación por correo.
+
+**Plazo de aviso (acuerdo opcional):**
+- Si el Cliente acepta un compromiso anual con descuento ofrecido por Casa Concierge PDC, se podrá requerir un aviso previo por escrito de **60 días** para cancelar, conforme al acuerdo por escrito.
 
 ---
 

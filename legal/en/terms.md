@@ -52,8 +52,8 @@ Casa Concierge PDC offers three monthly subscription plans:
 
 | Plan | Commission on gross income | Monthly minimum fee |
 |---|---|---|
-| Essential | 18% | $60 USD/month |
-| Full Management | 22% | $80 USD/month |
+| Essential | 18% | $80 USD/month |
+| Full Management | 22% | $100 USD/month |
 | Premium Concierge | 28% | $120 USD/month |
 
 **How billing works:**
@@ -63,6 +63,9 @@ Casa Concierge PDC offers three monthly subscription plans:
 - If the month's income results in a percentage lower than the minimum fee, no additional charges are made.
 
 Prices are denominated in **United States dollars (USD)** and may be updated with **30 days'** prior notice.
+
+**Underperformance policy (Full Management):**
+- If a Full Management property consistently underperforms for **2 consecutive months** (for example, generating income below the plan’s minimum threshold), Casa Concierge PDC may propose to **downgrade the service** to Essential or **terminate the service** with written notice, in order to maintain service quality and operational sustainability.
 
 ---
 
@@ -76,6 +79,10 @@ Casa Concierge PDC's standard and preferred payment method is **credit or debit 
 - In the event of a payment failure through Stripe, up to three additional attempts will be made. If payment fails on all three consecutive attempts, the service will be suspended until the outstanding balance is settled.
 
 For alternative payment methods, see clause §6 — Alternative Payment Methods.
+
+**Invoice dispute window:**
+- The Client has **5 business days** from receipt of an invoice or monthly statement to dispute it in writing via email, including supporting evidence.
+- After this period, the invoice/statement is deemed accepted.
 
 ---
 
@@ -115,6 +122,9 @@ The Client may cancel their subscription at any time from their owner portal or 
 - Casa Concierge PDC will deliver a final property report to the Client within **10 business days** of cancellation.
 - Property listings on rental platforms will be deactivated or transferred to the Client according to their preference.
 - Property photographs will be removed from the Casa Concierge PDC website within a maximum of **48 hours** after cancellation. The Client will receive confirmation via email.
+
+**Notice period (optional agreement):**
+- If the Client agrees to a discounted annual commitment offered by Casa Concierge PDC, a **60-day** prior written notice may be required for cancellation, as specified in the written agreement.
 
 ---
 

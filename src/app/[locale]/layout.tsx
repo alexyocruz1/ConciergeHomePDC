@@ -56,6 +56,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     metadataBase: new URL(siteUrl),
     title: meta?.title || "Casa Concierge PDC",
     description: meta?.description || "",
+    icons: {
+      icon: [
+        { url: "/favicon.ico" },
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      ],
+      apple: [{ url: "/favicon-180x180.png" }],
+      other: [{ rel: "manifest", url: "/site.webmanifest" }],
+    },
     alternates: {
       languages: Object.fromEntries(
         routing.locales.map((l) => [l, `/${l}`])

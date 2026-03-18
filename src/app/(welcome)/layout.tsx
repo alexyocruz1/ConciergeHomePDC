@@ -24,6 +24,14 @@ const baseMetadata: Metadata = {
   title: "Casa Concierge PDC — Property Management, Riviera Maya",
   description:
     "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/favicon-180x180.png" }],
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
+  },
   openGraph: {
     title: "Casa Concierge PDC — Property Management, Riviera Maya",
     description:
