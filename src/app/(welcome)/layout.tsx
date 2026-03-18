@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { headers } from "next/headers";
 import "../globals.css";
 
 const inter = Inter({
@@ -9,10 +10,17 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://casaconciergepdc.com";
 const DEFAULT_OG_IMAGE = "/og-image-es.jpg";
 
-export const metadata: Metadata = {
+async function getSiteUrl(): Promise<string> {
+  const h = await headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  if (!host) return "https://casaconciergepdc.com";
+  return `${proto}://${host}`;
+}
+
+const baseMetadata: Metadata = {
   title: "Casa Concierge PDC",
   description:
     "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
@@ -20,11 +28,11 @@ export const metadata: Metadata = {
     title: "Casa Concierge PDC",
     description:
       "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
-    url: `${SITE_URL}/es`,
+    url: "/es",
     type: "website",
     images: [
       {
-        url: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
+        url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
         alt: "Casa Concierge PDC",
@@ -36,9 +44,17 @@ export const metadata: Metadata = {
     title: "Casa Concierge PDC",
     description:
       "Professional vacation property management in Playa del Carmen and the Riviera Maya.",
-    images: [`${SITE_URL}${DEFAULT_OG_IMAGE}`],
+    images: [DEFAULT_OG_IMAGE],
   },
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  const siteUrl = await getSiteUrl();
+  return {
+    metadataBase: new URL(siteUrl),
+    ...baseMetadata,
+  };
+}
 
 export default function WelcomeLayout({ children }: { children: ReactNode }) {
   return (

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { Header } from "@/components/Header";
@@ -24,7 +25,13 @@ const ogImages: Record<string, string> = {
   de: "/og-image-de.jpg",
 };
 
-const SITE_URL = "https://casaconciergepdc.com";
+async function getSiteUrl(): Promise<string> {
+  const h = await headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  if (!host) return "https://casaconciergepdc.com";
+  return `${proto}://${host}`;
+}
 
 type Props = {
   children: React.ReactNode;
@@ -41,10 +48,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = messages.meta as Record<string, string>;
 
   const imagePath = ogImages[locale] ?? ogImages.es;
-  const imageUrl = `${SITE_URL}${imagePath}`;
-  const localePath = `/${locale}`;
+  const siteUrl = await getSiteUrl();
+  const imageUrl = new URL(imagePath, siteUrl).toString();
+  const localeUrl = new URL(`/${locale}`, siteUrl).toString();
 
   return {
+    metadataBase: new URL(siteUrl),
     title: meta?.title || "Casa Concierge PDC",
     description: meta?.description || "",
     alternates: {
@@ -55,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: meta?.title || "Casa Concierge PDC",
       description: meta?.description || "",
-      url: `${SITE_URL}${localePath}`,
+      url: localeUrl,
       type: "website",
       images: [
         {
