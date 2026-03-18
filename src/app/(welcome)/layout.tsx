@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 const DEFAULT_OG_IMAGE = "/og-image-default.jpg";
+const FAVICON_VERSION = "v=2";
 
 async function getSiteUrl(): Promise<string> {
   const h = await headers();
@@ -26,11 +27,15 @@ const baseMetadata: Metadata = {
     "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: `/favicon.ico?${FAVICON_VERSION}` },
+      {
+        url: `/favicon-32x32.png?${FAVICON_VERSION}`,
+        sizes: "32x32",
+        type: "image/png",
+      },
     ],
-    apple: [{ url: "/favicon-180x180.png" }],
-    other: [{ rel: "manifest", url: "/site.webmanifest" }],
+    apple: [{ url: `/favicon-180x180.png?${FAVICON_VERSION}` }],
+    other: [{ rel: "manifest", url: `/site.webmanifest?${FAVICON_VERSION}` }],
   },
   openGraph: {
     title: "Casa Concierge PDC — Property Management, Riviera Maya",
