@@ -34,17 +34,22 @@ export function HowItWorks() {
         </div>
 
         <div className="relative mt-16">
-          <div className="absolute left-8 top-0 hidden h-full w-0.5 bg-primary-200 lg:left-1/2 lg:block" />
+          <div className="absolute left-[1.6rem] top-0 h-full w-0.5 bg-primary-200 lg:left-1/2" />
 
           <div className="space-y-8 lg:space-y-12">
             {steps.map((step, i) => (
               <div
                 key={i}
-                className={`relative flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8 ${
+                className={`relative flex items-start gap-4 lg:flex-row lg:items-center lg:gap-8 ${
                   i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 }`}
               >
-                <div className={`flex-1 ${i % 2 === 0 ? "lg:text-right" : "lg:text-left"}`}>
+                <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-4 border-slate-50 bg-primary-700 text-white shadow-md lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:h-14 lg:w-14 lg:border-white">
+                  <span className="text-sm font-bold lg:hidden">{i + 1}</span>
+                  <span className="hidden lg:block">{stepIcons[i]}</span>
+                </div>
+
+                <div className={`min-w-0 flex-1 ${i % 2 === 0 ? "lg:text-right" : "lg:text-left"}`}>
                   <div
                     className={`rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md ${
                       i % 2 === 0 ? "lg:ml-auto lg:mr-8" : "lg:ml-8 lg:mr-auto"
@@ -57,10 +62,6 @@ export function HowItWorks() {
                       {step.desc}
                     </p>
                   </div>
-                </div>
-
-                <div className="absolute left-5 hidden h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-primary-700 text-white shadow-md lg:relative lg:left-auto lg:flex lg:shrink-0">
-                  {stepIcons[i]}
                 </div>
 
                 <div className="hidden flex-1 lg:block" />

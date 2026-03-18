@@ -51,7 +51,7 @@ export function Comparison() {
             return (
               <div key={key} className="animate-in fade-in duration-300">
                 {/* Desktop table */}
-                <div className="hidden overflow-hidden rounded-2xl border border-slate-200 shadow-sm sm:block">
+                <div className="hidden overflow-hidden rounded-2xl border border-slate-200 shadow-sm md:block">
                   <table className="w-full text-left text-sm">
                     <thead>
                       <tr className="bg-slate-50">
@@ -88,7 +88,7 @@ export function Comparison() {
                 </div>
 
                 {/* Mobile cards */}
-                <div className="space-y-3 sm:hidden">
+                <div className="space-y-3 md:hidden">
                   {rows.map((row, j) => (
                     <div
                       key={j}

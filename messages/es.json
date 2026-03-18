@@ -41,7 +41,7 @@
     "subtitle": "Tú ganas, nosotros ganamos. Si tu propiedad no genera ingresos, no pagas más allá del mínimo.",
     "popular": "Más Popular",
     "of_income": "del ingreso bruto de alquiler",
-    "subscribe": "Suscribirse",
+    "subscribe": "Suscribirme",
     "tier1": {
       "name": "Esencial",
       "price": "18%",
@@ -223,6 +223,7 @@
     "topic_other": "Otro",
     "message": "Mensaje",
     "submit": "Enviar Mensaje",
+    "age_confirm": "Confirmo que tengo 18 años de edad o más.",
     "whatsapp_cta": "Escríbenos por WhatsApp",
     "response_time": "Respondemos en menos de 24 horas"
   },
@@ -232,6 +233,19 @@
     "terms": "Términos de Servicio",
     "cookies": "Política de Cookies",
     "whatsapp_disclaimer": "Las comunicaciones por WhatsApp son de carácter operativo. Para reclamaciones o acuerdos formales: info@casaconciergepdc.com",
-    "copyright": "© {year} Casa Concierge PDC. Todos los derechos reservados."
+    "copyright": "© {year} Casa Concierge PDC. Todos los derechos reservados.",
+    "cookie_settings": "Configuración de Cookies"
+  },
+  "cookies_banner": {
+    "message": "Usamos cookies para mejorar tu experiencia. Las cookies esenciales siempre están activas. Puedes aceptar o rechazar las cookies opcionales.",
+    "accept": "Aceptar Todo",
+    "reject": "Rechazar Todo",
+    "customize": "Personalizar",
+    "save": "Guardar Preferencias",
+    "privacy_link": "Más información en nuestra Política de Cookies.",
+    "analytics_label": "Cookies de análisis",
+    "analytics_desc": "Nos ayudan a entender cómo los visitantes usan el sitio.",
+    "preferences_label": "Cookies de preferencias",
+    "preferences_desc": "Recuerdan tu configuración, como idioma y moneda."
   }
 }

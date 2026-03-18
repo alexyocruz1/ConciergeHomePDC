@@ -13,6 +13,7 @@ export function Contact() {
     topic: "",
     message: "",
   });
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -169,9 +170,23 @@ export function Contact() {
                 />
               </div>
 
+              <label className="flex items-start gap-3 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  required
+                  checked={ageConfirmed}
+                  onChange={(e) => setAgeConfirmed(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-primary-700 focus:ring-primary-500/20"
+                />
+                <span className="text-xs leading-relaxed text-slate-500">
+                  {t("age_confirm")}
+                </span>
+              </label>
+
               <button
                 type="submit"
-                className="w-full rounded-full bg-primary-700 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-800 hover:shadow-md"
+                disabled={!ageConfirmed}
+                className="w-full rounded-full bg-primary-700 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-800 hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t("submit")}
               </button>

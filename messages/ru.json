@@ -223,6 +223,7 @@
     "topic_other": "Другое",
     "message": "Сообщение",
     "submit": "Отправить Сообщение",
+    "age_confirm": "Я подтверждаю, что мне исполнилось 18 лет.",
     "whatsapp_cta": "Напишите нам в WhatsApp",
     "response_time": "Мы отвечаем в течение 24 часов"
   },
@@ -232,6 +233,19 @@
     "terms": "Условия Использования",
     "cookies": "Политика Cookies",
     "whatsapp_disclaimer": "Сообщения в WhatsApp носят исключительно оперативный характер. Для официальных запросов или претензий: info@casaconciergepdc.com",
-    "copyright": "© {year} Casa Concierge PDC. Все права защищены."
+    "copyright": "© {year} Casa Concierge PDC. Все права защищены.",
+    "cookie_settings": "Настройки Cookies"
+  },
+  "cookies_banner": {
+    "message": "Мы используем файлы cookie для улучшения вашего опыта. Основные cookie всегда активны. Вы можете принять или отклонить дополнительные cookie.",
+    "accept": "Принять Все",
+    "reject": "Отклонить Все",
+    "customize": "Настроить",
+    "save": "Сохранить",
+    "privacy_link": "Подробнее в нашей Политике Cookies.",
+    "analytics_label": "Аналитические cookie",
+    "analytics_desc": "Помогают нам понять, как посетители используют сайт.",
+    "preferences_label": "Cookie предпочтений",
+    "preferences_desc": "Запоминают ваши настройки, такие как язык и валюта."
   }
 }

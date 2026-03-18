@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CookieSettingsButton } from "./CookieBanner";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -81,6 +82,9 @@ export function Footer() {
                 <Link href="/cookies" className="text-sm text-slate-400 transition-colors hover:text-white">
                   {t("cookies")}
                 </Link>
+              </li>
+              <li>
+                <CookieSettingsButton />
               </li>
             </ul>
           </div>

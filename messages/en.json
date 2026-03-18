@@ -223,6 +223,7 @@
     "topic_other": "Other",
     "message": "Message",
     "submit": "Send Message",
+    "age_confirm": "I confirm that I am 18 years of age or older.",
     "whatsapp_cta": "Message us on WhatsApp",
     "response_time": "We respond within 24 hours"
   },
@@ -232,6 +233,19 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
     "whatsapp_disclaimer": "WhatsApp communications are operational only. For formal requests or claims: info@casaconciergepdc.com",
-    "copyright": "© {year} Casa Concierge PDC. All rights reserved."
+    "copyright": "© {year} Casa Concierge PDC. All rights reserved.",
+    "cookie_settings": "Cookie Settings"
+  },
+  "cookies_banner": {
+    "message": "We use cookies to improve your experience. Essential cookies are always active. You can accept or reject optional cookies.",
+    "accept": "Accept All",
+    "reject": "Reject All",
+    "customize": "Customize",
+    "save": "Save Preferences",
+    "privacy_link": "Learn more in our Cookie Policy.",
+    "analytics_label": "Analytics cookies",
+    "analytics_desc": "Help us understand how visitors use our site.",
+    "preferences_label": "Preference cookies",
+    "preferences_desc": "Remember your settings like language and currency."
   }
 }
