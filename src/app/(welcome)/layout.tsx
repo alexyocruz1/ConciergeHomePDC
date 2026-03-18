@@ -21,11 +21,11 @@ async function getSiteUrl(): Promise<string> {
 }
 
 const baseMetadata: Metadata = {
-  title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
+  title: "Casa Concierge PDC — Property Management, Riviera Maya",
   description:
     "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
   openGraph: {
-    title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
+    title: "Casa Concierge PDC — Property Management, Riviera Maya",
     description:
       "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
     url: "/",
@@ -41,7 +41,7 @@ const baseMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
+    title: "Casa Concierge PDC — Property Management, Riviera Maya",
     description:
       "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
     images: [DEFAULT_OG_IMAGE],
