@@ -5,6 +5,7 @@
   },
   "nav": {
     "services": "Services",
+    "why_us": "Pourquoi Nous",
     "properties": "Propriétés",
     "about": "À Propos",
     "blog": "Blog",
@@ -37,27 +38,27 @@
   },
   "services": {
     "title": "Nos Plans",
-    "subtitle": "Choisissez le niveau de service qui convient le mieux à votre investissement.",
+    "subtitle": "Vous gagnez, nous gagnons. Si votre propriété ne génère rien, vous ne payez rien au-delà du minimum.",
     "popular": "Le Plus Populaire",
-    "per_month": "/mois",
-    "per_property": "par propriété",
-    "plus_commission": "+ 20% du revenu locatif brut",
+    "of_income": "du revenu locatif brut",
     "subscribe": "S'abonner",
     "tier1": {
       "name": "Essentiel",
-      "price": "$150 USD",
+      "price": "18%",
+      "minimum": "Minimum $60 USD/mois",
       "description": "Pour les propriétaires qui ont besoin de tranquillité d'esprit.",
       "features": [
         "Inspection mensuelle (1 visite/mois avec rapport photo)",
         "Coordination de maintenance de base",
         "Rapport mensuel au propriétaire",
-        "Contact WhatsApp/email avec réponse garantie en 24h",
+        "Contact WhatsApp/email avec objectif de réponse en 24h",
         "Consultation sur les annonces (Airbnb/Booking)"
       ]
     },
     "tier2": {
       "name": "Gestion Complète",
-      "price": "$350 USD",
+      "price": "22%",
+      "minimum": "Minimum $80 USD/mois",
       "description": "Opération complète sans souci. Notre plan le plus populaire.",
       "features": [
         "Tout ce qui est inclus dans Essentiel",
@@ -72,8 +73,9 @@
     },
     "tier3": {
       "name": "Premium Concierge",
-      "price": "$600 USD",
-      "description": "Rendements maximaux avec un service entièrement personnalisé.",
+      "price": "28%",
+      "minimum": "Minimum $120 USD/mois",
+      "description": "Rendements optimisés avec un service entièrement personnalisé.",
       "features": [
         "Tout ce qui est inclus dans Gestion Complète",
         "Réponse prioritaire (4 heures, 7 jours sur 7)",
@@ -85,6 +87,9 @@
         "Accès à notre réseau de conseil en acquisition"
       ]
     },
+    "disclaimer": "* Les résultats peuvent varier selon la saison, l'emplacement, les caractéristiques du bien et les conditions du marché. Les chiffres présentés sont des estimations basées sur des propriétés similaires et ne constituent pas une garantie de revenus.",
+    "faq_alt_payment_q": "Puis-je payer par virement ou en espèces ?",
+    "faq_alt_payment_a": "Notre méthode de paiement principale est la carte de crédit/débit via notre plateforme sécurisée. Si vous souhaitez explorer des méthodes de paiement alternatives (virement SPEI, virement international), contactez-nous directement pour convenir d'un accord écrit préalable. Les méthodes alternatives sont soumises à disponibilité et approbation, et les mêmes tarifs et conditions du plan sélectionné s'appliquent.",
     "addons_title": "Services Supplémentaires",
     "addons_subtitle": "Disponibles pour tous les plans.",
     "addons": [
@@ -95,6 +100,73 @@
       { "name": "Kit de bienvenue pour les clients", "price": "$40 USD par kit" },
       { "name": "Publication sur les réseaux sociaux", "price": "$30 USD par publication" }
     ]
+  },
+  "comparison": {
+    "title": "Comment Nous Nous Comparons",
+    "subtitle": "Découvrez exactement comment notre service se compare aux alternatives.",
+    "us_label": "Casa Concierge PDC",
+    "feature_label": "Caractéristique",
+    "comp1": {
+      "tab": "vs. Courtier",
+      "them_label": "Courtier Traditionnel",
+      "takeaway": "Un courtier vous fait acquérir la propriété. Nous faisons travailler la propriété pour vous chaque mois après. Ce ne sont pas des concurrents — ils servent des phases différentes. Nous collaborons même avec des courtiers et payons des frais de parrainage quand les clients ont besoin d'acheter.",
+      "rows": [
+        { "feature": "Focalisation principale", "them": "Achat et vente de propriétés", "us": "Gestion continue et revenus locatifs" },
+        { "feature": "Présence locale continue", "them": "Aucune après la clôture de la vente", "us": "Visites hebdomadaires/mensuelles, toujours joignables" },
+        { "feature": "Gestion locative", "them": "Non offerte", "us": "Gestion complète Airbnb/VRBO" },
+        { "feature": "Communication avec les clients", "them": "Non offerte", "us": "7 jours sur 7" },
+        { "feature": "Coordination du nettoyage", "them": "Non offerte", "us": "À chaque changement de locataire" },
+        { "feature": "Rapports mensuels de revenus", "them": "Non offerts", "us": "PDF détaillé + tableau de bord" },
+        { "feature": "Promotion de la propriété", "them": "Non offerte", "us": "Annonce active + notre portail immobilier" },
+        { "feature": "Structure des frais", "them": "3–5% sur la vente (unique)", "us": "% du revenu locatif mensuel uniquement" }
+      ]
+    },
+    "comp2": {
+      "tab": "vs. Auto-gestion",
+      "them_label": "Auto-gestion sur Airbnb",
+      "takeaway": "Si une propriété bien gérée génère 3 000 $/mois et une mal gérée 1 800 $/mois, nos frais coûtent bien moins que les 1 200 $ de revenus perdus. Nous ne gérons pas seulement — nous optimisons.",
+      "rows": [
+        { "feature": "Temps requis du propriétaire", "them": "5–15 heures/semaine", "us": "Zéro — entièrement mains libres" },
+        { "feature": "Communication avec les clients", "them": "Le propriétaire s'en charge (à toute heure, tout fuseau)", "us": "Nous nous en chargeons, 7 jours sur 7" },
+        { "feature": "Délai de réponse aux clients", "them": "Dépend de la disponibilité du propriétaire", "us": "Généralement en moins de 4 heures" },
+        { "feature": "Stratégie tarifaire", "them": "Manuelle ou tarification intelligente basique", "us": "Tarification dynamique selon saison et demande" },
+        { "feature": "Nettoyage après chaque client", "them": "Le propriétaire doit coordonner à distance", "us": "Nous coordonnons chaque changement" },
+        { "feature": "Problèmes de maintenance", "them": "Le propriétaire cherche un entrepreneur en urgence", "us": "Entrepreneurs locaux de confiance disponibles" },
+        { "feature": "Inspections de la propriété", "them": "Jamais ou rarement", "us": "Minimum mensuel, tous les plans" },
+        { "feature": "Couverture d'urgence locale", "them": "Aucune", "us": "Nous sommes physiquement sur place" },
+        { "feature": "Annonce multi-plateformes", "them": "Généralement Airbnb uniquement", "us": "Airbnb + VRBO + Booking.com" },
+        { "feature": "Rapport mensuel des revenus", "them": "Téléchargement depuis Airbnb (basique)", "us": "Rapport PDF complet + tableau de bord propriétaire" }
+      ]
+    },
+    "comp3": {
+      "tab": "vs. Grandes Entreprises",
+      "them_label": "Grande Société de Gestion",
+      "takeaway": "Les grandes entreprises offrent une couverture. Nous offrons un engagement. Quand vous nous envoyez un message, la personne qui a physiquement visité votre propriété la semaine dernière est celle qui répond.",
+      "rows": [
+        { "feature": "Propriétés par agent", "them": "50–150 et plus", "us": "10–25 max (volontairement)" },
+        { "feature": "Avec qui vous parlez", "them": "Personnel rotatif, centres d'appels", "us": "Directement avec nous — toujours les mêmes personnes" },
+        { "feature": "Délai de réponse", "them": "24–72 heures typiquement", "us": "4–24h objectif selon le plan" },
+        { "feature": "Présence physique locale", "them": "Personnel de bureau, rarement chez vous", "us": "Nous visitons personnellement votre propriété" },
+        { "feature": "Technologie et rapports", "them": "Souvent basiques ou obsolètes", "us": "Tableau de bord propriétaire personnalisé + PDF mensuel" },
+        { "feature": "Flexibilité du contrat", "them": "Rigide, souvent 6–12 mois minimum", "us": "Abonnement mensuel, annulable à tout moment" },
+        { "feature": "Transparence des frais", "them": "Frais cachés fréquents, contrats complexes", "us": "Un pourcentage clair, un petit minimum" },
+        { "feature": "Investissement personnel", "them": "Faible — c'est un emploi pour leur personnel", "us": "Élevé — c'est notre entreprise et notre réputation" },
+        { "feature": "Langues", "them": "Généralement espagnol uniquement", "us": "ES, EN, FR, RU, PT, DE" }
+      ]
+    },
+    "comp4": {
+      "tab": "vs. Ne Rien Faire",
+      "them_label": "Ne Rien Faire",
+      "takeaway": "Beaucoup d'investisseurs achètent une propriété puis la laissent vide. C'est de l'argent perdu chaque mois, et votre propriété se dégrade sans surveillance.",
+      "rows": [
+        { "feature": "Revenus locatifs mensuels", "them": "0 $", "us": "1 500 $ – 4 000 $ et plus selon la propriété" },
+        { "feature": "État de la propriété dans le temps", "them": "Se dégrade sans surveillance", "us": "Entretenue, inspectée, documentée" },
+        { "feature": "Sécurité", "them": "Non surveillée", "us": "Visites régulières, détection des problèmes" },
+        { "feature": "ROI sur l'investissement", "them": "Négatif (coûts sans revenus)", "us": "Positif dès le premier mois" },
+        { "feature": "Coût de notre service", "them": "—", "us": "18–28% des revenus générés" },
+        { "feature": "Gain net", "them": "0 $", "us": "1 100 $ – 3 000 $/mois et plus après nos frais" }
+      ]
+    }
   },
   "about": {
     "title": "Qui Sommes-Nous",
@@ -159,6 +231,7 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "cookies": "Politique de Cookies",
+    "whatsapp_disclaimer": "Les communications WhatsApp sont à caractère opérationnel uniquement. Pour les réclamations ou accords formels : info@casaconciergepdc.com",
     "copyright": "© {year} Casa Concierge PDC. Tous droits réservés."
   }
 }

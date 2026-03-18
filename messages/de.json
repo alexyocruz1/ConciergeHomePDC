@@ -5,6 +5,7 @@
   },
   "nav": {
     "services": "Leistungen",
+    "why_us": "Warum Wir",
     "properties": "Immobilien",
     "about": "Über Uns",
     "blog": "Blog",
@@ -37,27 +38,27 @@
   },
   "services": {
     "title": "Unsere Pläne",
-    "subtitle": "Wählen Sie das Serviceniveau, das am besten zu Ihrer Investition passt.",
+    "subtitle": "Sie verdienen, wir verdienen. Wenn Ihre Immobilie nichts einbringt, zahlen Sie nichts außer dem Mindestbetrag.",
     "popular": "Am Beliebtesten",
-    "per_month": "/Monat",
-    "per_property": "pro Immobilie",
-    "plus_commission": "+ 20% der Bruttomieteinnahmen",
+    "of_income": "der Bruttomieteinnahmen",
     "subscribe": "Abonnieren",
     "tier1": {
       "name": "Basis",
-      "price": "$150 USD",
+      "price": "18%",
+      "minimum": "Minimum $60 USD/Monat",
       "description": "Für Eigentümer, die Sicherheit und lokale Augen brauchen.",
       "features": [
         "Monatliche Inspektion (1 Besuch/Monat mit Fotobericht)",
         "Grundlegende Wartungskoordination",
         "Monatlicher Eigentümerbericht",
-        "WhatsApp/E-Mail-Kontakt mit 24h-Antwortgarantie",
+        "WhatsApp/E-Mail-Kontakt mit 24h-Antwortziel",
         "Listing-Beratung (Airbnb/Booking)"
       ]
     },
     "tier2": {
       "name": "Komplettverwaltung",
-      "price": "$350 USD",
+      "price": "22%",
+      "minimum": "Minimum $80 USD/Monat",
       "description": "Kompletter Rundum-Service. Unser beliebtester Plan.",
       "features": [
         "Alles aus dem Basis-Plan",
@@ -72,8 +73,9 @@
     },
     "tier3": {
       "name": "Premium Concierge",
-      "price": "$600 USD",
-      "description": "Maximale Renditen mit einem komplett personalisierten Service.",
+      "price": "28%",
+      "minimum": "Minimum $120 USD/Monat",
+      "description": "Optimierte Renditen mit einem komplett personalisierten Service.",
       "features": [
         "Alles aus der Komplettverwaltung",
         "Prioritätsantwort (4 Stunden, 7 Tage die Woche)",
@@ -85,6 +87,9 @@
         "Zugang zu unserem Akquisitionsberatungsnetzwerk"
       ]
     },
+    "disclaimer": "* Die Ergebnisse können je nach Saison, Lage, Immobilieneigenschaften und Marktbedingungen variieren. Die gezeigten Zahlen sind Schätzungen basierend auf vergleichbaren Immobilien und stellen keine Einkommensgarantie dar.",
+    "faq_alt_payment_q": "Kann ich per Überweisung oder bar bezahlen?",
+    "faq_alt_payment_a": "Unsere primäre Zahlungsmethode ist Kredit-/Debitkarte über unsere sichere Plattform. Wenn Sie alternative Zahlungsmethoden (SPEI-Überweisung, internationale Überweisung) nutzen möchten, kontaktieren Sie uns direkt für eine vorherige schriftliche Vereinbarung. Alternative Methoden unterliegen der Verfügbarkeit und Genehmigung, und es gelten die gleichen Tarife und Bedingungen des gewählten Plans.",
     "addons_title": "Zusatzleistungen",
     "addons_subtitle": "Verfügbar für alle Pläne.",
     "addons": [
@@ -95,6 +100,73 @@
       { "name": "Gäste-Willkommenspaket", "price": "$40 USD pro Paket" },
       { "name": "Social-Media-Beitrag", "price": "$30 USD pro Beitrag" }
     ]
+  },
+  "comparison": {
+    "title": "Wie Wir Uns Vergleichen",
+    "subtitle": "Sehen Sie genau, wie unser Service im Vergleich zu den Alternativen abschneidet.",
+    "us_label": "Casa Concierge PDC",
+    "feature_label": "Merkmal",
+    "comp1": {
+      "tab": "vs. Makler",
+      "them_label": "Traditioneller Makler",
+      "takeaway": "Ein Makler hilft Ihnen beim Erwerb der Immobilie. Wir machen die Immobilie für Sie jeden Monat danach profitabel. Sie sind keine Konkurrenten — sie bedienen unterschiedliche Phasen. Wir arbeiten sogar mit Maklern zusammen und zahlen Vermittlungsprovisionen, wenn Kunden kaufen möchten.",
+      "rows": [
+        { "feature": "Hauptfokus", "them": "Kauf und Verkauf von Immobilien", "us": "Laufende Verwaltung und Mieteinnahmen" },
+        { "feature": "Laufende lokale Präsenz", "them": "Keine nach Verkaufsabschluss", "us": "Wöchentliche/monatliche Besuche, immer erreichbar" },
+        { "feature": "Mietverwaltung", "them": "Nicht angeboten", "us": "Komplette Airbnb/VRBO-Verwaltung" },
+        { "feature": "Gästekommunikation", "them": "Nicht angeboten", "us": "7 Tage die Woche" },
+        { "feature": "Reinigungskoordination", "them": "Nicht angeboten", "us": "Bei jedem Wechsel" },
+        { "feature": "Monatliche Einnahmeberichte", "them": "Nicht angeboten", "us": "Detaillierte PDF + Dashboard" },
+        { "feature": "Immobilienvermarktung", "them": "Nicht angeboten", "us": "Aktives Listing + unser Immobilienportal" },
+        { "feature": "Gebührenstruktur", "them": "3–5 % beim Verkauf (einmalig)", "us": "Nur % der monatlichen Mieteinnahmen" }
+      ]
+    },
+    "comp2": {
+      "tab": "vs. Selbstverwaltung",
+      "them_label": "Selbstverwaltung auf Airbnb",
+      "takeaway": "Wenn eine gut verwaltete Immobilie 3.000 $/Monat einbringt und eine schlecht selbst verwaltete nur 1.800 $/Monat, kostet unsere Gebühr weit weniger als die 1.200 $ entgangener Einnahmen. Wir verwalten nicht nur — wir optimieren.",
+      "rows": [
+        { "feature": "Zeitaufwand des Eigentümers", "them": "5–15 Stunden/Woche", "us": "Null — komplett sorgenfrei" },
+        { "feature": "Gästekommunikation", "them": "Eigentümer übernimmt (jede Stunde, jede Zeitzone)", "us": "Wir übernehmen, 7 Tage die Woche" },
+        { "feature": "Antwortzeit gegenüber Gästen", "them": "Abhängig von Verfügbarkeit des Eigentümers", "us": "Typischerweise unter 4 Stunden" },
+        { "feature": "Preisstrategie", "them": "Manuell oder einfache Smart-Pricing", "us": "Dynamische Preise nach Saison und Nachfrage" },
+        { "feature": "Reinigung nach jedem Gast", "them": "Eigentümer muss aus der Ferne koordinieren", "us": "Wir koordinieren jeden Wechsel" },
+        { "feature": "Wartungsprobleme", "them": "Eigentümer sucht verzweifelt einen Handwerker", "us": "Vertrauenswürdige lokale Handwerker auf Abruf" },
+        { "feature": "Immobilieninspektionen", "them": "Nie oder selten", "us": "Monatlich mindestens, in jeder Stufe" },
+        { "feature": "Lokale Notfallabdeckung", "them": "Keine", "us": "Wir sind physisch vor Ort" },
+        { "feature": "Listing auf mehreren Plattformen", "them": "Meist nur Airbnb", "us": "Airbnb + VRBO + Booking.com" },
+        { "feature": "Monatliche Einnahmeberichterstattung", "them": "Download von Airbnb (einfach)", "us": "Vollständiger PDF-Bericht + Eigentümer-Dashboard" }
+      ]
+    },
+    "comp3": {
+      "tab": "vs. Große Unternehmen",
+      "them_label": "Große Verwaltungsgesellschaft",
+      "takeaway": "Große Unternehmen bieten Abdeckung. Wir bieten Engagement. Wenn Sie uns eine Nachricht schicken, antwortet die Person, die letzte Woche physisch durch Ihre Immobilie gegangen ist.",
+      "rows": [
+        { "feature": "Immobilien pro Agent", "them": "50–150+", "us": "10–25 max (bewusst)" },
+        { "feature": "Mit wem Sie sprechen", "them": "Wechselndes Personal, Callcenter", "us": "Direkt mit uns — immer dieselben Ansprechpartner" },
+        { "feature": "Antwortzeit", "them": "Typisch 24–72 Stunden", "us": "Ziel 4–24h" },
+        { "feature": "Lokale physische Präsenz", "them": "Büropersonal, selten bei Ihrer Immobilie", "us": "Wir besuchen Ihre Immobilie persönlich" },
+        { "feature": "Technologie & Berichterstattung", "them": "Oft einfach oder veraltet", "us": "Individuelles Eigentümer-Dashboard + monatliche PDF" },
+        { "feature": "Vertragsflexibilität", "them": "Starr, oft 6–12 Monate Mindestlaufzeit", "us": "Monatliches Abo, jederzeit kündbar" },
+        { "feature": "Gebührentransparenz", "them": "Oft versteckte Gebühren, komplexe Verträge", "us": "Ein klares Prozent, ein kleiner Mindestbetrag" },
+        { "feature": "Persönliches Engagement", "them": "Gering — für Mitarbeiter nur ein Job", "us": "Hoch — das ist unser Geschäft und unser Ruf" },
+        { "feature": "Sprachen", "them": "Meist nur Spanisch", "us": "ES, EN, FR, RU, PT, DE" }
+      ]
+    },
+    "comp4": {
+      "tab": "vs. Nichts Tun",
+      "them_label": "Nichts Tun",
+      "takeaway": "Viele Investoren kaufen eine Immobilie und lassen sie dann leer stehen. Das ist jeden Monat verschenktes Geld, und Ihre Immobilie verfällt ohne Überwachung.",
+      "rows": [
+        { "feature": "Monatliche Mieteinnahmen", "them": "0 $", "us": "1.500 $ – 4.000 $+ je nach Immobilie" },
+        { "feature": "Immobilienzustand über Zeit", "them": "Verfällt ohne Überwachung", "us": "Gepflegt, inspiziert, dokumentiert" },
+        { "feature": "Sicherheit", "them": "Unüberwacht", "us": "Regelmäßige Besuche, Problemerkennung" },
+        { "feature": "ROI der Investition", "them": "Negativ (Kosten ohne Einnahmen)", "us": "Positiv ab dem ersten Monat" },
+        { "feature": "Kosten unseres Services", "them": "—", "us": "18–28 % der erzielten Einnahmen" },
+        { "feature": "Nettogewinn", "them": "0 $", "us": "1.100 $ – 3.000 $+/Monat nach unserer Gebühr" }
+      ]
+    }
   },
   "about": {
     "title": "Wer Wir Sind",
@@ -159,6 +231,7 @@
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie-Richtlinie",
+    "whatsapp_disclaimer": "WhatsApp-Kommunikation ist rein operativer Natur. Für formelle Anfragen oder Beschwerden: info@casaconciergepdc.com",
     "copyright": "© {year} Casa Concierge PDC. Alle Rechte vorbehalten."
   }
 }

@@ -5,6 +5,7 @@
   },
   "nav": {
     "services": "Services",
+    "why_us": "Why Us",
     "properties": "Properties",
     "about": "About Us",
     "blog": "Blog",
@@ -37,27 +38,27 @@
   },
   "services": {
     "title": "Our Plans",
-    "subtitle": "Choose the service level that best fits your investment.",
+    "subtitle": "You earn, we earn. If your property earns nothing, you pay nothing beyond the minimum.",
     "popular": "Most Popular",
-    "per_month": "/mo",
-    "per_property": "per property",
-    "plus_commission": "+ 20% of gross rental income",
+    "of_income": "of gross rental income",
     "subscribe": "Subscribe",
     "tier1": {
       "name": "Essential",
-      "price": "$150 USD",
+      "price": "18%",
+      "minimum": "Minimum $60 USD/mo",
       "description": "For owners who need peace of mind and local eyes.",
       "features": [
         "Monthly property inspection (1 visit/month with photo report)",
         "Basic maintenance coordination",
         "Monthly owner report (occupancy, issues, condition)",
-        "WhatsApp/email contact with 24-hour response guarantee",
+        "WhatsApp/email contact with 24-hour response target",
         "Listing consultation (Airbnb/Booking)"
       ]
     },
     "tier2": {
       "name": "Full Management",
-      "price": "$350 USD",
+      "price": "22%",
+      "minimum": "Minimum $80 USD/mo",
       "description": "Full hands-off operation. Our most popular plan.",
       "features": [
         "Everything in Essential",
@@ -72,8 +73,9 @@
     },
     "tier3": {
       "name": "Premium Concierge",
-      "price": "$600 USD",
-      "description": "Maximum returns with a fully white-glove service.",
+      "price": "28%",
+      "minimum": "Minimum $120 USD/mo",
+      "description": "Optimized returns with a fully white-glove service.",
       "features": [
         "Everything in Full Management",
         "Priority response (4 hours, 7 days a week)",
@@ -85,6 +87,9 @@
         "Access to our acquisition consulting network"
       ]
     },
+    "disclaimer": "* Results may vary by season, location, property features, and market conditions. Figures shown are estimates based on similar properties and do not constitute a guarantee of income.",
+    "faq_alt_payment_q": "Can I pay by transfer or cash?",
+    "faq_alt_payment_a": "Our primary payment method is credit/debit card through our secure platform. If you'd like to explore alternative payment methods (SPEI transfer, international wire), contact us directly to arrange a prior written agreement. Alternative methods are subject to availability and approval, and the same plan rates and conditions apply.",
     "addons_title": "Add-On Services",
     "addons_subtitle": "Available to all plans.",
     "addons": [
@@ -95,6 +100,73 @@
       { "name": "Guest welcome kit (branded, with local tips)", "price": "$40 USD per kit" },
       { "name": "Social media property post (Instagram/Facebook)", "price": "$30 USD per post" }
     ]
+  },
+  "comparison": {
+    "title": "How We Compare",
+    "subtitle": "See exactly how our service stacks up against the alternatives.",
+    "us_label": "Casa Concierge PDC",
+    "feature_label": "Feature",
+    "comp1": {
+      "tab": "vs. Broker",
+      "them_label": "Traditional Broker",
+      "takeaway": "A broker gets you into the property. We make the property work for you every single month after that. They're not competitors — they serve different phases. We even partner with brokers and pay referral fees when clients need to buy.",
+      "rows": [
+        { "feature": "Main focus", "them": "Buying & selling properties", "us": "Ongoing management & rental income" },
+        { "feature": "Ongoing local presence", "them": "None after sale closes", "us": "Weekly/monthly visits, always reachable" },
+        { "feature": "Rental management", "them": "Not offered", "us": "Full Airbnb/VRBO management" },
+        { "feature": "Guest communication", "them": "Not offered", "us": "7 days a week" },
+        { "feature": "Cleaning coordination", "them": "Not offered", "us": "Every turnover" },
+        { "feature": "Monthly income reports", "them": "Not offered", "us": "Detailed PDF + dashboard" },
+        { "feature": "Property promotion", "them": "Not offered", "us": "Active listing + our property portal" },
+        { "feature": "Fee structure", "them": "3–5% on sale (one-time)", "us": "% of monthly rental income only" }
+      ]
+    },
+    "comp2": {
+      "tab": "vs. Self-Managing",
+      "them_label": "Self-Managing on Airbnb",
+      "takeaway": "If a well-managed property earns $3,000/month and a poorly self-managed one earns $1,800/month, our fee costs far less than the $1,200 in lost income. We don't just manage — we optimize.",
+      "rows": [
+        { "feature": "Time required from owner", "them": "5–15 hours/week", "us": "Zero — fully hands-off" },
+        { "feature": "Guest communication", "them": "Owner handles it (any hour, any timezone)", "us": "We handle it, 7 days a week" },
+        { "feature": "Response time to guests", "them": "Depends on owner's availability", "us": "Typically under 4 hours" },
+        { "feature": "Pricing strategy", "them": "Manual or basic smart pricing", "us": "Dynamic pricing by season & demand" },
+        { "feature": "Cleaning after each guest", "them": "Owner must coordinate remotely", "us": "We coordinate every turnover" },
+        { "feature": "Maintenance issues", "them": "Owner scrambles for a contractor", "us": "Trusted local contractors on call" },
+        { "feature": "Property inspections", "them": "Never or rarely", "us": "Monthly minimum, every tier" },
+        { "feature": "Local emergency coverage", "them": "None", "us": "We are physically here" },
+        { "feature": "Multi-platform listing", "them": "Usually just Airbnb", "us": "Airbnb + VRBO + Booking.com" },
+        { "feature": "Monthly income reporting", "them": "Download from Airbnb (basic)", "us": "Full PDF report + owner dashboard" }
+      ]
+    },
+    "comp3": {
+      "tab": "vs. Large Companies",
+      "them_label": "Large Management Company",
+      "takeaway": "Big companies offer coverage. We offer commitment. When you send us a message, the person who physically walked through your property last week is the one answering.",
+      "rows": [
+        { "feature": "Properties per agent", "them": "50–150+", "us": "10–25 max (intentional)" },
+        { "feature": "Who you talk to", "them": "Rotating staff, call centers", "us": "Directly with us — always the same people" },
+        { "feature": "Response time", "them": "24–72 hours typical", "us": "Target 4–24h depending on tier" },
+        { "feature": "Local physical presence", "them": "Office staff, rarely at your property", "us": "We personally visit your property" },
+        { "feature": "Technology & reporting", "them": "Often basic or outdated", "us": "Custom owner dashboard + monthly PDF" },
+        { "feature": "Contract flexibility", "them": "Rigid, often 6–12 months minimum", "us": "Monthly subscription, cancel anytime" },
+        { "feature": "Fee transparency", "them": "Often hidden fees, complex contracts", "us": "One clear percentage, one small minimum" },
+        { "feature": "Personal investment", "them": "Low — it's a job to their staff", "us": "High — this is our business and reputation" },
+        { "feature": "Languages", "them": "Usually Spanish only", "us": "ES, EN, FR, RU, PT, DE" }
+      ]
+    },
+    "comp4": {
+      "tab": "vs. Doing Nothing",
+      "them_label": "Doing Nothing",
+      "takeaway": "Many investors buy a property and then let it sit. That's money left on the table every single month, and your property deteriorates without oversight.",
+      "rows": [
+        { "feature": "Monthly rental income", "them": "$0", "us": "$1,500 – $4,000+ depending on property" },
+        { "feature": "Property condition over time", "them": "Deteriorates without oversight", "us": "Maintained, inspected, documented" },
+        { "feature": "Security", "them": "Unmonitored", "us": "Regular visits, issue detection" },
+        { "feature": "ROI on investment", "them": "Negative (costs with no income)", "us": "Positive from month one" },
+        { "feature": "Cost of our service", "them": "—", "us": "18–28% of income generated" },
+        { "feature": "Net gain", "them": "$0", "us": "$1,100 – $3,000+/mo after our fee" }
+      ]
+    }
   },
   "about": {
     "title": "Who We Are",
@@ -159,6 +231,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
+    "whatsapp_disclaimer": "WhatsApp communications are operational only. For formal requests or claims: info@casaconciergepdc.com",
     "copyright": "© {year} Casa Concierge PDC. All rights reserved."
   }
 }

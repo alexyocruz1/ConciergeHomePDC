@@ -5,6 +5,7 @@
   },
   "nav": {
     "services": "Serviços",
+    "why_us": "Por Que Nós",
     "properties": "Propriedades",
     "about": "Sobre Nós",
     "blog": "Blog",
@@ -37,27 +38,27 @@
   },
   "services": {
     "title": "Nossos Planos",
-    "subtitle": "Escolha o nível de serviço que melhor se adapta ao seu investimento.",
+    "subtitle": "Você ganha, nós ganhamos. Se sua propriedade não gera renda, você não paga nada além do mínimo.",
     "popular": "Mais Popular",
-    "per_month": "/mês",
-    "per_property": "por propriedade",
-    "plus_commission": "+ 20% da renda bruta de aluguel",
+    "of_income": "da renda bruta de aluguel",
     "subscribe": "Assinar",
     "tier1": {
       "name": "Essencial",
-      "price": "$150 USD",
+      "price": "18%",
+      "minimum": "Mínimo $60 USD/mês",
       "description": "Para proprietários que precisam de tranquilidade e olhos locais.",
       "features": [
         "Inspeção mensal (1 visita/mês com relatório fotográfico)",
         "Coordenação básica de manutenção",
         "Relatório mensal ao proprietário",
-        "Contato WhatsApp/email com resposta garantida em 24h",
+        "Contato WhatsApp/email com objetivo de resposta em 24h",
         "Consultoria de listagem (Airbnb/Booking)"
       ]
     },
     "tier2": {
       "name": "Gestão Completa",
-      "price": "$350 USD",
+      "price": "22%",
+      "minimum": "Mínimo $80 USD/mês",
       "description": "Operação completa sem preocupações. Nosso plano mais popular.",
       "features": [
         "Tudo incluído no Essencial",
@@ -72,8 +73,9 @@
     },
     "tier3": {
       "name": "Premium Concierge",
-      "price": "$600 USD",
-      "description": "Retornos máximos com serviço totalmente personalizado.",
+      "price": "28%",
+      "minimum": "Mínimo $120 USD/mês",
+      "description": "Retornos otimizados com serviço totalmente personalizado.",
       "features": [
         "Tudo incluído na Gestão Completa",
         "Resposta prioritária (4 horas, 7 dias por semana)",
@@ -85,6 +87,9 @@
         "Acesso à nossa rede de consultoria de aquisições"
       ]
     },
+    "disclaimer": "* Os resultados podem variar conforme temporada, localização, características do imóvel e condições de mercado. Os valores apresentados são estimativas baseadas em propriedades similares e não constituem garantia de renda.",
+    "faq_alt_payment_q": "Posso pagar por transferência ou em dinheiro?",
+    "faq_alt_payment_a": "Nosso método de pagamento principal é cartão de crédito/débito através da nossa plataforma segura. Se deseja explorar métodos de pagamento alternativos (transferência SPEI, transferência internacional), entre em contato diretamente para combinar um acordo prévio por escrito. Os métodos alternativos estão sujeitos à disponibilidade e aprovação, e aplicam-se as mesmas tarifas e condições do plano selecionado.",
     "addons_title": "Serviços Adicionais",
     "addons_subtitle": "Disponíveis para todos os planos.",
     "addons": [
@@ -95,6 +100,73 @@
       { "name": "Kit de boas-vindas para hóspedes", "price": "$40 USD por kit" },
       { "name": "Publicação em redes sociais", "price": "$30 USD por publicação" }
     ]
+  },
+  "comparison": {
+    "title": "Como Nosso Serviço Se Compara",
+    "subtitle": "Veja exatamente como nosso serviço se compara às alternativas.",
+    "us_label": "Casa Concierge PDC",
+    "feature_label": "Recurso",
+    "comp1": {
+      "tab": "vs. Corretor",
+      "them_label": "Corretor Tradicional",
+      "takeaway": "Um corretor te ajuda a comprar a propriedade. Nós fazemos a propriedade trabalhar para você todos os meses depois disso. Não somos concorrentes — atendemos fases diferentes. Até fazemos parcerias com corretores e pagamos comissões de indicação quando clientes precisam comprar.",
+      "rows": [
+        { "feature": "Foco principal", "them": "Compra e venda de propriedades", "us": "Gestão contínua e renda de aluguel" },
+        { "feature": "Presença local contínua", "them": "Nenhuma após o fechamento da venda", "us": "Visitas semanais/mensais, sempre acessíveis" },
+        { "feature": "Gestão de aluguéis", "them": "Não oferecido", "us": "Gestão completa Airbnb/VRBO" },
+        { "feature": "Comunicação com hóspedes", "them": "Não oferecido", "us": "7 dias por semana" },
+        { "feature": "Coordenação de limpeza", "them": "Não oferecido", "us": "A cada troca de hóspede" },
+        { "feature": "Relatórios mensais de renda", "them": "Não oferecido", "us": "PDF detalhado + painel" },
+        { "feature": "Promoção da propriedade", "them": "Não oferecido", "us": "Anúncio ativo + nosso portal de propriedades" },
+        { "feature": "Estrutura de taxas", "them": "3–5% na venda (única vez)", "us": "% apenas da renda mensal de aluguel" }
+      ]
+    },
+    "comp2": {
+      "tab": "vs. Autogestão",
+      "them_label": "Autogestão no Airbnb",
+      "takeaway": "Se uma propriedade bem administrada gera $3.000/mês e uma mal administrada gera $1.800/mês, nossa taxa custa muito menos do que os $1.200 perdidos em renda. Não apenas gerenciamos — otimizamos.",
+      "rows": [
+        { "feature": "Tempo exigido do proprietário", "them": "5–15 horas/semana", "us": "Zero — totalmente sem preocupações" },
+        { "feature": "Comunicação com hóspedes", "them": "Proprietário resolve (qualquer hora, qualquer fuso)", "us": "Nós resolvemos, 7 dias por semana" },
+        { "feature": "Tempo de resposta aos hóspedes", "them": "Depende da disponibilidade do proprietário", "us": "Geralmente em menos de 4 horas" },
+        { "feature": "Estratégia de preços", "them": "Manual ou preços inteligentes básicos", "us": "Preços dinâmicos por temporada e demanda" },
+        { "feature": "Limpeza após cada hóspede", "them": "Proprietário coordena remotamente", "us": "Coordenamos cada troca de hóspede" },
+        { "feature": "Problemas de manutenção", "them": "Proprietário corre atrás de empreiteiro", "us": "Empreiteiros locais de confiança à disposição" },
+        { "feature": "Inspeções da propriedade", "them": "Nunca ou raramente", "us": "Mínimo mensal em todos os planos" },
+        { "feature": "Cobertura local para emergências", "them": "Nenhuma", "us": "Estamos fisicamente aqui" },
+        { "feature": "Anúncio em múltiplas plataformas", "them": "Geralmente só Airbnb", "us": "Airbnb + VRBO + Booking.com" },
+        { "feature": "Relatório mensal de renda", "them": "Download do Airbnb (básico)", "us": "Relatório PDF completo + painel do proprietário" }
+      ]
+    },
+    "comp3": {
+      "tab": "vs. Grandes Empresas",
+      "them_label": "Grande Empresa de Gestão",
+      "takeaway": "Grandes empresas oferecem cobertura. Nós oferecemos comprometimento. Quando você nos envia uma mensagem, a pessoa que visitou sua propriedade fisicamente na semana passada é quem responde.",
+      "rows": [
+        { "feature": "Propriedades por agente", "them": "50–150+", "us": "10–25 no máximo (intencional)" },
+        { "feature": "Com quem você fala", "them": "Equipe rotativa, centrais de atendimento", "us": "Diretamente conosco — sempre as mesmas pessoas" },
+        { "feature": "Tempo de resposta", "them": "24–72 horas típico", "us": "Objetivo 4–24h" },
+        { "feature": "Presença física local", "them": "Equipe de escritório, raramente na sua propriedade", "us": "Visitamos sua propriedade pessoalmente" },
+        { "feature": "Tecnologia e relatórios", "them": "Frequentemente básicos ou desatualizados", "us": "Painel personalizado + PDF mensal" },
+        { "feature": "Flexibilidade do contrato", "them": "Rígido, geralmente mínimo 6–12 meses", "us": "Assinatura mensal, cancele quando quiser" },
+        { "feature": "Transparência das taxas", "them": "Frequentemente taxas ocultas, contratos complexos", "us": "Uma porcentagem clara, um mínimo pequeno" },
+        { "feature": "Investimento pessoal", "them": "Baixo — é um emprego para a equipe", "us": "Alto — este é nosso negócio e nossa reputação" },
+        { "feature": "Idiomas", "them": "Geralmente só espanhol", "us": "ES, EN, FR, RU, PT, DE" }
+      ]
+    },
+    "comp4": {
+      "tab": "vs. Não Fazer Nada",
+      "them_label": "Não Fazer Nada",
+      "takeaway": "Muitos investidores compram uma propriedade e a deixam parada. É dinheiro deixado na mesa todo mês, e sua propriedade se deteriora sem supervisão.",
+      "rows": [
+        { "feature": "Renda mensal de aluguel", "them": "$0", "us": "$1.500 – $4.000+ dependendo da propriedade" },
+        { "feature": "Condição da propriedade ao longo do tempo", "them": "Deteriora sem supervisão", "us": "Mantida, inspecionada, documentada" },
+        { "feature": "Segurança", "them": "Sem monitoramento", "us": "Visitas regulares, detecção de problemas" },
+        { "feature": "ROI do investimento", "them": "Negativo (custos sem renda)", "us": "Positivo desde o primeiro mês" },
+        { "feature": "Custo do nosso serviço", "them": "—", "us": "18–28% da renda gerada" },
+        { "feature": "Ganho líquido", "them": "$0", "us": "$1.100 – $3.000+/mês após nossa taxa" }
+      ]
+    }
   },
   "about": {
     "title": "Quem Somos",
@@ -159,6 +231,7 @@
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "cookies": "Política de Cookies",
+    "whatsapp_disclaimer": "As comunicações por WhatsApp são de caráter operacional. Para reclamações ou acordos formais: info@casaconciergepdc.com",
     "copyright": "© {year} Casa Concierge PDC. Todos os direitos reservados."
   }
 }

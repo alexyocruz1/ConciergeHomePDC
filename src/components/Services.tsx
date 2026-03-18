@@ -10,19 +10,16 @@ export function Services() {
       key: "tier1" as const,
       badge: null,
       highlight: false,
-      hasCommission: false,
     },
     {
       key: "tier2" as const,
       badge: t("popular"),
       highlight: true,
-      hasCommission: true,
     },
     {
       key: "tier3" as const,
       badge: null,
       highlight: false,
-      hasCommission: true,
     },
   ];
 
@@ -70,20 +67,15 @@ export function Services() {
                 </div>
 
                 <div className="mt-6 text-center">
-                  <span className="text-4xl font-extrabold text-slate-900">
+                  <span className="text-5xl font-extrabold text-primary-700">
                     {t(`${tier.key}.price`)}
                   </span>
-                  <span className="text-base text-slate-500">
-                    {t("per_month")}
-                  </span>
-                  <p className="mt-1 text-sm text-slate-400">
-                    {t("per_property")}
+                  <p className="mt-1 text-sm text-slate-500">
+                    {t("of_income")}
                   </p>
-                  {tier.hasCommission && (
-                    <p className="mt-1 text-sm font-medium text-primary-700">
-                      {t("plus_commission")}
-                    </p>
-                  )}
+                  <p className="mt-1 text-xs font-medium text-slate-400">
+                    {t(`${tier.key}.minimum`)}
+                  </p>
                 </div>
 
                 <ul className="mt-8 flex-1 space-y-3">
@@ -147,6 +139,21 @@ export function Services() {
             ))}
           </div>
         </div>
+
+        {/* FAQ */}
+        <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6">
+          <h4 className="font-semibold text-slate-900">
+            {t("faq_alt_payment_q")}
+          </h4>
+          <p className="mt-2 text-sm leading-relaxed text-slate-500">
+            {t("faq_alt_payment_a")}
+          </p>
+        </div>
+
+        {/* Legal disclaimer */}
+        <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-slate-400">
+          {t("disclaimer")}
+        </p>
       </div>
     </section>
   );
