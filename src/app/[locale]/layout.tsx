@@ -15,6 +15,17 @@ const inter = Inter({
   display: "swap",
 });
 
+const ogImages: Record<string, string> = {
+  es: "/og-image-es.jpg",
+  en: "/og-image-en.jpg",
+  fr: "/og-image-fr.jpg",
+  ru: "/og-image-ru.jpg",
+  pt: "/og-image-pt.jpg",
+  de: "/og-image-de.jpg",
+};
+
+const SITE_URL = "https://casaconciergepdc.com";
+
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -29,6 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const messages = await getMessages({ locale });
   const meta = messages.meta as Record<string, string>;
 
+  const imagePath = ogImages[locale] ?? ogImages.es;
+  const imageUrl = `${SITE_URL}${imagePath}`;
+  const localePath = `/${locale}`;
+
   return {
     title: meta?.title || "Casa Concierge PDC",
     description: meta?.description || "",
@@ -36,6 +51,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: Object.fromEntries(
         routing.locales.map((l) => [l, `/${l}`])
       ),
+    },
+    openGraph: {
+      title: meta?.title || "Casa Concierge PDC",
+      description: meta?.description || "",
+      url: `${SITE_URL}${localePath}`,
+      type: "website",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: meta?.title || "Casa Concierge PDC",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta?.title || "Casa Concierge PDC",
+      description: meta?.description || "",
+      images: [imageUrl],
     },
   };
 }
