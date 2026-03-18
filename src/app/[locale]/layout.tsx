@@ -25,8 +25,6 @@ const ogImages: Record<string, string> = {
   de: "/og-image-de.jpg",
 };
 
-const FAVICON_VERSION = "v=2";
-
 async function getSiteUrl(): Promise<string> {
   const h = await headers();
   const proto = h.get("x-forwarded-proto") ?? "https";
@@ -60,15 +58,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: meta?.description || "",
     icons: {
       icon: [
-        { url: `/favicon.ico?${FAVICON_VERSION}` },
-        {
-          url: `/favicon-32x32.png?${FAVICON_VERSION}`,
-          sizes: "32x32",
-          type: "image/png",
-        },
+        { url: "/favicon.ico" },
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       ],
-      apple: [{ url: `/favicon-180x180.png?${FAVICON_VERSION}` }],
-      other: [{ rel: "manifest", url: `/site.webmanifest?${FAVICON_VERSION}` }],
+      apple: [{ url: "/favicon-180x180.png" }],
+      other: [{ rel: "manifest", url: "/site.webmanifest" }],
     },
     alternates: {
       languages: Object.fromEntries(
