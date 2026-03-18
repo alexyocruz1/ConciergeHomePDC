@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { PhoneInput } from "./PhoneInput";
 
 export function Contact() {
   const t = useTranslations("contact");
@@ -104,8 +105,8 @@ export function Contact() {
               </div>
 
               <div className="grid gap-5 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700">
+                <div className="flex flex-col">
+                  <label htmlFor="email" className="text-sm font-medium text-slate-700">
                     {t("email")}
                   </label>
                   <input
@@ -114,40 +115,44 @@ export function Contact() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="mt-1.5 block w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                    className="mt-auto pt-1.5 block w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                   />
                 </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-slate-700">
-                    {t("phone")}
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="mt-1.5 block w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
-                  />
-                </div>
+                <PhoneInput
+                  label={t("phone")}
+                  value={formData.phone}
+                  onChange={(val) => setFormData({ ...formData, phone: val })}
+                />
               </div>
 
               <div>
                 <label htmlFor="topic" className="block text-sm font-medium text-slate-700">
                   {t("topic")}
                 </label>
-                <select
-                  id="topic"
-                  required
-                  value={formData.topic}
-                  onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                  className="mt-1.5 block w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
-                >
-                  <option value="" disabled></option>
-                  <option value="management">{t("topic_management")}</option>
-                  <option value="acquisition">{t("topic_acquisition")}</option>
-                  <option value="guest">{t("topic_guest")}</option>
-                  <option value="other">{t("topic_other")}</option>
-                </select>
+                <div className="relative mt-1.5">
+                  <select
+                    id="topic"
+                    required
+                    value={formData.topic}
+                    onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3 pr-10 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                  >
+                    <option value="" disabled></option>
+                    <option value="management">{t("topic_management")}</option>
+                    <option value="acquisition">{t("topic_acquisition")}</option>
+                    <option value="guest">{t("topic_guest")}</option>
+                    <option value="other">{t("topic_other")}</option>
+                  </select>
+                  <svg
+                    className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
               </div>
 
               <div>

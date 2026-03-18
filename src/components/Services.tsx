@@ -131,24 +131,20 @@ export function Services() {
               {t("addons_subtitle")}
             </p>
           </div>
-          <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <table className="w-full">
-              <tbody>
-                {addons.map((addon: { name: string; price: string }, i: number) => (
-                  <tr
-                    key={i}
-                    className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}
-                  >
-                    <td className="px-6 py-4 text-sm text-slate-700">
-                      {addon.name}
-                    </td>
-                    <td className="whitespace-nowrap px-6 py-4 text-right text-sm font-medium text-slate-900">
-                      {addon.price}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="mx-auto mt-8 max-w-3xl space-y-3 sm:space-y-0 sm:divide-y sm:divide-slate-100 sm:overflow-hidden sm:rounded-2xl sm:border sm:border-slate-200">
+            {addons.map((addon: { name: string; price: string }, i: number) => (
+              <div
+                key={i}
+                className={`flex flex-col gap-1 rounded-xl border border-slate-200 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:rounded-none sm:border-0 sm:px-6 sm:py-4 ${
+                  i % 2 === 0 ? "bg-white" : "bg-white sm:bg-slate-50"
+                }`}
+              >
+                <span className="text-sm text-slate-700">{addon.name}</span>
+                <span className="text-sm font-semibold text-primary-700 sm:shrink-0 sm:text-right sm:font-medium sm:text-slate-900">
+                  {addon.price}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
