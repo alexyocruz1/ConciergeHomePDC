@@ -38,7 +38,9 @@ export function CookieBanner() {
   useEffect(() => {
     const existing = readPrefs();
     if (!existing) {
-      setVisible(true);
+      // Avoid calling setState directly inside an effect body.
+      const id = window.setTimeout(() => setVisible(true), 0);
+      return () => window.clearTimeout(id);
     }
   }, []);
 

@@ -18,7 +18,9 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    setMobileMenuOpen(false);
+    // Avoid calling setState directly inside an effect body.
+    const id = window.setTimeout(() => setMobileMenuOpen(false), 0);
+    return () => window.clearTimeout(id);
   }, [pathname]);
 
   const navLinks = [

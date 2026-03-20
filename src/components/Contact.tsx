@@ -14,14 +14,42 @@ export function Contact() {
     message: "",
   });
   const [ageConfirmed, setAgeConfirmed] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`[Casa Concierge] ${formData.topic}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nTopic: ${formData.topic}\n\n${formData.message}`
-    );
-    window.location.href = `mailto:info@casaconciergepdc.com?subject=${subject}&body=${body}`;
+    setIsSubmitting(true);
+    setSubmitError(null);
+    setSubmitSuccess(false);
+
+    fetch("/api/hubspot/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then(async (res) => {
+        if (!res.ok) {
+          const text = await res.text().catch(() => "");
+          throw new Error(text || `Request failed: ${res.status}`);
+        }
+        return res.json().catch(() => null);
+      })
+      .then(() => {
+        setSubmitSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          topic: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        setSubmitError(err instanceof Error ? err.message : "Failed to submit");
+      })
+      .finally(() => setIsSubmitting(false));
   }
 
   return (
@@ -185,11 +213,20 @@ export function Contact() {
 
               <button
                 type="submit"
-                disabled={!ageConfirmed}
+                disabled={!ageConfirmed || isSubmitting}
                 className="w-full rounded-full bg-primary-700 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-800 hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t("submit")}
               </button>
+
+              {submitSuccess && (
+                <p className="text-sm text-green-700">
+                  Thanks! We received your message and will reply soon.
+                </p>
+              )}
+              {submitError && (
+                <p className="text-sm text-red-700">Error: {submitError}</p>
+              )}
             </form>
           </div>
         </div>
