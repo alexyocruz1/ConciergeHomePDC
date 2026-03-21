@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/Hero";
 import { ProblemSolution } from "@/components/ProblemSolution";
@@ -29,7 +30,17 @@ export default async function HomePage({ params }: Props) {
       <Faq />
       {/* <Testimonials /> */}
       <Acquisition />
-      <Contact />
+      <Suspense
+        fallback={
+          <section id="contact" className="bg-white py-20 lg:py-28" aria-hidden>
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="h-96 animate-pulse rounded-2xl bg-slate-100" />
+            </div>
+          </section>
+        }
+      >
+        <Contact />
+      </Suspense>
     </>
   );
 }
