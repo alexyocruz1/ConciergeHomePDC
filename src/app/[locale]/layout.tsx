@@ -9,6 +9,7 @@ import "../globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
+import { getCachedActivePropertyCount } from "@/lib/properties/queries";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -101,12 +102,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const activePropertyCount = await getCachedActivePropertyCount();
 
   return (
     <html lang={locale} className={inter.variable}>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header />
+          <Header showPropertiesLink={activePropertyCount > 0} />
           <main>{children}</main>
           <Footer />
           <CookieBanner />

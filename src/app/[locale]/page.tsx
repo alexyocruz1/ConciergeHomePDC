@@ -10,6 +10,7 @@ import { Faq } from "@/components/Faq";
 // import { Testimonials } from "@/components/Testimonials";
 import { Acquisition } from "@/components/Acquisition";
 import { Contact } from "@/components/Contact";
+import { ListingsTeaser } from "@/components/ListingsTeaser";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -27,6 +28,7 @@ export default async function HomePage({ params }: Props) {
       <Comparison />
       <About />
       <HowItWorks />
+      <ListingsTeaser locale={locale} />
       <Faq />
       {/* <Testimonials /> */}
       <Acquisition />

@@ -5,7 +5,11 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
 import { useState, useEffect } from "react";
 
-export function Header() {
+type HeaderProps = {
+  showPropertiesLink?: boolean;
+};
+
+export function Header({ showPropertiesLink = false }: HeaderProps) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,9 +27,14 @@ export function Header() {
     return () => window.clearTimeout(id);
   }, [pathname]);
 
-  const navLinks = [
+  type NavLink =
+    | { href: string; label: string; isRoute?: false }
+    | { href: "/properties"; label: string; isRoute: true };
+
+  const navLinks: NavLink[] = [
     { href: "#services", label: t("services") },
     { href: "#comparison", label: t("why_us") },
+    ...(showPropertiesLink ? [{ href: "/properties" as const, label: t("properties"), isRoute: true as const }] : []),
     { href: "#about", label: t("about") },
     { href: "#contact", label: t("contact") },
   ];
@@ -104,16 +113,27 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="border-t border-slate-100 bg-white lg:hidden">
           <div className="space-y-1 px-4 py-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 hover:bg-primary-50 hover:text-primary-700"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 hover:bg-primary-50 hover:text-primary-700"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 hover:bg-primary-50 hover:text-primary-700"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <div className="border-t border-slate-100 pt-4">
               <LanguageToggle scrolled={true} />
             </div>

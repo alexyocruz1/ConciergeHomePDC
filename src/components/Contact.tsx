@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { PhoneInput } from "./PhoneInput";
@@ -76,6 +76,21 @@ export function Contact() {
   const prefilledTopic = searchParams.get("topic") || "";
   const selectedTopic =
     formData.topic || (topics.some((item) => item.value === prefilledTopic) ? prefilledTopic : "");
+
+  const propertyNameParam = searchParams.get("propertyName");
+  const propertyPrefillDone = useRef(false);
+
+  useEffect(() => {
+    if (!propertyNameParam || propertyPrefillDone.current) return;
+    propertyPrefillDone.current = true;
+    const decoded = decodeURIComponent(propertyNameParam);
+    const prefix = t("property_interest_prefix", { name: decoded });
+    setFormData((prev) => ({
+      ...prev,
+      topic: prev.topic || "rental_search",
+      message: prev.message || prefix,
+    }));
+  }, [propertyNameParam, t]);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();

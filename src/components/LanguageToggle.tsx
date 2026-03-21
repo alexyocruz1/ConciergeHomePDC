@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { useParams } from "next/navigation";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useState, useRef, useEffect } from "react";
@@ -18,6 +19,7 @@ export function LanguageToggle({ scrolled }: { scrolled: boolean }) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const routeParams = useParams<{ slug?: string }>();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -32,7 +34,19 @@ export function LanguageToggle({ scrolled }: { scrolled: boolean }) {
   }, []);
 
   function switchLocale(newLocale: string) {
-    router.replace(pathname, { locale: newLocale as (typeof routing.locales)[number] });
+    const l = newLocale as (typeof routing.locales)[number];
+    if (typeof routeParams.slug === "string" && routeParams.slug.length > 0) {
+      router.replace(
+        { pathname: "/properties/[slug]", params: { slug: routeParams.slug } },
+        { locale: l }
+      );
+    } else {
+      router.replace(
+        // next-intl: pathname may include `/properties/[slug]` in the union; replace() accepts concrete routes
+        pathname as Parameters<typeof router.replace>[0],
+        { locale: l }
+      );
+    }
     setOpen(false);
   }
 
