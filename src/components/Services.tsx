@@ -1,9 +1,65 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
+type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
+
+const vitrinaByLocale: Record<Locale, { name: string; description: string; subtitle: string; minimum: string; features: string[]; cta: string }> = {
+  es: {
+    name: "Vitrina",
+    description: "Publicación gratuita con comisión solo por resultados.",
+    subtitle: "Comisión sobre reservas o colocaciones",
+    minimum: "Sin cuota mínima mensual",
+    features: ["$0/mes", "10% en reservas cortas", "50%-75% en colocación de renta", "2%-3% en referidos de venta", "Ideal para probar el mercado sin riesgo"],
+    cta: "Publicar mi propiedad gratis",
+  },
+  en: {
+    name: "Vitrina",
+    description: "Free listing with commission only on results.",
+    subtitle: "Commission on bookings or placements",
+    minimum: "No monthly minimum fee",
+    features: ["$0/month", "10% on short-term bookings", "50%-75% on long-term placements", "2%-3% on sale referrals", "Ideal to test the market with zero upfront risk"],
+    cta: "List my property for free",
+  },
+  fr: {
+    name: "Vitrina",
+    description: "Annonce gratuite avec commission uniquement sur résultats.",
+    subtitle: "Commission sur réservations ou placements",
+    minimum: "Aucun minimum mensuel",
+    features: ["$0/mois", "10% sur réservations courte durée", "50%-75% sur placements longue durée", "2%-3% sur referrals de vente", "Idéal pour tester le marché sans risque initial"],
+    cta: "Publier ma propriété gratuitement",
+  },
+  ru: {
+    name: "Vitrina",
+    description: "Бесплатное размещение с комиссией только за результат.",
+    subtitle: "Комиссия за бронирования или заселения",
+    minimum: "Без ежемесячного минимума",
+    features: ["$0/месяц", "10% за краткосрочные бронирования", "50%-75% за долгосрочное заселение", "2%-3% за реферальную продажу", "Подходит для теста рынка без стартовых затрат"],
+    cta: "Разместить объект бесплатно",
+  },
+  pt: {
+    name: "Vitrina",
+    description: "Anúncio gratuito com comissão apenas por resultados.",
+    subtitle: "Comissão em reservas ou colocações",
+    minimum: "Sem mínimo mensal",
+    features: ["$0/mes", "10% em reservas de curta duração", "50%-75% em colocações de longo prazo", "2%-3% em referrals de venda", "Ideal para testar o mercado sem risco inicial"],
+    cta: "Publicar meu imóvel grátis",
+  },
+  de: {
+    name: "Vitrina",
+    description: "Kostenloses Listing, Provision nur bei Ergebnissen.",
+    subtitle: "Provision auf Buchungen oder Vermittlungen",
+    minimum: "Keine monatliche Mindestgebühr",
+    features: ["$0/Monat", "10% auf Kurzzeitbuchungen", "50%-75% bei Langzeitvermittlung", "2%-3% bei Verkaufsreferrals", "Ideal zum risikofreien Testen des Marktes"],
+    cta: "Meine Immobilie kostenlos listen",
+  },
+};
 
 export function Services() {
   const t = useTranslations("services");
+  const locale = useLocale() as Locale;
+  const vitrina = vitrinaByLocale[locale] || vitrinaByLocale.en;
 
   const tiers = [
     {
@@ -37,7 +93,48 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 lg:grid-cols-4">
+          <div className="relative flex flex-col rounded-3xl border border-emerald-200 bg-emerald-50/40 p-8 shadow-sm">
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-slate-900">{vitrina.name}</h3>
+              <p className="mt-2 text-sm text-slate-500">{vitrina.description}</p>
+            </div>
+
+            <div className="mt-6 text-center">
+              <span className="text-5xl font-extrabold text-emerald-700">$0</span>
+              <p className="mt-1 text-sm text-slate-500">{vitrina.subtitle}</p>
+              <p className="mt-1 text-xs font-medium text-slate-400">{vitrina.minimum}</p>
+            </div>
+
+            <ul className="mt-8 flex-1 space-y-3">
+              {vitrina.features.map((feature, i) => (
+                <li key={i} className="flex gap-3 text-sm text-slate-600">
+                  <svg
+                    className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="?topic=vitrina_free_listing#contact"
+              className="mt-8 block rounded-full bg-emerald-700 py-3.5 text-center text-sm font-semibold text-white transition-all hover:bg-emerald-800"
+            >
+              {vitrina.cta}
+            </a>
+          </div>
+
           {tiers.map((tier) => {
             const features = t.raw(`${tier.key}.features`) as string[];
             return (
@@ -138,16 +235,6 @@ export function Services() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* FAQ */}
-        <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6">
-          <h4 className="font-semibold text-slate-900">
-            {t("faq_alt_payment_q")}
-          </h4>
-          <p className="mt-2 text-sm leading-relaxed text-slate-500">
-            {t("faq_alt_payment_a")}
-          </p>
         </div>
 
         {/* Legal disclaimer */}

@@ -1,5 +1,5 @@
 # Términos de Servicio
-**Versión 1.2 — [Mes] de [Año]**
+**Versión 1.3 — [Mes] de [Año]**
 
 **Casa Concierge PDC**
 Representante legal: Alexy Omar Cruz Aguilera
@@ -31,6 +31,33 @@ Casa Concierge PDC ofrece servicios de **gestión de propiedades vacacionales y 
 - Promoción de la propiedad en el portal web de Casa Concierge PDC
 
 Los servicios específicos incluidos en cada plan se detallan en la página de precios en nuestro sitio web y están sujetos a la suscripción activa del Cliente.
+
+---
+
+## Servicio de Búsqueda de Renta
+
+Casa Concierge PDC ofrece adicionalmente un servicio de intermediación para arrendamientos de mediano y largo plazo (1 a 12 meses), tanto para propietarios que buscan inquilinos como para personas que buscan propiedades en renta en la Riviera Maya.
+
+**Honorarios:**
+- Colocación de inquilino (1-6 meses): 50% del primer mes de renta, pagado por el propietario al confirmar el contrato de arrendamiento.
+- Colocación de inquilino (6-12 meses): 75% del primer mes de renta, pagado por el propietario al confirmar el contrato.
+- Búsqueda de renta para inquilino: $250 USD tarifa plana, pagada por el interesado al iniciar la búsqueda.
+
+Casa Concierge PDC actúa como intermediario y no es parte del contrato de arrendamiento entre propietario e inquilino. Los honorarios son no reembolsables una vez iniciada la búsqueda activa.
+
+---
+
+## Servicio Vitrina (Publicación Gratuita)
+
+Casa Concierge PDC puede ofrecer el modelo Vitrina, en el cual el propietario no paga cuota mensual fija y autoriza a Casa Concierge PDC a actuar como intermediario para leads calificados originados desde nuestro sitio web o canales de marketing.
+
+**Comisiones Vitrina:**
+- Reserva de corta estancia (1 noche a 1 mes): 10% del valor total de la reserva.
+- Colocación de renta de largo plazo (1-6 meses): 50% del primer mes de renta.
+- Colocación de renta de largo plazo (6-12 meses): 75% del primer mes de renta.
+- Referido de compraventa: 2-3% acordado por operación (normalmente pagado por la agencia, cuando aplique).
+
+La comisión es exigible antes de la entrega de llaves o firma de contrato cuando la operación se origine por canales de Casa Concierge PDC. Los honorarios son no reembolsables una vez iniciada la búsqueda activa o gestión del lead.
 
 ---
 
@@ -93,6 +120,7 @@ A solicitud del Cliente y mediante **acuerdo previo y escrito**, Casa Concierge 
 - **(a) Efectivo** — pago en persona, previa coordinación de fecha, hora y lugar.
 - **(b) Transferencia SPEI** — solo desde cuentas bancarias mexicanas.
 - **(c) Transferencia bancaria internacional (SWIFT)** — para clientes con cuentas en el extranjero.
+- **(d) Transferencia vía Wise** — para clientes internacionales usando datos de cuenta Wise proporcionados por Casa Concierge PDC.
 
 **Condiciones aplicables a todos los métodos alternativos:**
 

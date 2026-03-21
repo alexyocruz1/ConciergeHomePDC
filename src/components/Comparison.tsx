@@ -1,12 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useState } from "react";
 
 const COMP_KEYS = ["comp1", "comp2", "comp3", "comp4"] as const;
 
 export function Comparison() {
   const t = useTranslations("comparison");
+  const locale = useLocale();
   const [active, setActive] = useState(0);
 
   return (
@@ -47,6 +49,42 @@ export function Comparison() {
               them: string;
               us: string;
             }>;
+            const enhancedRows = [...rows];
+            if (key === "comp4") {
+              const tenantPlacementByLocale: Record<string, { feature: string; them: string; us: string }> = {
+                es: {
+                  feature: "Encontrar inquilinos de largo plazo",
+                  them: "❌ Por tu cuenta",
+                  us: "✅ Buscamos y verificamos inquilinos",
+                },
+                en: {
+                  feature: "Finding long-term tenants",
+                  them: "❌ On your own",
+                  us: "✅ We source and vet tenants",
+                },
+                fr: {
+                  feature: "Trouver des locataires longue durée",
+                  them: "❌ Par vos propres moyens",
+                  us: "✅ Nous trouvons et vérifions les locataires",
+                },
+                ru: {
+                  feature: "Поиск долгосрочных арендаторов",
+                  them: "❌ Самостоятельно",
+                  us: "✅ Мы подбираем и проверяем арендаторов",
+                },
+                pt: {
+                  feature: "Encontrar inquilinos de longo prazo",
+                  them: "❌ Por conta própria",
+                  us: "✅ Buscamos e verificamos inquilinos",
+                },
+                de: {
+                  feature: "Langzeitmieter finden",
+                  them: "❌ Auf eigene Faust",
+                  us: "✅ Wir finden und prüfen Mieter",
+                },
+              };
+              enhancedRows.push(tenantPlacementByLocale[locale] || tenantPlacementByLocale.en);
+            }
 
             return (
               <div key={key} className="animate-in fade-in duration-300">
@@ -67,7 +105,7 @@ export function Comparison() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
-                      {rows.map((row, j) => (
+                      {enhancedRows.map((row, j) => (
                         <tr
                           key={j}
                           className={j % 2 === 0 ? "bg-white" : "bg-slate-50/50"}
@@ -89,7 +127,7 @@ export function Comparison() {
 
                 {/* Mobile cards */}
                 <div className="space-y-3 md:hidden">
-                  {rows.map((row, j) => (
+                  {enhancedRows.map((row, j) => (
                     <div
                       key={j}
                       className="rounded-xl border border-slate-200 bg-white p-4"

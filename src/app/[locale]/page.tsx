@@ -5,6 +5,7 @@ import { Services } from "@/components/Services";
 import { Comparison } from "@/components/Comparison";
 import { About } from "@/components/About";
 import { HowItWorks } from "@/components/HowItWorks";
+import { Faq } from "@/components/Faq";
 // import { Testimonials } from "@/components/Testimonials";
 import { Acquisition } from "@/components/Acquisition";
 import { Contact } from "@/components/Contact";
@@ -25,6 +26,7 @@ export default async function HomePage({ params }: Props) {
       <Comparison />
       <About />
       <HowItWorks />
+      <Faq />
       {/* <Testimonials /> */}
       <Acquisition />
       <Contact />

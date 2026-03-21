@@ -1,5 +1,5 @@
 # Terms of Service
-**Version 1.2 — [Month] [Year]**
+**Version 1.3 — [Month] [Year]**
 
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
@@ -31,6 +31,33 @@ Casa Concierge PDC offers **vacation and residential property management** servi
 - Property promotion on the Casa Concierge PDC website
 
 The specific services included in each plan are detailed on the pricing page of our website and are subject to the Client's active subscription.
+
+---
+
+## Rental Search Service
+
+Casa Concierge PDC additionally offers an intermediation service for mid and long-term rentals (1 to 12 months), both for property owners seeking tenants and for individuals seeking rental properties in the Riviera Maya.
+
+**Fees:**
+- Tenant placement (1-6 months): 50% of first month's rent, paid by the owner upon signing the rental agreement.
+- Tenant placement (6-12 months): 75% of first month's rent, paid by the owner upon signing.
+- Rental search for incoming renter: $250 USD flat fee, paid by the renter upon initiating the active search.
+
+Casa Concierge PDC acts as intermediary and is not a party to the rental agreement between owner and tenant. Fees are non-refundable once active search has begun.
+
+---
+
+## Vitrina Free Listing Service
+
+Casa Concierge PDC may offer a free listing model ("Vitrina") where the owner pays no monthly fee and authorizes Casa Concierge PDC as intermediary for qualified leads generated through our website or marketing channels.
+
+**Vitrina commissions:**
+- Short-term booking (1 night to 1 month): 10% of total booking value.
+- Long-term placement (1-6 months): 50% of first month's rent.
+- Long-term placement (6-12 months): 75% of first month's rent.
+- Property sale referral: 2-3% as agreed per deal (typically paid by agency side when applicable).
+
+Commission is due before key handover or lease signature for transactions originated through Casa Concierge PDC channels. Fees are non-refundable once active search or lead management has begun.
 
 ---
 
@@ -93,6 +120,7 @@ At the Client's request and through a **prior written agreement**, Casa Concierg
 - **(a) Cash** — in-person payment, with prior coordination of date, time, and location.
 - **(b) SPEI transfer** — only from Mexican bank accounts.
 - **(c) International bank transfer (SWIFT)** — for clients with foreign bank accounts.
+- **(d) Wise transfer** — for international clients using Wise account details provided by Casa Concierge PDC.
 
 **Conditions applicable to all alternative methods:**
 

@@ -2,10 +2,14 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { useLocale } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { PhoneInput } from "./PhoneInput";
 
 export function Contact() {
   const t = useTranslations("contact");
+  const locale = useLocale();
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,6 +22,61 @@ export function Contact() {
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
+  const localeTopics: Record<string, { value: string; label: string }[]> = {
+    es: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Busqueda de propiedad en renta" },
+      { value: "vitrina_free_listing", label: "Publicar propiedad gratis (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+    en: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Rental Search" },
+      { value: "vitrina_free_listing", label: "Free property listing (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+    fr: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Recherche de location" },
+      { value: "vitrina_free_listing", label: "Annonce gratuite (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+    ru: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Поиск аренды" },
+      { value: "vitrina_free_listing", label: "Бесплатное размещение (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+    pt: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Busca de aluguel" },
+      { value: "vitrina_free_listing", label: "Anuncio gratuito (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+    de: [
+      { value: "management", label: t("topic_management") },
+      { value: "acquisition", label: t("topic_acquisition") },
+      { value: "rental_search", label: "Mietimmobiliensuche" },
+      { value: "vitrina_free_listing", label: "Kostenlose Anzeige (Vitrina)" },
+      { value: "guest", label: t("topic_guest") },
+      { value: "other", label: t("topic_other") },
+    ],
+  };
+  const topics = localeTopics[locale] || localeTopics.es;
+  const prefilledTopic = searchParams.get("topic") || "";
+  const selectedTopic =
+    formData.topic || (topics.some((item) => item.value === prefilledTopic) ? prefilledTopic : "");
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setIsSubmitting(true);
@@ -27,7 +86,7 @@ export function Contact() {
     fetch("/api/hubspot/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({ ...formData, topic: selectedTopic }),
     })
       .then(async (res) => {
         if (!res.ok) {
@@ -162,15 +221,16 @@ export function Contact() {
                   <select
                     id="topic"
                     required
-                    value={formData.topic}
+                    value={selectedTopic}
                     onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
                     className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3 pr-10 text-sm text-slate-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                   >
                     <option value="" disabled></option>
-                    <option value="management">{t("topic_management")}</option>
-                    <option value="acquisition">{t("topic_acquisition")}</option>
-                    <option value="guest">{t("topic_guest")}</option>
-                    <option value="other">{t("topic_other")}</option>
+                    {topics.map((topic) => (
+                      <option key={topic.value} value={topic.value}>
+                        {topic.label}
+                      </option>
+                    ))}
                   </select>
                   <svg
                     className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"

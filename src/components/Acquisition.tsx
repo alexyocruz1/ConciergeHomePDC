@@ -1,9 +1,106 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
+type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
+
+const rentalCopy: Record<
+  Locale,
+  { title: string; subtitle: string; body: string; badges: string[]; cta: string }
+> = {
+  es: {
+    title: "¿Buscas rentar en la Riviera Maya?",
+    subtitle: "Te ayudamos a encontrar la propiedad adecuada.",
+    body: "Ofrecemos un servicio de búsqueda de propiedades en renta para particulares y familias que buscan estancias de mediano o largo plazo en Playa del Carmen y la Riviera Maya. Propiedades verificadas, negociación en tu idioma, sin sorpresas. Para propietarios, también gestionamos la búsqueda y verificación de inquilinos confiables.",
+    badges: ["Propiedades verificadas", "Sin estafas", "En tu idioma", "1–12 meses"],
+    cta: "Contáctanos",
+  },
+  en: {
+    title: "Looking to rent in the Riviera Maya?",
+    subtitle: "We help you find the right property.",
+    body: "We offer a rental search service for individuals and families looking for mid to long-term stays in Playa del Carmen and the Riviera Maya. Vetted properties, negotiation in your language, no surprises. For property owners, we also manage the search and vetting of reliable long-term tenants.",
+    badges: ["Vetted properties", "No scams", "In your language", "1–12 months"],
+    cta: "Contact Us",
+  },
+  fr: {
+    title: "Vous cherchez à louer en Riviera Maya ?",
+    subtitle: "Nous vous aidons à trouver la bonne propriété.",
+    body: "Nous proposons un service de recherche de propriétés en location pour les particuliers et les familles cherchant des séjours de moyen ou long terme à Playa del Carmen et en Riviera Maya. Propriétés vérifiées, négociation dans votre langue, sans mauvaises surprises. Pour les propriétaires, nous gérons également la recherche et la vérification de locataires fiables.",
+    badges: ["Propriétés vérifiées", "Sans arnaques", "Dans votre langue", "1–12 mois"],
+    cta: "Nous contacter",
+  },
+  ru: {
+    title: "Хотите снять жилье на Ривьера-Майя?",
+    subtitle: "Мы поможем найти подходящую недвижимость.",
+    body: "Мы предлагаем услугу поиска аренды для частных лиц и семей, планирующих среднесрочное или долгосрочное проживание в Плая-дель-Кармен и на Ривьера-Майя. Проверенные объекты, переговоры на вашем языке, без неожиданностей. Для владельцев недвижимости — также подбор и проверка надежных арендаторов.",
+    badges: ["Проверенные объекты", "Без мошенников", "На вашем языке", "1–12 месяцев"],
+    cta: "Связаться с нами",
+  },
+  pt: {
+    title: "Procura alugar na Riviera Maya?",
+    subtitle: "Ajudamos você a encontrar o imóvel certo.",
+    body: "Oferecemos um serviço de busca de imóveis para aluguel para pessoas e famílias que buscam estadias de médio ou longo prazo em Playa del Carmen e na Riviera Maya. Imóveis verificados, negociação no seu idioma, sem surpresas. Para proprietários, também gerenciamos a busca e verificação de inquilinos confiáveis.",
+    badges: ["Imóveis verificados", "Sem golpes", "No seu idioma", "1–12 meses"],
+    cta: "Fale conosco",
+  },
+  de: {
+    title: "Auf der Suche nach einer Mietimmobilie an der Riviera Maya?",
+    subtitle: "Wir helfen Ihnen, die richtige Immobilie zu finden.",
+    body: "Wir bieten einen Mietimmobilien-Suchservice für Einzelpersonen und Familien an, die mittel- bis langfristige Aufenthalte in Playa del Carmen und der Riviera Maya suchen. Geprüfte Immobilien, Verhandlungen in Ihrer Sprache, keine unangenehmen Überraschungen. Für Immobilieneigentümer übernehmen wir auch die Suche und Überprüfung zuverlässiger Langzeitmieter.",
+    badges: ["Geprüfte Immobilien", "Kein Betrug", "In Ihrer Sprache", "1–12 Monate"],
+    cta: "Kontakt aufnehmen",
+  },
+};
+
+const vitrinaCopy: Record<Locale, { title: string; subtitle: string; body: string; badges: string[]; cta: string }> = {
+  es: {
+    title: "Lista tu propiedad gratis",
+    subtitle: "Sin costo mensual. Solo comision por resultados.",
+    body: "Publica tu propiedad en nuestro portal sin cuota fija mensual. Solo cobramos comision cuando la propiedad se renta o vende a traves de nuestro sitio.",
+    badges: ["Sin cuota mensual", "Propiedades verificadas", "Fotos profesionales", "0 riesgo"],
+    cta: "Publicar mi propiedad gratis",
+  },
+  en: {
+    title: "List your property for free",
+    subtitle: "No monthly fee. Commission only on results.",
+    body: "Publish your property on our portal with no fixed monthly fee. We only charge a commission when your property is rented or sold through our site.",
+    badges: ["No monthly fee", "Verified listings", "Professional photos", "Zero risk"],
+    cta: "List my property for free",
+  },
+  fr: {
+    title: "Listez votre propriété gratuitement",
+    subtitle: "Sans frais mensuels. Commission uniquement sur résultats.",
+    body: "Publiez votre propriété sur notre portail sans frais mensuels fixes. Nous facturons seulement une commission quand votre bien est loué ou vendu via notre site.",
+    badges: ["Sans frais mensuels", "Annonces vérifiées", "Photos professionnelles", "Risque zéro"],
+    cta: "Publier ma propriété gratuitement",
+  },
+  ru: {
+    title: "Разместите объект бесплатно",
+    subtitle: "Без ежемесячной платы. Комиссия только за результат.",
+    body: "Размещайте объект на нашем портале без фиксированной ежемесячной оплаты. Мы берем комиссию только когда объект сдан или продан через наш сайт.",
+    badges: ["Без ежемесячной платы", "Проверенные объявления", "Профессиональные фото", "Нулевой риск"],
+    cta: "Разместить бесплатно",
+  },
+  pt: {
+    title: "Liste seu imóvel grátis",
+    subtitle: "Sem taxa mensal. Comissão apenas por resultados.",
+    body: "Publique seu imóvel em nosso portal sem custo fixo mensal. Cobramos comissão apenas quando o imóvel é alugado ou vendido pelo nosso site.",
+    badges: ["Sem taxa mensal", "Anúncios verificados", "Fotos profissionais", "Risco zero"],
+    cta: "Publicar meu imóvel grátis",
+  },
+  de: {
+    title: "Immobilie kostenlos listen",
+    subtitle: "Keine Monatsgebühr. Provision nur bei Ergebnis.",
+    body: "Veröffentlichen Sie Ihre Immobilie ohne feste Monatsgebühr in unserem Portal. Wir berechnen nur eine Provision, wenn über unsere Website vermietet oder verkauft wird.",
+    badges: ["Keine Monatsgebühr", "Geprüfte Inserate", "Professionelle Fotos", "Kein Risiko"],
+    cta: "Meine Immobilie kostenlos listen",
+  },
+};
 
 export function Acquisition() {
   const t = useTranslations("acquisition");
+  const locale = useLocale() as Locale;
 
   const benefits = [
     {
@@ -81,6 +178,35 @@ export function Acquisition() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-16 grid gap-6 lg:grid-cols-2">
+          {[
+            { ...((rentalCopy[locale] || rentalCopy.en)), topic: "rental_search" },
+            { ...((vitrinaCopy[locale] || vitrinaCopy.en)), topic: "vitrina_free_listing" },
+          ].map((card) => (
+            <div key={card.title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900">{card.title}</h3>
+              <p className="mt-2 text-sm font-semibold text-primary-700">{card.subtitle}</p>
+              <p className="mt-4 text-sm leading-relaxed text-slate-600">{card.body}</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {card.badges.map((badge) => (
+                  <span
+                    key={badge}
+                    className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+              <a
+                href={`?topic=${encodeURIComponent(card.topic)}#contact`}
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary-700 px-6 py-3 text-sm font-semibold text-white hover:bg-primary-800"
+              >
+                {card.cta}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>
