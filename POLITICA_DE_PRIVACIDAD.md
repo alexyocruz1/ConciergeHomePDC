@@ -89,7 +89,7 @@ No vendemos, alquilamos ni compartimos sus datos personales con terceros con fin
 Las fotografías de su propiedad son recopiladas y utilizadas exclusivamente con su **consentimiento explícito**, otorgado mediante el formulario de incorporación al momento de activar el servicio.
 
 Dichas fotografías podrán ser publicadas en:
-- El portal de propiedades de casaconciergepdc.com
+- El portal de propiedades en [www.casaconcierge.co](https://www.casaconcierge.co/)
 - Listados en plataformas de renta (Airbnb, VRBO, Booking.com)
 - Material de marketing relacionado con su propiedad
 

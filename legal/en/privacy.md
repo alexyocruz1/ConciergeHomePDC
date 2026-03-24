@@ -89,7 +89,7 @@ We do not sell, rent, or share your personal data with third parties for adverti
 Photographs of your property are collected and used exclusively with your **explicit consent**, granted through the onboarding form at the time of service activation.
 
 Said photographs may be published on:
-- The property portal at casaconciergepdc.com
+- The property portal at [www.casaconcierge.co](https://www.casaconcierge.co/)
 - Listings on rental platforms (Airbnb, VRBO, Booking.com)
 - Marketing materials related to your property
 

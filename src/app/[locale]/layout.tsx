@@ -10,6 +10,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { getCachedActivePropertyCount } from "@/lib/properties/queries";
+import { CANONICAL_SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -30,7 +31,7 @@ async function getSiteUrl(): Promise<string> {
   const h = await headers();
   const proto = h.get("x-forwarded-proto") ?? "https";
   const host = h.get("x-forwarded-host") ?? h.get("host");
-  if (!host) return "https://casaconciergepdc.com";
+  if (!host) return CANONICAL_SITE_URL;
   return `${proto}://${host}`;
 }
 
