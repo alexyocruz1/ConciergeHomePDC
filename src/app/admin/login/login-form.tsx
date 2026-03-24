@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { signOutAdmin } from "@/app/admin/auth-actions";
+import { AdminSignOutButton } from "@/app/admin/SignOutButton";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
 export function AdminLoginForm({
@@ -58,14 +58,11 @@ export function AdminLoginForm({
             <code className="text-xs">ADMIN_ALLOWED_EMAILS</code> or ask the site owner to add your
             email.
           </p>
-          <form action={signOutAdmin} className="mt-3">
-            <button
-              type="submit"
-              className="text-sm font-medium text-amber-950 underline hover:no-underline"
-            >
+          <div className="mt-3">
+            <AdminSignOutButton className="text-sm font-medium text-amber-950 underline hover:no-underline disabled:opacity-50">
               Sign out and try another account
-            </button>
-          </form>
+            </AdminSignOutButton>
+          </div>
         </div>
       )}
     <form

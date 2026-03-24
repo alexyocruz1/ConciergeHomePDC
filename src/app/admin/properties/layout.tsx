@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
+import { AdminSignOutButton } from "@/app/admin/SignOutButton";
 import { requireAdminUser } from "@/lib/auth/admin";
-import { signOutAdmin } from "@/app/admin/auth-actions";
 
 export default async function AdminPropertiesLayout({
   children,
@@ -22,14 +22,7 @@ export default async function AdminPropertiesLayout({
           Signed in as{" "}
           <span className="font-medium text-slate-900">{auth.user.email ?? auth.user.id}</span>
         </p>
-        <form action={signOutAdmin}>
-          <button
-            type="submit"
-            className="text-sm font-medium text-primary-700 hover:text-primary-900 hover:underline"
-          >
-            Sign out
-          </button>
-        </form>
+        <AdminSignOutButton className="text-sm font-medium text-primary-700 hover:text-primary-900 hover:underline disabled:opacity-50" />
       </div>
       {children}
     </>
