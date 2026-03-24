@@ -55,11 +55,12 @@ export function Footer() {
                   Gestor
                 </a>
               </li>
-              <li>
+              {/* Premium Concierge — re-enable when tier3 is live in Services */}
+              {/* <li>
                 <a href="#services" className="text-sm text-slate-400 transition-colors hover:text-white">
                   Premium Concierge
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Essential",
       "price": "18%",
-      "minimum": "Minimum $80 USD/mo",
+      "minimum": "Minimum $120 USD/mo",
       "description": "For owners who need peace of mind and local eyes.",
       "features": [
         "Monthly property inspection (1 visit/month with photo report)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Full Management",
       "price": "22%",
-      "minimum": "Minimum $100 USD/mo",
+      "minimum": "Minimum $140 USD/mo",
       "description": "Full hands-off operation. Our most popular plan.",
       "features": [
         "Everything in Essential",
@@ -164,7 +164,7 @@
         { "feature": "Property condition over time", "them": "Deteriorates without oversight", "us": "Maintained, inspected, documented" },
         { "feature": "Security", "them": "Unmonitored", "us": "Regular visits, issue detection" },
         { "feature": "ROI on investment", "them": "Negative (costs with no income)", "us": "Positive from month one" },
-        { "feature": "Cost of our service", "them": "—", "us": "18–28% of income generated" },
+        { "feature": "Cost of our service", "them": "—", "us": "18–22% of income generated" },
         { "feature": "Net gain", "them": "$0", "us": "$1,100 – $3,000+/mo after our fee" }
       ]
     }

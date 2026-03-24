@@ -8,7 +8,7 @@ type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 const vitrinaByLocale: Record<Locale, { name: string; description: string; subtitle: string; minimum: string; features: string[]; cta: string }> = {
   es: {
     name: "Vitrina",
-    description: "Publica tu propiedad gratis. Cobramos solo si hay resultado.",
+    description: "Publica tu propiedad gratis. Cobramos sólo si hay resultado.",
     subtitle: "Comisión sobre reservas o colocaciones",
     minimum: "Sin cuota mensual",
     features: [
@@ -97,6 +97,7 @@ export function Services() {
   const locale = useLocale() as Locale;
   const vitrina = vitrinaByLocale[locale] || vitrinaByLocale.en;
 
+  /* Premium Concierge (tier3) is defined in messages for a future launch — keep translations, re-add here when ready. */
   const tiers = [
     {
       key: "tier1" as const,
@@ -107,11 +108,6 @@ export function Services() {
       key: "tier2" as const,
       badge: t("popular"),
       highlight: true,
-    },
-    {
-      key: "tier3" as const,
-      badge: null,
-      highlight: false,
     },
   ];
 
@@ -129,7 +125,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 lg:grid-cols-3">
           <div className="relative flex flex-col rounded-3xl border border-emerald-200 bg-emerald-50/40 p-8 shadow-sm">
             <div className="text-center">
               <h3 className="text-xl font-bold text-slate-900">{vitrina.name}</h3>

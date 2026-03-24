@@ -75,13 +75,12 @@ The Client is responsible for maintaining the confidentiality of their login cre
 
 ## 4. Plans and Pricing
 
-Casa Concierge PDC offers three monthly subscription plans:
+Casa Concierge PDC offers two monthly subscription plans:
 
 | Plan | Commission on gross income | Monthly minimum fee |
 |---|---|---|
-| Essential | 18% | $80 USD/month |
-| Full Management | 22% | $100 USD/month |
-| Premium Concierge | 28% | $120 USD/month |
+| Essential | 18% | $120 USD/month |
+| Full Management | 22% | $140 USD/month |
 
 **How billing works:**
 - Upon subscribing, the monthly minimum fee for the selected plan is automatically charged through Stripe.

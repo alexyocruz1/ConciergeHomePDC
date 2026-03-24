@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Esencial",
       "price": "18%",
-      "minimum": "Mínimo $80 USD/mes",
+      "minimum": "Mínimo $120 USD/mes",
       "description": "Para propietarios que necesitan tranquilidad y ojos locales.",
       "features": [
         "Inspección mensual (1 visita/mes con reporte fotográfico)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Gestor",
       "price": "22%",
-      "minimum": "Mínimo $100 USD/mes",
+      "minimum": "Mínimo $140 USD/mes",
       "description": "Operación completa sin preocupaciones. Nuestro plan más popular.",
       "features": [
         "Todo lo incluido en Esencial",
@@ -164,7 +164,7 @@
         { "feature": "Condición de la propiedad", "them": "Se deteriora sin supervisión", "us": "Mantenida, inspeccionada, documentada" },
         { "feature": "Seguridad", "them": "Sin monitoreo", "us": "Visitas regulares, detección de problemas" },
         { "feature": "ROI de la inversión", "them": "Negativo (costos sin ingresos)", "us": "Positivo desde el primer mes" },
-        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18–28% de los ingresos generados" },
+        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18–22% de los ingresos generados" },
         { "feature": "Ganancia neta", "them": "$0", "us": "$1,100 – $3,000+/mes después de nuestra comisión" }
       ]
     }

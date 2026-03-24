@@ -75,13 +75,12 @@ El Cliente es responsable de mantener la confidencialidad de sus credenciales de
 
 ## 4. Planes y Precios
 
-Casa Concierge PDC ofrece tres planes de suscripción mensual:
+Casa Concierge PDC ofrece dos planes de suscripción mensual:
 
 | Plan | Comisión sobre ingresos brutos | Cuota mínima mensual |
 |---|---|---|
-| Esencial | 18% | $80 USD/mes |
-| Gestor | 22% | $100 USD/mes |
-| Premium Concierge | 28% | $120 USD/mes |
+| Esencial | 18% | $120 USD/mes |
+| Gestor | 22% | $140 USD/mes |
 
 **Funcionamiento del cobro:**
 - Al suscribirse, se cobra automáticamente la cuota mínima mensual del plan seleccionado a través de Stripe.

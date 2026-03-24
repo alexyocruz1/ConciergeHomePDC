@@ -26,7 +26,7 @@ export function Contact() {
     es: [
       { value: "management", label: t("topic_management") },
       { value: "acquisition", label: t("topic_acquisition") },
-      { value: "rental_search", label: "Busqueda de propiedad en renta" },
+      { value: "rental_search", label: "Búsqueda de propiedad en renta" },
       { value: "vitrina_free_listing", label: "Publicar propiedad gratis (Vitrina)" },
       { value: "guest", label: t("topic_guest") },
       { value: "other", label: t("topic_other") },

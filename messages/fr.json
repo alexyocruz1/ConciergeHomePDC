@@ -45,7 +45,7 @@
     "tier1": {
       "name": "Essentiel",
       "price": "18%",
-      "minimum": "Minimum $80 USD/mois",
+      "minimum": "Minimum $120 USD/mois",
       "description": "Pour les propriétaires qui ont besoin de tranquillité d'esprit.",
       "features": [
         "Inspection mensuelle (1 visite/mois avec rapport photo)",
@@ -58,7 +58,7 @@
     "tier2": {
       "name": "Gestion Complète",
       "price": "22%",
-      "minimum": "Minimum $100 USD/mois",
+      "minimum": "Minimum $140 USD/mois",
       "description": "Opération complète sans souci. Notre plan le plus populaire.",
       "features": [
         "Tout ce qui est inclus dans Essentiel",
@@ -164,7 +164,7 @@
         { "feature": "État de la propriété dans le temps", "them": "Se dégrade sans surveillance", "us": "Entretenue, inspectée, documentée" },
         { "feature": "Sécurité", "them": "Non surveillée", "us": "Visites régulières, détection des problèmes" },
         { "feature": "ROI sur l'investissement", "them": "Négatif (coûts sans revenus)", "us": "Positif dès le premier mois" },
-        { "feature": "Coût de notre service", "them": "—", "us": "18–28% des revenus générés" },
+        { "feature": "Coût de notre service", "them": "—", "us": "18–22% des revenus générés" },
         { "feature": "Gain net", "them": "0 $", "us": "1 100 $ – 3 000 $/mois et plus après nos frais" }
       ]
     }

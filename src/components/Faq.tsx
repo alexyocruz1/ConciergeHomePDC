@@ -77,7 +77,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_how_to_start",
     category: "getting_started",
     question: {
-      es: "¿Como empiezo a trabajar con Casa Concierge PDC?",
+      es: "¿Cómo empiezo a trabajar con Casa Concierge PDC?",
       en: "How do I get started with Casa Concierge PDC?",
       fr: "Comment puis-je commencer avec Casa Concierge PDC ?",
       ru: "Как начать работу с Casa Concierge PDC?",
@@ -85,7 +85,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Wie fange ich mit Casa Concierge PDC an?",
     },
     answer: {
-      es: "Es muy sencillo. Contactanos por WhatsApp o por el formulario de esta pagina. Conversamos sobre tu propiedad, te recomendamos el plan mas adecuado y acordamos los terminos por escrito. Una vez confirmado el acuerdo, hacemos una visita inicial a tu propiedad y comenzamos.",
+      es: "Es muy sencillo. Contáctanos por WhatsApp o por el formulario de esta página. Conversamos sobre tu propiedad, te recomendamos el plan más adecuado y acordamos los términos por escrito. Una vez confirmado el acuerdo, hacemos una visita inicial a tu propiedad y comenzamos.",
       en: "It's straightforward. Contact us via WhatsApp or through the form on this page. We'll talk about your property, recommend the best plan, and confirm the terms in writing. Once the agreement is in place, we schedule an initial visit and get started.",
       fr: "C'est simple. Contactez-nous via WhatsApp ou via le formulaire de cette page. Nous discuterons de votre propriete, recommanderons le plan le plus adapte et confirmerons les termes par ecrit. Une fois l'accord conclu, nous planifions une visite initiale et commencons.",
       ru: "Всё просто. Свяжитесь с нами через WhatsApp или форму на этой странице. Обсудим вашу недвижимость, подберём подходящий план и подтвердим условия в письменном виде. После этого назначим первый визит на объект и приступим к работе.",
@@ -97,7 +97,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_where_do_you_operate",
     category: "getting_started",
     question: {
-      es: "¿En que zonas operan?",
+      es: "¿En qué zonas operan?",
       en: "What areas do you cover?",
       fr: "Quelles zones couvrez-vous ?",
       ru: "В каких районах вы работаете?",
@@ -105,7 +105,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Welche Gebiete decken Sie ab?",
     },
     answer: {
-      es: "Operamos principalmente en Playa del Carmen y la Riviera Maya, incluyendo Tulum, Puerto Morelos, Akumal y zonas residenciales como Mayakoba. Si tu propiedad esta fuera de estas areas, contactanos igualmente - evaluamos cada caso individualmente.",
+      es: "Operamos principalmente en Playa del Carmen y la Riviera Maya, incluyendo Tulum, Puerto Morelos, Akumal y zonas residenciales como Mayakoba. Si tu propiedad está fuera de estas áreas, contáctanos igualmente — evaluamos cada caso individualmente.",
       en: "We operate primarily in Playa del Carmen and the Riviera Maya, including Tulum, Puerto Morelos, Akumal, and residential areas like Mayakoba. If your property is outside these areas, contact us anyway - we evaluate each case individually.",
       fr: "Nous operons principalement a Playa del Carmen et sur la Riviera Maya, incluant Tulum, Puerto Morelos, Akumal et des zones residentielles comme Mayakoba. Si votre propriete est en dehors de ces zones, contactez-nous quand meme - nous evaluons chaque cas individuellement.",
       ru: "Мы работаем преимущественно в Плая-дель-Кармен и на Ривьера-Майя, включая Тулум, Пуэрто-Морелос, Акумаль и жилые комплексы, например Майакоба. Если ваша недвижимость находится за пределами этих зон - свяжитесь с нами, мы рассматриваем каждый случай индивидуально.",
@@ -117,7 +117,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_property_types",
     category: "getting_started",
     question: {
-      es: "¿Que tipo de propiedades gestionan?",
+      es: "¿Qué tipo de propiedades gestionan?",
       en: "What types of properties do you manage?",
       fr: "Quels types de proprietes gerez-vous ?",
       ru: "Какими типами недвижимости вы управляете?",
@@ -125,7 +125,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Welche Arten von Immobilien verwalten Sie?",
     },
     answer: {
-      es: "Gestionamos departamentos, condominios, casas y villas vacacionales. La propiedad debe tener un potencial de ingreso mensual minimo de $600 USD para que la gestion sea rentable para ambas partes. Si no estas seguro, cuentanos sobre tu propiedad y te damos una evaluacion honesta.",
+      es: "Gestionamos departamentos, condominios, casas y villas vacacionales. La propiedad debe tener un potencial de ingreso mensual mínimo de $600 USD para que la gestión sea rentable para ambas partes. Si no estás seguro, cuéntanos sobre tu propiedad y te damos una evaluación honesta.",
       en: "We manage apartments, condos, houses, and vacation villas. The property should have a minimum monthly income potential of $600 USD for management to make financial sense for both sides. If you're not sure, tell us about your property and we'll give you an honest assessment.",
       fr: "Nous gerons des appartements, condos, maisons et villas de vacances. La propriete doit avoir un potentiel de revenu mensuel minimum de 600 USD pour que la gestion soit rentable des deux cotes. Si vous n'etes pas sur, parlez-nous de votre propriete et nous vous donnerons une evaluation honnete.",
       ru: "Мы управляем квартирами, кондоминиумами, домами и туристическими виллами. Для обоюдной выгоды объект должен приносить не менее $600 USD в месяц. Если не уверены - расскажите о своей недвижимости, и мы честно оценим её потенциал.",
@@ -137,7 +137,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_first_visit",
     category: "getting_started",
     question: {
-      es: "¿Que pasa en la primera visita a mi propiedad?",
+      es: "¿Qué pasa en la primera visita a mi propiedad?",
       en: "What happens during the first visit to my property?",
       fr: "Que se passe-t-il lors de la premiere visite de ma propriete ?",
       ru: "Что происходит при первом визите на объект?",
@@ -145,7 +145,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was passiert beim ersten Besuch meiner Immobilie?",
     },
     answer: {
-      es: "Hacemos una inspeccion completa: estado general, fotografias de todas las habitaciones, inventario de mobiliario y electrodomesticos, revision de accesos, y evaluacion del potencial de renta. Te enviamos un reporte escrito con nuestras recomendaciones antes de empezar a gestionar activamente.",
+      es: "Hacemos una inspección completa: estado general, fotografías de todas las habitaciones, inventario de mobiliario y electrodomésticos, revisión de accesos y evaluación del potencial de renta. Te enviamos un reporte escrito con nuestras recomendaciones antes de empezar a gestionar activamente.",
       en: "We conduct a full inspection: general condition, photos of every room, furniture and appliance inventory, access review, and rental potential assessment. We send you a written report with our recommendations before we begin active management.",
       fr: "Nous effectuons une inspection complete : etat general, photos de chaque piece, inventaire du mobilier et des appareils, verification des acces et evaluation du potentiel locatif. Nous vous envoyons un rapport ecrit avec nos recommandations avant de commencer la gestion active.",
       ru: "Проводим полную инспекцию: общее состояние, фотосъёмка каждой комнаты, опись мебели и техники, проверка доступа и оценка арендного потенциала. До начала активного управления отправляем вам письменный отчёт с рекомендациями.",
@@ -157,7 +157,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_rental_search",
     category: "getting_started",
     question: {
-      es: "¿Tambien ayudan a encontrar propiedades en renta?",
+      es: "¿También ayudan a encontrar propiedades en renta?",
       en: "Do you also help find rental properties?",
       fr: "Aidez-vous egalement a trouver des proprietes a louer ?",
       ru: "Вы также помогаете найти арендное жильё?",
@@ -165,7 +165,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Helfen Sie auch beim Finden von Mietimmobilien?",
     },
     answer: {
-      es: "Si. Ofrecemos un servicio de busqueda de propiedades en renta para personas y familias que buscan estancias de 1 a 12 meses en Playa del Carmen y la Riviera Maya. Propiedades verificadas, gestion en tu idioma y sin sorpresas. Para propietarios, tambien buscamos y verificamos inquilinos confiables para renta de largo plazo. Contactanos con tus requisitos y presupuesto.",
+      es: "Sí. Ofrecemos un servicio de búsqueda de propiedades en renta para personas y familias que buscan estancias de 1 a 12 meses en Playa del Carmen y la Riviera Maya. Propiedades verificadas, gestión en tu idioma y sin sorpresas. Para propietarios, también buscamos y verificamos inquilinos confiables para renta de largo plazo. Contáctanos con tus requisitos y presupuesto.",
       en: "Yes. We offer a rental search service for individuals and families looking for 1 to 12-month stays in Playa del Carmen and the Riviera Maya. Vetted properties, handled in your language, no surprises. For property owners, we also source and vet reliable long-term tenants. Contact us with your requirements and budget.",
       fr: "Oui. Nous proposons un service de recherche de location pour les particuliers et familles cherchant des sejours de 1 a 12 mois a Playa del Carmen et en Riviera Maya. Proprietes verifiees, gestion dans votre langue, sans mauvaises surprises. Pour les proprietaires, nous recherchons et verifions egalement des locataires fiables. Contactez-nous avec vos exigences et votre budget.",
       ru: "Да. Мы предлагаем услугу поиска аренды для частных лиц и семей, планирующих проживание от 1 до 12 месяцев в Плая-дель-Кармен и на Ривьера-Майя. Проверенные объекты, ведение на вашем языке, без сюрпризов. Для владельцев - также подбор и проверка надёжных долгосрочных арендаторов. Свяжитесь с нами, указав требования и бюджет.",
@@ -177,7 +177,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_how_billing_works",
     category: "pricing",
     question: {
-      es: "¿Como funciona exactamente el cobro?",
+      es: "¿Cómo funciona exactamente el cobro?",
       en: "How exactly does billing work?",
       fr: "Comment fonctionne exactement la facturation ?",
       ru: "Как именно происходит оплата?",
@@ -185,12 +185,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Wie funktioniert die Abrechnung genau?",
     },
     answer: {
-      es: "Cobramos un porcentaje de los ingresos brutos de renta - 18%, 22% o 28% segun el plan. Hay una cuota minima mensual ($60, $100 o $120 USD) que solo aplica si el porcentaje resulta menor. Si tu propiedad no genera ingresos, casi no pagas. Al cierre de cada mes recibes un desglose transparente: ingresos, nuestra comision y tu ingreso neto.",
-      en: "We charge a percentage of your gross rental income - 18%, 22%, or 28% depending on the plan. There's a monthly minimum ($60, $100, or $120 USD) that only applies if the percentage comes out lower. If your property earns nothing, you pay almost nothing. At month end you receive a transparent breakdown: income, our fee, and your net.",
-      fr: "Nous facturons un pourcentage des revenus locatifs bruts - 18%, 22% ou 28% selon le plan. Il y a un minimum mensuel (60, 100 ou 120 USD) qui ne s'applique que si le pourcentage est inferieur. Si votre propriete ne genere rien, vous payez presque rien. En fin de mois vous recevez un releve transparent : revenus, notre commission et votre net.",
-      ru: "Берём процент от валового дохода от аренды - 18%, 22% или 28% в зависимости от плана. Есть ежемесячный минимум ($60, $100 или $120 USD), который применяется только если процент ниже него. Если недвижимость не приносит дохода - платёж минимален. В конце месяца вы получаете прозрачный отчёт: доходы, наша комиссия и ваша выплата.",
-      pt: "Cobramos uma porcentagem da receita bruta de aluguel - 18%, 22% ou 28% dependendo do plano. Ha um minimo mensal ($60, $100 ou $120 USD) que so se aplica se a porcentagem for menor. Se seu imovel nao gerar renda, voce quase nao paga. No fim do mes voce recebe um demonstrativo transparente: receitas, nossa comissao e seu liquido.",
-      de: "Wir berechnen einen Prozentsatz der Bruttomieteinnahmen - 18%, 22% oder 28% je nach Plan. Es gibt ein monatliches Minimum ($60, $100 oder $120 USD), das nur gilt, wenn der Prozentsatz darunter liegt. Verdient Ihre Immobilie nichts, zahlen Sie fast nichts. Am Monatsende erhalten Sie eine transparente Aufstellung: Einnahmen, unsere Provision und Ihr Nettobetrag.",
+      es: "Cobramos un porcentaje de los ingresos brutos de renta — 18% o 22% según el plan. Hay una cuota mínima mensual ($120 o $140 USD) que solo aplica si el porcentaje resulta menor. Si tu propiedad no genera ingresos, casi no pagas. Al cierre de cada mes recibes un desglose transparente: ingresos, nuestra comisión y tu ingreso neto.",
+      en: "We charge a percentage of your gross rental income — 18% or 22% depending on the plan. There's a monthly minimum ($120 or $140 USD) that only applies if the percentage comes out lower. If your property earns nothing, you pay almost nothing. At month end you receive a transparent breakdown: income, our fee, and your net.",
+      fr: "Nous facturons un pourcentage des revenus locatifs bruts — 18 % ou 22 % selon le plan. Il y a un minimum mensuel (120 ou 140 USD) qui ne s'applique que si le pourcentage est inférieur. Si votre propriété ne génère rien, vous payez presque rien. En fin de mois vous recevez un relevé transparent : revenus, notre commission et votre net.",
+      ru: "Берём процент от валового дохода от аренды — 18% или 22% в зависимости от плана. Есть ежемесячный минимум ($120 или $140 USD), который применяется только если процент ниже него. Если недвижимость не приносит дохода — платёж минимален. В конце месяца вы получаете прозрачный отчёт: доходы, наша комиссия и ваша выплата.",
+      pt: "Cobramos uma porcentagem da receita bruta de aluguel — 18% ou 22% dependendo do plano. Há um mínimo mensal ($120 ou $140 USD) que só se aplica se a porcentagem for menor. Se seu imóvel não gerar renda, você quase não paga. No fim do mês você recebe um demonstrativo transparente: receitas, nossa comissão e seu líquido.",
+      de: "Wir berechnen einen Prozentsatz der Bruttomieteinnahmen — 18 % oder 22 % je nach Plan. Es gibt ein monatliches Minimum ($120 oder $140 USD), das nur gilt, wenn der Prozentsatz darunter liegt. Verdient Ihre Immobilie nichts, zahlen Sie fast nichts. Am Monatsende erhalten Sie eine transparente Aufstellung: Einnahmen, unsere Provision und Ihr Nettobetrag.",
     },
   },
   {
@@ -205,7 +205,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Kann ich in mexikanischen Pesos oder bar bezahlen?",
     },
     answer: {
-      es: "Si. Aceptamos transferencia SPEI (cuentas bancarias mexicanas), transferencia internacional y efectivo, previa confirmacion por escrito. Los pagos en MXN se convierten al tipo de cambio oficial Banxico vigente en la fecha de pago. Proximamente tambien disponible pago con tarjeta directamente desde el sitio.",
+      es: "Sí. Aceptamos transferencia SPEI (cuentas bancarias mexicanas), transferencia internacional y efectivo, previa confirmación por escrito. Los pagos en MXN se convierten al tipo de cambio oficial Banxico vigente en la fecha de pago. Próximamente también disponible pago con tarjeta directamente desde el sitio.",
       en: "Yes. We accept SPEI transfer (Mexican bank accounts), international wire transfer, and cash - with prior written confirmation. MXN payments are converted using the official Banxico exchange rate on the payment date. Card payment directly through the site is coming soon.",
       fr: "Oui. Nous acceptons le virement SPEI (comptes bancaires mexicains), le virement international et les especes - avec confirmation ecrite prealable. Les paiements en MXN sont convertis au taux de change officiel Banxico a la date de paiement. Le paiement par carte directement sur le site sera bientot disponible.",
       ru: "Да. Принимаем переводы SPEI (мексиканские банковские счета), международные банковские переводы и наличные - при предварительном письменном подтверждении. Платежи в MXN конвертируются по официальному курсу Banxico на дату платежа. Оплата картой через сайт скоро будет доступна.",
@@ -217,7 +217,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_no_income_month",
     category: "pricing",
     question: {
-      es: "¿Que pasa si mi propiedad no genera ingresos un mes?",
+      es: "¿Qué pasa si mi propiedad no genera ingresos un mes?",
       en: "What if my property earns nothing in a month?",
       fr: "Que se passe-t-il si ma propriete ne genere aucun revenu un mois ?",
       ru: "Что если в какой-то месяц недвижимость не приносит дохода?",
@@ -225,12 +225,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was passiert, wenn meine Immobilie in einem Monat keine Einnahmen erzielt?",
     },
     answer: {
-      es: "Solo pagas la cuota minima mensual de tu plan ($60, $100 o $120 USD). Esta cubre nuestra visita de inspeccion, el reporte mensual y la disponibilidad continua del equipo. Sin penalizaciones ni cargos adicionales.",
-      en: "You only pay the monthly minimum fee for your plan ($60, $100, or $120 USD). This covers our inspection visit, monthly report, and the team's continued availability. No penalties, no extra charges.",
-      fr: "Vous ne payez que la redevance mensuelle minimale de votre plan (60, 100 ou 120 USD). Cela couvre notre visite d'inspection, le rapport mensuel et la disponibilite continue de l'equipe. Pas de penalites, pas de frais supplementaires.",
-      ru: "Вы платите только ежемесячный минимум по вашему плану ($60, $100 или $120 USD). Он покрывает инспекционный визит, ежемесячный отчёт и постоянную доступность команды. Никаких штрафов и дополнительных платежей.",
-      pt: "Voce paga apenas a taxa minima mensal do seu plano ($60, $100 ou $120 USD). Isso cobre nossa visita de inspecao, relatorio mensal e disponibilidade continua da equipe. Sem penalidades nem cobrancas extras.",
-      de: "Sie zahlen nur die monatliche Mindestgebuhr Ihres Plans ($60, $100 oder $120 USD). Diese deckt unseren Inspektionsbesuch, den Monatsbericht und die kontinuierliche Verfugbarkeit des Teams. Keine Strafen, keine zusatzlichen Gebuhren.",
+      es: "Sólo pagas la cuota mínima mensual de tu plan ($120 o $140 USD). Cubre nuestra visita de inspección, el reporte mensual y la disponibilidad continua del equipo. Sin penalizaciones ni cargos adicionales.",
+      en: "You only pay the monthly minimum fee for your plan ($120 or $140 USD). This covers our inspection visit, monthly report, and the team's continued availability. No penalties, no extra charges.",
+      fr: "Vous ne payez que la redevance mensuelle minimale de votre plan (120 ou 140 USD). Elle couvre notre visite d'inspection, le rapport mensuel et la disponibilité continue de l'équipe. Pas de pénalités, pas de frais supplémentaires.",
+      ru: "Вы платите только ежемесячный минимум по вашему плану ($120 или $140 USD). Он покрывает инспекционный визит, ежемесячный отчёт и постоянную доступность команды. Никаких штрафов и дополнительных платежей.",
+      pt: "Você paga apenas a taxa mínima mensal do seu plano ($120 ou $140 USD). Isso cobre nossa visita de inspeção, relatório mensal e disponibilidade contínua da equipe. Sem penalidades nem cobranças extras.",
+      de: "Sie zahlen nur die monatliche Mindestgebühr Ihres Plans ($120 oder $140 USD). Diese deckt unseren Inspektionsbesuch, den Monatsbericht und die kontinuierliche Verfügbarkeit des Teams. Keine Strafen, keine zusätzlichen Gebühren.",
     },
   },
   {
@@ -245,7 +245,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Kann ich jederzeit kundigen?",
     },
     answer: {
-      es: "Si. Puedes cancelar en cualquier momento por correo o desde tu portal. El servicio continua activo hasta el final del periodo facturado - sin permanencia minima ni penalizaciones. Al cancelar, tus fotografias se eliminan de nuestro portal en maximo 48 horas y recibes un reporte final de tu propiedad.",
+      es: "Sí. Puedes cancelar en cualquier momento por correo o desde tu portal. El servicio continúa activo hasta el final del periodo facturado — sin permanencia mínima ni penalizaciones. Al cancelar, tus fotografías se eliminan de nuestro portal en máximo 48 horas y recibes un reporte final de tu propiedad.",
       en: "Yes. You can cancel at any time by email or from your portal. The service remains active until the end of the billed period - no minimum commitment, no cancellation fee. Upon cancellation, your photos are removed from our portal within 48 hours and you receive a final property report.",
       fr: "Oui. Vous pouvez annuler a tout moment par e-mail ou depuis votre portail. Le service reste actif jusqu'a la fin de la periode facturee - sans engagement minimum ni frais d'annulation. A l'annulation, vos photos sont supprimees de notre portail dans les 48 heures et vous recevez un rapport final.",
       ru: "Да. Можно отменить в любое время по электронной почте или через портал. Сервис остаётся активным до конца оплаченного периода - без минимального срока и штрафов. После отмены ваши фотографии удаляются с портала в течение 48 часов, а вы получаете финальный отчёт.",
@@ -257,7 +257,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_platforms",
     category: "service",
     question: {
-      es: "¿En que plataformas publican mi propiedad?",
+      es: "¿En qué plataformas publican mi propiedad?",
       en: "Which platforms do you list my property on?",
       fr: "Sur quelles plateformes publiez-vous ma propriete ?",
       ru: "На каких платформах вы размещаете мою недвижимость?",
@@ -265,12 +265,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Auf welchen Plattformen listen Sie meine Immobilie?",
     },
     answer: {
-      es: "En los planes Gestor y Premium gestionamos activamente tu propiedad en Airbnb, VRBO y Booking.com, y la publicamos en nuestro propio portal de propiedades en este sitio. En el plan Esencial te asesoramos sobre como configurar y optimizar tus propios listados.",
-      en: "On Full Management and Premium plans we actively manage your property on Airbnb, VRBO, and Booking.com, and feature it on our own property portal on this site. On the Essential plan we advise you on how to set up and optimize your own listings.",
-      fr: "Sur les plans Full Management et Premium, nous gerons activement votre propriete sur Airbnb, VRBO et Booking.com, et la presentons sur notre propre portail. Sur le plan Essentiel, nous vous conseillons sur la configuration et l'optimisation de vos propres annonces.",
-      ru: "В планах «Полное управление» и «Премиум» мы активно управляем недвижимостью на Airbnb, VRBO и Booking.com и размещаем её на нашем портале. В плане «Базовый» консультируем по настройке и оптимизации собственных объявлений.",
-      pt: "Nos planos Full Management e Premium gerenciamos ativamente seu imovel no Airbnb, VRBO e Booking.com e o divulgamos em nosso portal. No plano Essencial, orientamos sobre como configurar e otimizar seus proprios anuncios.",
-      de: "Bei Full Management- und Premium-Planen verwalten wir Ihre Immobilie aktiv auf Airbnb, VRBO und Booking.com und prasentieren sie in unserem Portal. Im Essential-Plan beraten wir Sie bei der Einrichtung und Optimierung Ihrer eigenen Inserate.",
+      es: "En el plan Gestor gestionamos activamente tu propiedad en Airbnb, VRBO y Booking.com, y la publicamos en nuestro propio portal de propiedades en este sitio. En el plan Esencial te asesoramos sobre cómo configurar y optimizar tus propios listados.",
+      en: "On the Full Management plan we actively manage your property on Airbnb, VRBO, and Booking.com, and feature it on our own property portal on this site. On the Essential plan we advise you on how to set up and optimize your own listings.",
+      fr: "Avec le plan Gestion complète, nous gérons activement votre propriété sur Airbnb, VRBO et Booking.com, et la présentons sur notre propre portail. Avec le plan Essentiel, nous vous conseillons sur la configuration et l'optimisation de vos propres annonces.",
+      ru: "В плане «Полное управление» мы активно ведём недвижимость на Airbnb, VRBO и Booking.com и размещаем её на нашем портале. В плане «Базовый» консультируем по настройке и оптимизации собственных объявлений.",
+      pt: "No plano Full Management gerenciamos ativamente seu imóvel no Airbnb, VRBO e Booking.com e o divulgamos em nosso portal. No plano Essencial, orientamos sobre como configurar e otimizar seus próprios anúncios.",
+      de: "Im Full-Management-Plan verwalten wir Ihre Immobilie aktiv auf Airbnb, VRBO und Booking.com und präsentieren sie in unserem Portal. Im Essential-Plan beraten wir Sie bei der Einrichtung und Optimierung Ihrer eigenen Inserate.",
     },
   },
   {
@@ -285,7 +285,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Erledigen Sie die Reinigung direkt oder koordinieren Sie diese?",
     },
     answer: {
-      es: "La coordinamos. Trabajamos con personal de limpieza de confianza en cada zona. Nosotros agendamos, supervisamos y verificamos la calidad despues de cada limpieza. El costo se factura al propietario al costo real sin margen adicional. Para limpiezas profundas hay un servicio adicional disponible.",
+      es: "La coordinamos. Trabajamos con personal de limpieza de confianza en cada zona. Nosotros agendamos, supervisamos y verificamos la calidad después de cada limpieza. El costo se factura al propietario al costo real sin margen adicional. Para limpiezas profundas hay un servicio adicional disponible.",
       en: "We coordinate it. We work with trusted cleaning staff in each area, scheduling, supervising, and verifying quality after every clean. Cleaning costs are billed to the owner at actual cost - no markup. Deep cleaning is available as an add-on service.",
       fr: "Nous la coordonnons. Nous travaillons avec du personnel de nettoyage de confiance dans chaque zone, planifiant, supervisant et verifiant la qualite apres chaque nettoyage. Les couts sont factures au proprietaire au cout reel, sans marge. Le nettoyage en profondeur est disponible en option.",
       ru: "Мы координируем уборку. Работаем с проверенным персоналом в каждом районе: организуем, контролируем и проверяем качество после каждой уборки. Стоимость выставляется владельцу по фактической цене без наценки. Генеральная уборка доступна как дополнительная услуга.",
@@ -297,7 +297,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_maintenance",
     category: "service",
     question: {
-      es: "¿Que pasa si hay un problema de mantenimiento?",
+      es: "¿Qué pasa si hay un problema de mantenimiento?",
       en: "What happens if there's a maintenance issue?",
       fr: "Que se passe-t-il en cas de probleme d'entretien ?",
       ru: "Что происходит при поломке или неисправности?",
@@ -305,7 +305,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was passiert bei einem Wartungsproblem?",
     },
     answer: {
-      es: "Para problemas menores actuamos dentro del presupuesto de mantenimiento mensual que tu pre-apruebas. Para reparaciones mayores te notificamos de inmediato con fotos, te presentamos al menos dos presupuestos de contratistas de confianza y esperamos tu autorizacion. Nunca se gasta sin que lo sepas.",
+      es: "Para problemas menores actuamos dentro del presupuesto de mantenimiento mensual que tú preapruebas. Para reparaciones mayores te notificamos de inmediato con fotos, te presentamos al menos dos presupuestos de contratistas de confianza y esperamos tu autorización. Nunca se gasta sin que lo sepas.",
       en: "For minor issues we act within the monthly maintenance budget you pre-approve. For major repairs we notify you immediately with photos, present at least two quotes from trusted contractors, and wait for your authorization. Nothing is ever spent without your knowledge.",
       fr: "Pour les problemes mineurs, nous intervenons dans le budget de maintenance mensuel que vous pre-approuvez. Pour les reparations importantes, nous vous informons immediatement avec photos, presentons au moins deux devis et attendons votre autorisation. Rien n'est jamais depense sans que vous le sachiez.",
       ru: "Мелкие неисправности устраняем в рамках заранее согласованного ежемесячного бюджета. При серьёзных поломках немедленно уведомляем с фотографиями, предоставляем не менее двух смет и ждём вашего разрешения. Без вашего ведома ничего не тратится.",
@@ -317,7 +317,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_property_access",
     category: "trust",
     question: {
-      es: "¿Como manejan el acceso a mi propiedad?",
+      es: "¿Cómo manejan el acceso a mi propiedad?",
       en: "How do you handle access to my property?",
       fr: "Comment gerez-vous l'acces a ma propriete ?",
       ru: "Как вы управляете доступом к моей недвижимости?",
@@ -325,7 +325,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Wie verwalten Sie den Zugang zu meiner Immobilie?",
     },
     answer: {
-      es: "Los datos de acceso se recogen durante la incorporacion y se almacenan de forma segura - nunca por WhatsApp. Solo el equipo de Casa Concierge PDC y el personal autorizado (limpieza, mantenimiento) acceden a la propiedad, y solo cuando es necesario. Cada acceso queda registrado en tu reporte mensual.",
+      es: "Los datos de acceso se recogen durante la incorporación y se almacenan de forma segura — nunca por WhatsApp. Solo el equipo de Casa Concierge PDC y el personal autorizado (limpieza, mantenimiento) acceden a la propiedad, y solo cuando es necesario. Cada acceso queda registrado en tu reporte mensual.",
       en: "Access details are collected during onboarding and stored securely - never via WhatsApp. Only the Casa Concierge PDC team and authorized personnel (cleaning, maintenance) access the property, and only when necessary. Every access is logged in your monthly report.",
       fr: "Les details d'acces sont collectes lors de l'integration et stockes en toute securite - jamais via WhatsApp. Seule l'equipe Casa Concierge PDC et le personnel autorise accedent a la propriete, uniquement lorsque necessaire. Chaque acces est enregistre dans votre rapport mensuel.",
       ru: "Данные доступа собираются при подключении и хранятся в безопасности - никогда через WhatsApp. Доступ к объекту имеют только команда Casa Concierge PDC и авторизованный персонал, и только при необходимости. Каждый визит фиксируется в ежемесячном отчёте.",
@@ -337,7 +337,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_damage",
     category: "trust",
     question: {
-      es: "¿Que pasa si un huesped dana mi propiedad?",
+      es: "¿Qué pasa si un huésped daña mi propiedad?",
       en: "What if a guest damages my property?",
       fr: "Que se passe-t-il si un locataire endommage ma propriete ?",
       ru: "Что если гость повредит мою недвижимость?",
@@ -345,7 +345,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was passiert, wenn ein Gast meine Immobilie beschadigt?",
     },
     answer: {
-      es: "Documentamos el estado de la propiedad con fotos antes y despues de cada estancia. Si hay danos, te notificamos en 24 horas y gestionamos la reclamacion ante Airbnb AirCover (cobertura de hasta $3M USD) o la plataforma correspondiente. Casa Concierge PDC actua como coordinador - no asumimos responsabilidad financiera directa por danos de huespedes, tal como se detalla en nuestros Terminos de Servicio.",
+      es: "Documentamos el estado de la propiedad con fotos antes y después de cada estancia. Si hay daños, te notificamos en 24 horas y gestionamos la reclamación ante Airbnb AirCover (cobertura de hasta $3M USD) o la plataforma correspondiente. Casa Concierge PDC actúa como coordinador — no asumimos responsabilidad financiera directa por daños de huéspedes, tal como se detalla en nuestros Términos de Servicio.",
       en: "We document the property's condition with photos before and after every stay. If there's damage, we notify you within 24 hours and manage the claim through Airbnb AirCover (up to $3M USD) or the relevant platform. Casa Concierge PDC acts as coordinator - we don't assume direct financial liability for guest-caused damage, as detailed in our Terms of Service.",
       fr: "Nous documentons l'etat de la propriete avec des photos avant et apres chaque sejour. En cas de dommages, nous vous informons dans les 24 heures et gerons la reclamation via Airbnb AirCover (jusqu'a 3 M USD) ou la plateforme concernee. Casa Concierge PDC agit en coordinateur - nous n'assumons pas de responsabilite financiere directe pour les dommages des locataires, comme indique dans nos Conditions de Service.",
       ru: "Документируем состояние объекта с фотографиями до и после каждого заезда. При ущербе уведомляем в течение 24 часов и ведём претензию через Airbnb AirCover (до $3 млн USD) или соответствующую платформу. Casa Concierge PDC выступает координатором - прямую финансовую ответственность за ущерб от гостей не несём, что описано в Условиях обслуживания.",
@@ -357,7 +357,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_my_data",
     category: "trust",
     question: {
-      es: "¿Que hacen con mis datos personales?",
+      es: "¿Qué hacen con mis datos personales?",
       en: "What do you do with my personal data?",
       fr: "Que faites-vous de mes donnees personnelles ?",
       ru: "Что вы делаете с моими личными данными?",
@@ -365,7 +365,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was machen Sie mit meinen personlichen Daten?",
     },
     answer: {
-      es: "Tus datos se usan exclusivamente para gestionar tu propiedad y tu cuenta. No los vendemos ni compartimos con fines publicitarios. Cumplimos con la LFPDPPP (Mexico) y el GDPR (Union Europea). Puedes consultar nuestra Politica de Privacidad completa en el pie de pagina.",
+      es: "Tus datos se usan exclusivamente para gestionar tu propiedad y tu cuenta. No los vendemos ni compartimos con fines publicitarios. Cumplimos con la LFPDPPP (México) y el GDPR (Unión Europea). Puedes consultar nuestra Política de Privacidad completa en el pie de página.",
       en: "Your data is used exclusively to manage your property and account. We never sell or share it for advertising purposes. We comply with Mexico's LFPDPPP and the European GDPR. You can read our full Privacy Policy in the footer.",
       fr: "Vos donnees sont utilisees exclusivement pour gerer votre propriete et votre compte. Nous ne les vendons ni ne les partageons a des fins publicitaires. Nous respectons la LFPDPPP mexicaine et le RGPD europeen. Consultez notre politique de confidentialite complete dans le pied de page.",
       ru: "Ваши данные используются исключительно для управления недвижимостью и аккаунтом. Мы никогда не продаём и не передаём их в рекламных целях. Соблюдаем мексиканский LFPDPPP и европейский GDPR. Полная Политика конфиденциальности - в подвале сайта.",
@@ -377,7 +377,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_response_time",
     category: "process",
     question: {
-      es: "¿Cuanto tardan en responder?",
+      es: "¿Cuánto tardan en responder?",
       en: "How quickly do you respond?",
       fr: "Combien de temps mettez-vous a repondre ?",
       ru: "Как быстро вы отвечаете?",
@@ -385,19 +385,19 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Wie schnell antworten Sie?",
     },
     answer: {
-      es: "Nuestro objetivo es responder en menos de 24 horas en dias habiles. Los clientes Premium tienen un objetivo de respuesta de 4 horas, 7 dias a la semana. Para emergencias operativas (huesped bloqueado, fuga de agua, acceso fallido), respondemos de inmediato sin importar el plan.",
-      en: "Our goal is to respond within 24 hours on business days. Premium clients have a 4-hour response target, 7 days a week. For operational emergencies (locked-out guest, water leak, access failure), we respond immediately regardless of plan.",
-      fr: "Notre objectif est de repondre dans les 24 heures les jours ouvrables. Les clients Premium ont un objectif de 4 heures, 7 jours sur 7. Pour les urgences operationnelles (locataire bloque, fuite d'eau, acces defaillant), nous repondons immediatement quel que soit le plan.",
-      ru: "Цель - ответить в течение 24 часов в рабочие дни. Клиенты «Премиум» - 4 часа, 7 дней в неделю. При операционных экстренных ситуациях (гость не может войти, протечка, проблема с доступом) реагируем немедленно вне зависимости от плана.",
-      pt: "Nosso objetivo e responder em ate 24 horas em dias uteis. Clientes Premium tem meta de 4 horas, 7 dias por semana. Para emergencias operacionais (hospede bloqueado, vazamento, falha de acesso), respondemos imediatamente independentemente do plano.",
-      de: "Unser Ziel ist eine Antwort innerhalb von 24 Stunden an Werktagen. Premium-Kunden haben ein 4-Stunden-Ziel, 7 Tage die Woche. Bei operativen Notfallen (eingeschlossener Gast, Wasserleck, Zugangsproblem) reagieren wir sofort, unabhangig vom Plan.",
+      es: "Nuestro objetivo es responder en menos de 24 horas en días hábiles. Para emergencias operativas (huésped bloqueado, fuga de agua, acceso fallido), respondemos de inmediato sin importar el plan.",
+      en: "Our goal is to respond within 24 hours on business days. For operational emergencies (locked-out guest, water leak, access failure), we respond immediately regardless of plan.",
+      fr: "Notre objectif est de répondre dans les 24 heures les jours ouvrables. Pour les urgences opérationnelles (locataire bloqué, fuite d'eau, accès défaillant), nous répondons immédiatement quel que soit le plan.",
+      ru: "Цель — ответить в течение 24 часов в рабочие дни. При операционных экстренных ситуациях (гость не может войти, протечка, проблема с доступом) реагируем немедленно вне зависимости от плана.",
+      pt: "Nosso objetivo é responder em até 24 horas em dias úteis. Para emergências operacionais (hóspede bloqueado, vazamento, falha de acesso), respondemos imediatamente independentemente do plano.",
+      de: "Unser Ziel ist eine Antwort innerhalb von 24 Stunden an Werktagen. Bei operativen Notfällen (eingeschlossener Gast, Wasserleck, Zugangsproblem) reagieren wir sofort, unabhängig vom Plan.",
     },
   },
   {
     key: "faq_reports",
     category: "process",
     question: {
-      es: "¿Que informacion recibo cada mes?",
+      es: "¿Qué información recibo cada mes?",
       en: "What information do I receive each month?",
       fr: "Quelles informations est-ce que je recois chaque mois ?",
       ru: "Какую информацию я получаю каждый месяц?",
@@ -405,7 +405,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Welche Informationen erhalte ich jeden Monat?",
     },
     answer: {
-      es: "Cada mes recibes un reporte PDF con: ingresos brutos generados, desglose de reservaciones (fechas, duracion, precio por noche), tasa de ocupacion, gastos de limpieza y mantenimiento, fotos actuales de la propiedad, nuestra comision y tu ingreso neto. Todo claro, sin letra pequena.",
+      es: "Cada mes recibes un reporte PDF con: ingresos brutos generados, desglose de reservaciones (fechas, duración, precio por noche), tasa de ocupación, gastos de limpieza y mantenimiento, fotos actuales de la propiedad, nuestra comisión y tu ingreso neto. Todo claro, sin letra pequeña.",
       en: "Every month you receive a PDF report with: gross income generated, booking breakdown (dates, duration, nightly rate), occupancy rate, cleaning and maintenance expenses, current property photos, our commission, and your net income. Clear, no fine print.",
       fr: "Chaque mois vous recevez un rapport PDF avec : revenus bruts, detail des reservations (dates, duree, prix par nuit), taux d'occupation, depenses de nettoyage et d'entretien, photos actuelles de la propriete, notre commission et votre revenu net. Clair, sans petits caracteres.",
       ru: "Каждый месяц - PDF-отчёт: валовой доход, детализация бронирований (даты, продолжительность, цена за ночь), заполняемость, расходы на уборку и обслуживание, актуальные фотографии объекта, наша комиссия и ваш чистый доход. Всё ясно, без мелкого шрифта.",
@@ -417,7 +417,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
     key: "faq_meetings",
     category: "process",
     question: {
-      es: "¿Podemos tener reuniones para revisar el desempeno?",
+      es: "¿Podemos tener reuniones para revisar el desempeño?",
       en: "Can we have meetings to review performance?",
       fr: "Pouvons-nous avoir des reunions pour examiner les performances ?",
       ru: "Можем ли мы встречаться для обсуждения результатов?",
@@ -425,19 +425,19 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Konnen wir Meetings zur Leistungsuberprufung haben?",
     },
     answer: {
-      es: "Si. Los clientes Premium tienen incluida una videollamada trimestral de revision. Los clientes de otros planes pueden solicitar una llamada en cualquier momento y respondemos en el plazo acordado. Tambien puedes escribirnos por correo o portal para revisar cualquier aspecto sin necesidad de agendar una reunion formal.",
-      en: "Yes. Premium clients have a quarterly review video call included. Clients on other plans can request a call at any time and we respond within the agreed timeframe. You can also reach us by email or portal to review any aspect without needing to schedule a formal meeting.",
-      fr: "Oui. Les clients Premium beneficient d'un appel video trimestriel inclus. Les clients des autres plans peuvent demander un appel a tout moment et nous repondons dans les delais convenus. Vous pouvez egalement nous contacter par e-mail ou portail pour examiner n'importe quel aspect sans reunion formelle.",
-      ru: "Да. Клиентам «Премиум» включён ежеквартальный видеозвонок. Клиенты других планов могут запросить звонок в любое время - отвечаем в согласованные сроки. Также можно написать по электронной почте или через портал, чтобы обсудить любой вопрос без формальной встречи.",
-      pt: "Sim. Clientes Premium tem videochamada trimestral de revisao incluida. Clientes de outros planos podem solicitar uma chamada a qualquer momento e respondemos no prazo acordado. Voce tambem pode nos contatar por e-mail ou portal para revisar qualquer aspecto sem agendar reuniao formal.",
-      de: "Ja. Premium-Kunden erhalten ein vierteljahrliches Review-Videogesprach inklusive. Kunden anderer Plane konnen jederzeit ein Gesprach anfragen - wir antworten innerhalb der vereinbarten Frist. Sie konnen uns auch per E-Mail oder Portal kontaktieren, ohne ein formelles Meeting planen zu mussen.",
+      es: "Sí. Puedes solicitar una llamada en cualquier momento y respondemos en el plazo acordado. También puedes escribirnos por correo o portal para revisar cualquier aspecto sin necesidad de agendar una reunión formal.",
+      en: "Yes. You can request a call at any time and we respond within the agreed timeframe. You can also reach us by email or portal to review any aspect without needing to schedule a formal meeting.",
+      fr: "Oui. Vous pouvez demander un appel à tout moment et nous répondons dans les délais convenus. Vous pouvez aussi nous contacter par e-mail ou via le portail pour examiner n'importe quel aspect sans réunion formelle.",
+      ru: "Да. Вы можете запросить звонок в любое время — отвечаем в согласованные сроки. Также можно написать по электронной почте или через портал, чтобы обсудить любой вопрос без формальной встречи.",
+      pt: "Sim. Você pode solicitar uma chamada a qualquer momento e respondemos no prazo acordado. Também pode nos contatar por e-mail ou portal para revisar qualquer aspecto sem agendar reunião formal.",
+      de: "Ja. Sie können jederzeit ein Gespräch anfragen — wir antworten innerhalb der vereinbarten Frist. Sie können uns auch per E-Mail oder Portal kontaktieren, ohne ein formelles Meeting planen zu müssen.",
     },
   },
   {
     key: "faq_whatsapp_official",
     category: "process",
     question: {
-      es: "¿WhatsApp es el canal oficial de comunicacion?",
+      es: "¿WhatsApp es el canal oficial de comunicación?",
       en: "Is WhatsApp the official communication channel?",
       fr: "WhatsApp est-il le canal de communication officiel ?",
       ru: "Является ли WhatsApp официальным каналом связи?",
@@ -445,7 +445,7 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Ist WhatsApp der offizielle Kommunikationskanal?",
     },
     answer: {
-      es: "WhatsApp es nuestro canal operativo del dia a dia - ideal para coordinar check-ins, avisos rapidos y consultas generales. Para acuerdos formales, cambios de servicio o reclamaciones, el canal oficial es el correo electronico. Todo queda por escrito y con fecha, lo que protege a ambas partes.",
+      es: "WhatsApp es nuestro canal operativo del día a día — ideal para coordinar check-ins, avisos rápidos y consultas generales. Para acuerdos formales, cambios de servicio o reclamaciones, el canal oficial es el correo electrónico. Todo queda por escrito y con fecha, lo que protege a ambas partes.",
       en: "WhatsApp is our day-to-day operational channel - ideal for check-in coordination, quick updates, and general questions. For formal agreements, service changes, or complaints, the official channel is email. Everything is in writing and dated, which protects both sides.",
       fr: "WhatsApp est notre canal operationnel quotidien - ideal pour les check-ins, les mises a jour rapides et les questions generales. Pour les accords formels, les changements de service ou les reclamations, le canal officiel est l'e-mail. Tout est par ecrit et date, ce qui protege les deux parties.",
       ru: "WhatsApp - повседневный операционный канал: удобен для координации заездов, быстрых обновлений и общих вопросов. Для официальных договорённостей, изменений услуг или претензий - электронная почта. Всё фиксируется письменно с датой, что защищает обе стороны.",
@@ -475,7 +475,6 @@ function polishText(locale: Locale, text: string): string {
     ["mas", "más"],
     ["tambien", "también"],
     ["busqueda", "búsqueda"],
-    ["si", "sí"],
     ["informacion", "información"],
     ["dias", "días"],
     ["habiles", "hábiles"],
@@ -487,6 +486,13 @@ function polishText(locale: Locale, text: string): string {
     ["duracion", "duración"],
     ["ocupacion", "ocupación"],
     ["rapidos", "rápidos"],
+    ["danos", "daños"],
+    ["huespedes", "huéspedes"],
+    ["huesped", "huésped"],
+    ["Espana", "España"],
+    ["espanol", "español"],
+    ["desempeno", "desempeño"],
+    ["ensenanza", "enseñanza"],
   ];
 
   const fr: Array<[string, string]> = [
