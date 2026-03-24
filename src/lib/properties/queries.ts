@@ -20,10 +20,13 @@ async function fetchActiveProperties(): Promise<PropertyRow[]> {
   return (data ?? []) as PropertyRow[];
 }
 
+/** Invalidate with `updateTag(PROPERTY_CACHE_TAG)` from server actions (or `revalidateTag(tag, profile)` elsewhere). */
+export const PROPERTY_CACHE_TAG = "properties";
+
 export const getCachedActiveProperties = unstable_cache(
   fetchActiveProperties,
   ["properties-active-list"],
-  { revalidate: 60 }
+  { revalidate: 60, tags: [PROPERTY_CACHE_TAG] }
 );
 
 async function countActive(): Promise<number> {
@@ -46,7 +49,7 @@ async function countActive(): Promise<number> {
 export const getCachedActivePropertyCount = unstable_cache(
   countActive,
   ["properties-active-count"],
-  { revalidate: 60 }
+  { revalidate: 60, tags: [PROPERTY_CACHE_TAG] }
 );
 
 export async function getPropertyBySlug(slug: string): Promise<PropertyRow | null> {

@@ -1,0 +1,34 @@
+{
+  "slug": "example-playa-condo",
+  "status": "draft",
+  "plan": "vitrina",
+  "nickname": {
+    "es": "Ejemplo — Condo cerca de la Quinta",
+    "en": "Example — Condo near Fifth Avenue"
+  },
+  "description": {
+    "es": "Condo de ejemplo en Playa del Carmen.\n\nReemplaza con la descripción real.",
+    "en": "Example condo in Playa del Carmen.\n\nReplace with real copy."
+  },
+  "location_area": "playa-centro",
+  "location_display": {
+    "es": "Playa del Carmen — Centro",
+    "en": "Playa del Carmen — Downtown"
+  },
+  "property_type": "condo",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "max_guests": 4,
+  "amenities": ["wifi", "pool", "kitchen", "ac"],
+  "price_nightly_usd": 150,
+  "price_monthly_usd": 2800,
+  "price_sale_usd": null,
+  "rental_type": ["short_term", "long_term"],
+  "photos": [
+    "https://YOUR_PROJECT.supabase.co/storage/v1/object/public/properties/example/cover.jpg"
+  ],
+  "ical_url": null,
+  "google_maps_embed": null,
+  "hubspot_contact_id": null,
+  "hubspot_deal_id": null
+}
