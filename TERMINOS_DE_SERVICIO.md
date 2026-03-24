@@ -4,7 +4,7 @@
 **Casa Concierge PDC**
 Representante legal: Alexy Omar Cruz Aguilera
 Playa del Carmen, Quintana Roo, México
-Correo de contacto: [correo@casaconciergepdc.com]
+Correo de contacto: [casaconciergepdc@outlook.com]
 
 ---
 
@@ -91,7 +91,7 @@ A solicitud del Cliente y mediante **acuerdo previo y escrito**, Casa Concierge 
 1. Deben ser acordados por escrito vía correo electrónico antes del primer pago. El acuerdo debe incluir el método elegido, el monto, la periodicidad y los datos bancarios o de entrega aplicables.
 2. El Cliente es responsable de cualquier comisión bancaria asociada a la transferencia. Casa Concierge PDC debe recibir el monto íntegro acordado, neto de comisiones.
 3. El tipo de cambio USD/MXN aplicable será el publicado por el **Banco de México (Banxico)** el día hábil anterior a la fecha de vencimiento del pago. Casa Concierge PDC notificará el monto en MXN al Cliente con al menos **3 días hábiles** de anticipación.
-4. El Cliente debe enviar comprobante de pago al correo [correo@casaconciergepdc.com] el mismo día de la transacción.
+4. El Cliente debe enviar comprobante de pago al correo [casaconciergepdc@outlook.com] el mismo día de la transacción.
 5. Casa Concierge PDC emitirá un recibo oficial numerado dentro de las **24 horas** posteriores a la confirmación del pago.
 6. Los pagos en efectivo deben realizarse en persona en el lugar acordado. Casa Concierge PDC entregará recibo físico y digital en el acto.
 7. El incumplimiento del pago en las fechas acordadas activa el siguiente proceso, independientemente del método:
@@ -106,7 +106,7 @@ A solicitud del Cliente y mediante **acuerdo previo y escrito**, Casa Concierge 
 
 ## 7. Cancelación del Servicio
 
-El Cliente puede cancelar su suscripción en cualquier momento desde su portal de propietario o mediante solicitud a [correo@casaconciergepdc.com].
+El Cliente puede cancelar su suscripción en cualquier momento desde su portal de propietario o mediante solicitud a [casaconciergepdc@outlook.com].
 
 **Efectos de la cancelación:**
 - El servicio continúa activo hasta el último día del período de facturación en curso.
@@ -183,7 +183,7 @@ La responsabilidad máxima de Casa Concierge PDC ante el Cliente en ningún caso
 
 Las comunicaciones a través de **WhatsApp son de carácter operativo** y no constituyen acuerdos, compromisos ni notificaciones formales.
 
-Cualquier acuerdo, modificación de servicio, reclamación, notificación de cancelación o solicitud formal debe realizarse por **correo electrónico** a [correo@casaconciergepdc.com] para tener validez contractual.
+Cualquier acuerdo, modificación de servicio, reclamación, notificación de cancelación o solicitud formal debe realizarse por **correo electrónico** a [casaconciergepdc@outlook.com] para tener validez contractual.
 
 Para asuntos de mayor importancia, el portal de propietarios cuenta con un canal de mensajería oficial, con registro de fecha y hora, que constituye el medio de comunicación formal preferido entre las partes.
 
@@ -240,7 +240,7 @@ Para dudas, aclaraciones o notificaciones relacionadas con estos Términos:
 **Casa Concierge PDC**
 Representante legal: Alexy Omar Cruz Aguilera
 📍 Playa del Carmen, Quintana Roo, México
-📧 [correo@casaconciergepdc.com]
+📧 [casaconciergepdc@outlook.com]
 💬 WhatsApp: [+52 XXX XXX XXXX] *(solo consultas operativas)*
 
 ---

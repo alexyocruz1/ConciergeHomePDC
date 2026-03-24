@@ -4,7 +4,7 @@
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 Playa del Carmen, Quintana Roo, México
-Contact email: [correo@casaconciergepdc.com]
+Contact email: [casaconciergepdc@outlook.com]
 
 ---
 
@@ -126,7 +126,7 @@ At the Client's request and through a **prior written agreement**, Casa Concierg
 1. They must be agreed upon in writing via email before the first payment. The agreement must include the chosen method, the amount, the frequency, and the applicable banking or delivery details.
 2. The Client is responsible for any bank fees associated with the transfer. Casa Concierge PDC must receive the full agreed-upon amount, net of fees.
 3. The applicable USD/MXN exchange rate shall be the rate published by the **Banco de México (Banxico)** on the business day prior to the payment due date. Casa Concierge PDC will notify the Client of the amount in MXN at least **3 business days** in advance.
-4. The Client must send proof of payment to [correo@casaconciergepdc.com] on the same day as the transaction.
+4. The Client must send proof of payment to [casaconciergepdc@outlook.com] on the same day as the transaction.
 5. Casa Concierge PDC will issue a numbered official receipt within **24 hours** of payment confirmation.
 6. Cash payments must be made in person at the agreed-upon location. Casa Concierge PDC will provide both a physical and digital receipt at the time of payment.
 7. Failure to make payment on the agreed-upon dates triggers the following process, regardless of the payment method:
@@ -141,7 +141,7 @@ At the Client's request and through a **prior written agreement**, Casa Concierg
 
 ## 7. Cancellation of Service
 
-The Client may cancel their subscription at any time from their owner portal or by submitting a request to [correo@casaconciergepdc.com].
+The Client may cancel their subscription at any time from their owner portal or by submitting a request to [casaconciergepdc@outlook.com].
 
 **Effects of cancellation:**
 - The service remains active until the last day of the current billing period.
@@ -221,7 +221,7 @@ Casa Concierge PDC's maximum liability to the Client shall in no case exceed the
 
 Communications through **WhatsApp are operational in nature** and do not constitute agreements, commitments, or formal notifications.
 
-Any agreement, service modification, complaint, cancellation notice, or formal request must be made via **email** to [correo@casaconciergepdc.com] to have contractual validity.
+Any agreement, service modification, complaint, cancellation notice, or formal request must be made via **email** to [casaconciergepdc@outlook.com] to have contractual validity.
 
 For matters of greater importance, the owner portal includes an official messaging channel with date and time stamps, which constitutes the preferred formal communication medium between the parties.
 
@@ -278,7 +278,7 @@ For questions, clarifications, or notifications related to these Terms:
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 📍 Playa del Carmen, Quintana Roo, México
-📧 [correo@casaconciergepdc.com]
+📧 [casaconciergepdc@outlook.com]
 💬 WhatsApp: [+52 XXX XXX XXXX] *(operational inquiries only)*
 
 ---

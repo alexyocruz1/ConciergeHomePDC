@@ -4,7 +4,7 @@
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 Playa del Carmen, Quintana Roo, México
-Contact email: [correo@casaconciergepdc.com]
+Contact email: [casaconciergepdc@outlook.com]
 
 ---
 
@@ -150,7 +150,7 @@ If you have questions about the use of cookies on our site, please contact us:
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 📍 Playa del Carmen, Quintana Roo, México
-📧 [correo@casaconciergepdc.com]
+📧 [casaconciergepdc@outlook.com]
 💬 WhatsApp: [+52 XXX XXX XXXX]
 
 ---

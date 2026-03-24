@@ -4,7 +4,7 @@
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 Playa del Carmen, Quintana Roo, México
-Contact email: [correo@casaconciergepdc.com]
+Contact email: [casaconciergepdc@outlook.com]
 
 ---
 
@@ -65,7 +65,7 @@ Your personal data is used for the following purposes:
 - Satisfaction surveys
 - Internal statistical analysis to improve our services
 
-If you do not wish your data to be used for secondary purposes, you may send us an email at [correo@casaconciergepdc.com] at any time.
+If you do not wish your data to be used for secondary purposes, you may send us an email at [casaconciergepdc@outlook.com] at any time.
 
 ---
 
@@ -95,7 +95,7 @@ Said photographs may be published on:
 
 **Upon cancellation of your subscription**, your photographs will be removed from the Casa Concierge PDC public portal within a maximum period of **48 hours**. You will receive a confirmation email when this occurs.
 
-You may request the removal of your photographs at any time, even without canceling the service, by sending a request to [correo@casaconciergepdc.com].
+You may request the removal of your photographs at any time, even without canceling the service, by sending a request to [casaconciergepdc@outlook.com].
 
 ---
 
@@ -112,7 +112,7 @@ You have the right to:
 
 To exercise any of these rights, send a request to:
 
-📧 **[correo@casaconciergepdc.com]**
+📧 **[casaconciergepdc@outlook.com]**
 
 Your request must include: full name, registered email address, a clear description of the right you wish to exercise, and a copy of official identification. We will respond within a maximum period of **20 business days**.
 
@@ -173,7 +173,7 @@ If you have questions about this Privacy Policy, you may contact us at:
 **Casa Concierge PDC**
 Legal representative: Alexy Omar Cruz Aguilera
 📍 Playa del Carmen, Quintana Roo, México
-📧 [correo@casaconciergepdc.com]
+📧 [casaconciergepdc@outlook.com]
 💬 WhatsApp: [+52 XXX XXX XXXX]
 
 ---

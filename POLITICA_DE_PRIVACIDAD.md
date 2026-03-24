@@ -4,7 +4,7 @@
 **Casa Concierge PDC**
 Representante legal: Alexy Omar Cruz Aguilera
 Playa del Carmen, Quintana Roo, México
-Correo de contacto: [correo@casaconciergepdc.com]
+Correo de contacto: [casaconciergepdc@outlook.com]
 
 ---
 
@@ -65,7 +65,7 @@ Sus datos personales son utilizados para las siguientes finalidades:
 - Encuestas de satisfacción
 - Análisis estadístico interno para mejorar nuestros servicios
 
-Si no desea que sus datos sean utilizados para finalidades secundarias, puede enviarnos un correo a [correo@casaconciergepdc.com] en cualquier momento.
+Si no desea que sus datos sean utilizados para finalidades secundarias, puede enviarnos un correo a [casaconciergepdc@outlook.com] en cualquier momento.
 
 ---
 
@@ -95,7 +95,7 @@ Dichas fotografías podrán ser publicadas en:
 
 **Al cancelar su suscripción**, sus fotografías serán eliminadas del portal público de Casa Concierge PDC en un plazo máximo de **48 horas**. Recibirá un correo de confirmación cuando esto ocurra.
 
-Usted puede solicitar la eliminación de sus fotografías en cualquier momento, incluso sin cancelar el servicio, enviando una solicitud a [correo@casaconciergepdc.com].
+Usted puede solicitar la eliminación de sus fotografías en cualquier momento, incluso sin cancelar el servicio, enviando una solicitud a [casaconciergepdc@outlook.com].
 
 ---
 
@@ -112,7 +112,7 @@ Usted tiene derecho a:
 
 Para ejercer cualquiera de estos derechos, envíe una solicitud a:
 
-📧 **[correo@casaconciergepdc.com]**
+📧 **[casaconciergepdc@outlook.com]**
 
 Su solicitud debe incluir: nombre completo, correo electrónico registrado, descripción clara del derecho que desea ejercer, y copia de identificación oficial. Responderemos en un plazo máximo de **20 días hábiles**.
 
@@ -173,7 +173,7 @@ Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos en:
 **Casa Concierge PDC**
 Representante legal: Alexy Omar Cruz Aguilera
 📍 Playa del Carmen, Quintana Roo, México
-📧 [correo@casaconciergepdc.com]
+📧 [casaconciergepdc@outlook.com]
 💬 WhatsApp: [+52 XXX XXX XXXX]
 
 ---

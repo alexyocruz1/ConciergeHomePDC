@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { PhoneInput } from "./PhoneInput";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export function Contact() {
   const t = useTranslations("contact");
@@ -165,10 +166,10 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-medium text-slate-900">Email</p>
                   <a
-                    href="mailto:info@casaconciergepdc.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="text-sm text-primary-700 hover:underline"
                   >
-                    info@casaconciergepdc.com
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </div>
