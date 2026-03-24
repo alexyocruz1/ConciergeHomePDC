@@ -16,6 +16,8 @@ export function AdminLoginForm({
   const forbidden = sessionForbidden || queryForbidden;
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
+  const missingPublicConfig =
+    !process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -30,6 +32,13 @@ export function AdminLoginForm({
       return;
     }
     const supabase = createSupabaseBrowserClient();
+    if (!supabase) {
+      setError(
+        "Supabase URL/anon key are missing in this deployment. In Vercel (or your host), add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY, then redeploy so the browser bundle includes them."
+      );
+      setPending(false);
+      return;
+    }
     const { error: err } = await supabase.auth.signInWithPassword({ email, password });
     setPending(false);
     if (err) {
@@ -63,6 +72,14 @@ export function AdminLoginForm({
       onSubmit={onSubmit}
       className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
     >
+      {missingPublicConfig && (
+        <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-950">
+          This deployment is missing <code className="text-xs">NEXT_PUBLIC_SUPABASE_URL</code> or{" "}
+          <code className="text-xs">NEXT_PUBLIC_SUPABASE_ANON_KEY</code> in the hosting environment.
+          Add both (same values as in Supabase → Settings → API), then redeploy. They must be
+          available at build time for Next.js.
+        </p>
+      )}
       {error && (
         <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">{error}</p>
       )}
