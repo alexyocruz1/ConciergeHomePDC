@@ -6,6 +6,7 @@ import type { PropertyRow } from "@/lib/properties/types";
 import { getLocalizedText } from "@/lib/properties/locale";
 import { formatUsd, parseNumeric } from "@/lib/properties/format";
 import { getPropertyPublicPath } from "@/lib/properties/urls";
+import { WHATSAPP_WA_ME_NUMBER } from "@/lib/site";
 
 type Props = {
   property: PropertyRow;
@@ -83,7 +84,10 @@ export function ShareButton({ property, variant = "icon", className = "" }: Prop
     const path = getPropertyPublicPath(locale, property.slug);
     const url = `${window.location.origin}${path}`;
     const text = buildShareText(url);
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(
+      `https://wa.me/${WHATSAPP_WA_ME_NUMBER}?text=${encodeURIComponent(text)}`,
+      "_blank"
+    );
     setOpen(false);
   }, [buildShareText, locale, property.slug]);
 

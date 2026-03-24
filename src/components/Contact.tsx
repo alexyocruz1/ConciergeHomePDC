@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { PhoneInput } from "./PhoneInput";
-import { CONTACT_EMAIL } from "@/lib/site";
+import { CONTACT_EMAIL, WHATSAPP_PHONE_DISPLAY, WHATSAPP_WA_ME_NUMBER } from "@/lib/site";
 
 export function Contact() {
   const t = useTranslations("contact");
@@ -147,13 +147,14 @@ export function Contact() {
                 <div>
                   <p className="text-sm font-medium text-slate-900">WhatsApp</p>
                   <a
-                    href="https://wa.me/521234567890"
+                    href={`https://wa.me/${WHATSAPP_WA_ME_NUMBER}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-primary-700 hover:underline"
                   >
                     {t("whatsapp_cta")}
                   </a>
+                  <p className="mt-0.5 text-xs text-slate-500">{WHATSAPP_PHONE_DISPLAY}</p>
                 </div>
               </div>
 

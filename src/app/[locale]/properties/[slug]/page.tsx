@@ -9,6 +9,7 @@ import { formatUsd, parseNumeric } from "@/lib/properties/format";
 import { PropertyGallery } from "@/components/properties/PropertyGallery";
 import { PropertyCard } from "@/components/properties/PropertyCard";
 import { ShareButton } from "@/components/properties/ShareButton";
+import { WHATSAPP_WA_ME_NUMBER } from "@/lib/site";
 
 export const revalidate = 60;
 
@@ -158,7 +159,7 @@ export default async function PropertyDetailPage({ params }: Props) {
                 {t("consult_cta")}
               </Link>
               <a
-                href="https://wa.me/521234567890"
+                href={`https://wa.me/${WHATSAPP_WA_ME_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full rounded-full border border-slate-200 bg-white py-3 text-center text-sm font-semibold text-slate-800 hover:bg-slate-50"
