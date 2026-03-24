@@ -1,14 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { signOutAdmin } from "@/app/admin/auth-actions";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
-export function AdminLoginForm({ sessionForbidden = false }: { sessionForbidden?: boolean }) {
+export function AdminLoginForm({
+  sessionForbidden = false,
+  queryForbidden = false,
+}: {
+  sessionForbidden?: boolean;
+  queryForbidden?: boolean;
+}) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const forbidden = sessionForbidden || searchParams.get("error") === "forbidden";
+  const forbidden = sessionForbidden || queryForbidden;
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
 
