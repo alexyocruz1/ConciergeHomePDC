@@ -9,8 +9,10 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+export const dynamic = "force-dynamic";
+
 type Props = {
-  searchParams: Promise<{ error?: string }>;
+  searchParams?: Promise<{ error?: string }>;
 };
 
 export default async function AdminLoginPage({ searchParams }: Props) {
@@ -18,8 +20,9 @@ export default async function AdminLoginPage({ searchParams }: Props) {
   if (!("error" in auth)) {
     redirect("/admin/properties");
   }
-  const sessionForbidden = auth.error.includes("not allowed");
-  const sp = await searchParams;
+  const sessionForbidden =
+    typeof auth.error === "string" && auth.error.includes("not allowed");
+  const sp = searchParams != null ? await searchParams : {};
   const queryForbidden = sp.error === "forbidden";
 
   return (

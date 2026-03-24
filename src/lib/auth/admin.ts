@@ -21,24 +21,28 @@ function isEmailAllowed(email: string | undefined, allowed: string[]): boolean {
 export async function requireAdminUser(): Promise<
   { user: User } | { error: string }
 > {
-  const supabase = await createSupabaseServerClient();
-  if (!supabase) {
-    return { error: "Supabase is not configured (anon key / URL)." };
-  }
+  try {
+    const supabase = await createSupabaseServerClient();
+    if (!supabase) {
+      return { error: "Supabase is not configured (anon key / URL)." };
+    }
 
-  const {
-    data: { user },
-    error,
-  } = await supabase.auth.getUser();
+    const {
+      data: { user },
+      error,
+    } = await supabase.auth.getUser();
 
-  if (error || !user) {
+    if (error || !user) {
+      return { error: "Sign in required." };
+    }
+
+    const allowed = parseAllowedEmails();
+    if (!isEmailAllowed(user.email ?? undefined, allowed)) {
+      return { error: "This account is not allowed to manage properties." };
+    }
+
+    return { user };
+  } catch {
     return { error: "Sign in required." };
   }
-
-  const allowed = parseAllowedEmails();
-  if (!isEmailAllowed(user.email ?? undefined, allowed)) {
-    return { error: "This account is not allowed to manage properties." };
-  }
-
-  return { user };
 }
