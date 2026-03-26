@@ -2,7 +2,7 @@
 **Version 1.1 — [Month] [Year]**
 
 **Casa Concierge PDC**
-Legal representative: Alexy Omar Cruz Aguilera
+Legal representative: Casa Concierge Co.
 Playa del Carmen, Quintana Roo, México
 Contact email: [casaconciergepdc@outlook.com]
 
@@ -10,7 +10,7 @@ Contact email: [casaconciergepdc@outlook.com]
 
 ## 1. Identity of the Data Controller
 
-In compliance with the **Federal Law on Protection of Personal Data Held by Private Parties (LFPDPPP)** and its Regulations, as well as the **General Data Protection Regulation of the European Union (GDPR)** as applicable to users residing in the European Union, **Casa Concierge PDC**, represented by Alexy Omar Cruz Aguilera, with domicile in Playa del Carmen, Quintana Roo, México, is the data controller responsible for the processing of the personal data you provide to us.
+In compliance with the **Federal Law on Protection of Personal Data Held by Private Parties (LFPDPPP)** and its Regulations, as well as the **General Data Protection Regulation of the European Union (GDPR)** as applicable to users residing in the European Union, **Casa Concierge PDC**, with domicile in Playa del Carmen, Quintana Roo, México, is the data controller responsible for the processing of the personal data you provide to us.
 
 ---
 
@@ -171,11 +171,7 @@ We reserve the right to update this Privacy Policy at any time. When we make sig
 If you have questions about this Privacy Policy, you may contact us at:
 
 **Casa Concierge PDC**
-Legal representative: Alexy Omar Cruz Aguilera
+Legal representative: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: [+52 XXX XXX XXXX]
-
----
-
-*This document was drafted in accordance with the Federal Law on Protection of Personal Data Held by Private Parties (LFPDPPP), published in the Official Gazette of the Federation on July 5, 2010, its Regulations, and considering the principles of the General Data Protection Regulation (GDPR) of the European Union. Legal review by an attorney is recommended before final publication.*
+💬 WhatsApp: +52 984 450 5332

@@ -1,8 +1,8 @@
 # Términos de Servicio
-**Versión 1.3 — [Mes] de [Año]**
+**Versión 1.3 — Abril de 2026**
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 Playa del Carmen, Quintana Roo, México
 Correo de contacto: [casaconciergepdc@outlook.com]
 
@@ -10,7 +10,7 @@ Correo de contacto: [casaconciergepdc@outlook.com]
 
 ## 1. Aceptación de los Términos
 
-Al registrarse, suscribirse o utilizar cualquier servicio ofrecido por **Casa Concierge PDC**, representada por Alexy Omar Cruz Aguilera (en adelante "la Empresa", "nosotros"), usted (en adelante "el Cliente" o "el Propietario") acepta quedar vinculado por los presentes Términos de Servicio en su versión vigente al momento de la aceptación.
+Al registrarse, suscribirse o utilizar cualquier servicio ofrecido por **Casa Concierge PDC** (en adelante "la Empresa", "nosotros"), usted (en adelante "el Cliente" o "el Propietario") acepta quedar vinculado por los presentes Términos de Servicio en su versión vigente al momento de la aceptación.
 
 La versión aceptada, junto con la fecha, hora y dirección IP del dispositivo utilizado, quedarán registradas en nuestro sistema como evidencia de la relación contractual.
 
@@ -276,11 +276,7 @@ Casa Concierge PDC se reserva el derecho de modificar estos Términos en cualqui
 Para dudas, aclaraciones o notificaciones relacionadas con estos Términos:
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: [+52 XXX XXX XXXX] *(solo consultas operativas)*
-
----
-
-*Se recomienda revisión por un abogado mexicano antes de la publicación definitiva de este documento.*
+💬 WhatsApp: +52 984 450 5332 *(solo consultas operativas)*

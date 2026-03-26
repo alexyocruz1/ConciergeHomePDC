@@ -2,7 +2,7 @@
 **Version 1.3 — [Month] [Year]**
 
 **Casa Concierge PDC**
-Legal representative: Alexy Omar Cruz Aguilera
+Legal representative: Casa Concierge Co.
 Playa del Carmen, Quintana Roo, México
 Contact email: [casaconciergepdc@outlook.com]
 
@@ -10,7 +10,7 @@ Contact email: [casaconciergepdc@outlook.com]
 
 ## 1. Acceptance of Terms
 
-By registering, subscribing, or using any service offered by **Casa Concierge PDC**, represented by Alexy Omar Cruz Aguilera (hereinafter "the Company", "we", "us"), you (hereinafter "the Client" or "the Owner") agree to be bound by these Terms of Service in their version in effect at the time of acceptance.
+By registering, subscribing, or using any service offered by **Casa Concierge PDC** (hereinafter "the Company", "we", "us"), you (hereinafter "the Client" or "the Owner") agree to be bound by these Terms of Service in their version in effect at the time of acceptance.
 
 The accepted version, along with the date, time, and IP address of the device used, will be recorded in our system as evidence of the contractual relationship.
 
@@ -276,11 +276,7 @@ Casa Concierge PDC reserves the right to modify these Terms at any time. Changes
 For questions, clarifications, or notifications related to these Terms:
 
 **Casa Concierge PDC**
-Legal representative: Alexy Omar Cruz Aguilera
+Legal representative: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: [+52 XXX XXX XXXX] *(operational inquiries only)*
-
----
-
-*Legal review by a Mexican attorney is recommended before final publication of this document.*
+💬 WhatsApp: +52 984 450 5332 *(operational inquiries only)*

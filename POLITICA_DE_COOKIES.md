@@ -1,8 +1,8 @@
 # Política de Cookies
-**Versión 1.1 — [Mes] de [Año]**
+**Versión 1.1 — Abril de 2026**
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 Playa del Carmen, Quintana Roo, México
 Correo de contacto: [casaconciergepdc@outlook.com]
 
@@ -148,11 +148,7 @@ Podemos actualizar esta Política de Cookies cuando incorporemos nuevas herramie
 Si tiene preguntas sobre el uso de cookies en nuestro sitio, contáctenos:
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: [+52 XXX XXX XXXX]
-
----
-
-*Se recomienda revisión por un abogado mexicano antes de la publicación definitiva de este documento.*
+💬 WhatsApp: +52 984 450 5332 *(solo consultas operativas)*

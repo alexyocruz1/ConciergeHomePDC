@@ -1,8 +1,8 @@
 # Política de Privacidad
-**Versión 1.1 — [Mes] de [Año]**
+**Versión 1.1 — Abril de 2026**
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 Playa del Carmen, Quintana Roo, México
 Correo de contacto: [casaconciergepdc@outlook.com]
 
@@ -10,7 +10,7 @@ Correo de contacto: [casaconciergepdc@outlook.com]
 
 ## 1. Identidad del Responsable
 
-En cumplimiento con la **Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)** y su Reglamento, así como con el **Reglamento General de Protección de Datos de la Unión Europea (GDPR)** en lo aplicable a usuarios residentes en la Unión Europea, **Casa Concierge PDC**, representada por Alexy Omar Cruz Aguilera, con domicilio en Playa del Carmen, Quintana Roo, México, es responsable del tratamiento de los datos personales que usted nos proporcione.
+En cumplimiento con la **Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)** y su Reglamento, así como con el **Reglamento General de Protección de Datos de la Unión Europea (GDPR)** en lo aplicable a usuarios residentes en la Unión Europea, **Casa Concierge PDC**, con domicilio en Playa del Carmen, Quintana Roo, México, es responsable del tratamiento de los datos personales que usted nos proporcione.
 
 ---
 
@@ -171,11 +171,7 @@ Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquie
 Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos en:
 
 **Casa Concierge PDC**
-Representante legal: Alexy Omar Cruz Aguilera
+Representante legal: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: [+52 XXX XXX XXXX]
-
----
-
-*Este documento fue redactado conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), publicada en el Diario Oficial de la Federación el 5 de julio de 2010, su Reglamento, y considerando los principios del Reglamento General de Protección de Datos (GDPR) de la Unión Europea. Se recomienda revisión por un abogado antes de su publicación definitiva.*
+💬 WhatsApp: +52 984 450 5332
