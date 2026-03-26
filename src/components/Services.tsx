@@ -46,7 +46,7 @@ const vitrinaByLocale: Record<
     positioning: "Best for testing the market",
     protection:
       "Casa Concierge acts solely as a marketing and referral service under this plan.",
-    subtitle: "Commission on bookings or placements",
+    subtitle: "Commission only when bookings or placements are generated",
     minimum: "No monthly fee",
     features: [
       `10% on short-term bookings (min. $${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN per booking)`,
@@ -373,6 +373,9 @@ export function Services() {
         </p>
         <p className="mx-auto mt-2 max-w-2xl text-center text-xs leading-relaxed text-slate-400">
           {t("mxn_note")}
+        </p>
+        <p className="mx-auto mt-4 max-w-2xl text-center text-xs leading-relaxed text-slate-400">
+          {t("global_clause")}
         </p>
       </div>
     </section>

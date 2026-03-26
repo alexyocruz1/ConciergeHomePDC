@@ -41,7 +41,7 @@
     "subtitle": "Choisissez votre plan et contactez-nous pour commencer.",
     "popular": "Le Plus Populaire",
     "of_income": "du revenu locatif brut",
-    "subscribe": "Nous contacter",
+    "subscribe": "Commencer",
     "tier1": {
       "name": "Essentiel",
       "price": "18%",
@@ -55,7 +55,11 @@
         "Consultation d'annonce (Airbnb, Booking, etc.)",
         "Limite : Maximum 1 visite par mois",
         "Limite : Maximum 2 coordinations de maintenance par mois",
-        "Support uniquement pendant les horaires (9:00 AM – 7:00 PM)"
+        "Support uniquement pendant les horaires (9:00 AM – 7:00 PM)",
+        "Services supplémentaires (optionnels)",
+        "Visite supplémentaire : $25–$40 USD",
+        "Visite d'urgence : $50+ USD",
+        "Coordination de maintenance supplémentaire : $15–$25 USD"
       ]
     },
     "tier2": {
@@ -67,7 +71,7 @@
         "✔ Inclut tout ce qui est dans Essentiel, plus :",
         "Gestion numérique : gestion des annonces (Airbnb, Booking, VRBO, etc.)",
         "Gestion numérique : communication avec les clients (pré-arrivée, séjour, post-checkout)",
-        "La communication avec les clients est gérée via un système de réponse rapide, généralement en quelques minutes pendant les heures actives.",
+        "La communication avec les clients est gérée via un système de réponse rapide, généralement en quelques minutes pendant les heures actives (couverture étendue pour les situations urgentes).",
         "Gestion numérique : optimisation des prix dynamiques selon demande et saison",
         "Gestion numérique : performances et reporting financier mensuels",
         "Coordination opérationnelle : check-in & check-out via partenaires locaux",
@@ -97,6 +101,7 @@
     },
     "disclaimer": "* Les résultats peuvent varier selon la saison, l'emplacement, les caractéristiques du bien et les conditions du marché. Les chiffres présentés sont des estimations basées sur des propriétés similaires et ne constituent pas une garantie de revenus.",
     "mxn_note": "*Paiements en pesos mexicains acceptés. L'équivalent MXN est calculé au taux Banxico en vigueur à la date de paiement.",
+    "global_clause": "Casa Concierge agit comme coordinateur et gestionnaire de service. L'exécution des services tiers (ménage, maintenance, check-in) relève de la responsabilité des prestataires concernés.",
     "faq_alt_payment_q": "Puis-je payer par virement ou en espèces ?",
     "faq_alt_payment_a": "Notre processus de paiement est simple : choisissez votre plan, contactez-nous, et nous convenons du mode de paiement — virement SPEI ou espèces. Paiement par carte bientôt disponible.",
     "addons_title": "",

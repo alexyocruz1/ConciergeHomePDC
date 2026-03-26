@@ -41,7 +41,7 @@
     "subtitle": "Choose your plan and contact us to get started.",
     "popular": "Most Popular",
     "of_income": "of gross rental income",
-    "subscribe": "Contact Us",
+    "subscribe": "Get Started",
     "tier1": {
       "name": "Essential",
       "price": "18%",
@@ -55,7 +55,11 @@
         "Listing consultation (Airbnb/Booking)",
         "Limit: Maximum 1 property visit per month",
         "Limit: Maximum 2 maintenance coordinations per month",
-        "Support only during business hours (9:00 AM–7:00 PM)"
+        "Support only during business hours (9:00 AM–7:00 PM)",
+        "Additional Services (Optional)",
+        "Extra property visit: $25–$40 USD",
+        "Emergency visit: $50+ USD",
+        "Additional maintenance coordination: $15–$25 USD"
       ]
     },
     "tier2": {
@@ -67,7 +71,7 @@
         "✔ Includes everything in Essential, plus:",
         "Digital management: listing management (Airbnb, Booking, VRBO, etc.)",
         "Digital management: guest communication (pre-arrival, during stay, post-checkout)",
-        "Guest communication is handled with a fast-response system, typically within minutes during active hours.",
+        "Guest communication is handled with a fast-response system, typically within minutes during active hours (extended coverage for urgent situations).",
         "Digital management: dynamic pricing optimization by demand and season",
         "Digital management: monthly performance and financial reporting",
         "Operational coordination: check-in & check-out via local partners",
@@ -97,6 +101,7 @@
     },
     "disclaimer": "* Results may vary by season, location, property features, and market conditions. Figures shown are estimates based on similar properties and do not constitute a guarantee of income.",
     "mxn_note": "*Mexican peso payments accepted. MXN equivalent calculated at the Banxico rate on the payment date.",
+    "global_clause": "Casa Concierge acts as a coordinator and service manager. Execution of third-party services (cleaning, maintenance, check-in) is the responsibility of the respective providers.",
     "faq_alt_payment_q": "Can I pay by transfer or cash?",
     "faq_alt_payment_a": "Our payment process is simple: choose your plan, contact us, and we agree on the payment method — SPEI transfer or cash. Card payments coming soon.",
     "addons_title": "",
@@ -327,7 +332,7 @@
     "modal_title_vitrina": "Vitrina — What are the steps?",
     "modal_title_esencial": "Essential — What are the steps?",
     "modal_title_gestor": "Full Management — What are the steps?",
-    "modal_cta": "Contact Us →",
+    "modal_cta": "Get Started →",
     "modal_close": "Close"
   },
   "footer": {

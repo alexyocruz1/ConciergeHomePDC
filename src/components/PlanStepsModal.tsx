@@ -17,7 +17,7 @@ const stepsByPlan: Record<Plan, Step[]> = {
     {
       title: {
         es: "Contáctanos",
-        en: "Contact us",
+        en: "Get started",
         fr: "Contactez-nous",
         ru: "Свяжитесь с нами",
         pt: "Fale conosco",
@@ -376,12 +376,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Aktives tägliches Management",
       },
       description: {
-        es: "Nos encargamos de todo: respondemos a huéspedes en menos de 4 horas, coordinamos check-in y check-out, gestionamos la limpieza después de cada estancia y manejamos el mantenimiento con tu presupuesto preaprobado. Tú no haces nada.",
-        en: "We handle everything: respond to guests within 4 hours, coordinate check-in and check-out, manage cleaning after every stay, and handle maintenance within your pre-approved budget. You do nothing.",
-        fr: "Nous gérons tout : répondons aux clients en moins de 4 heures, coordonnons les arrivées et départs, gérons le nettoyage après chaque séjour et traitons la maintenance dans votre budget pré-approuvé. Vous ne faites rien.",
-        ru: "Берём всё на себя: отвечаем гостям менее чем за 4 часа, координируем заезд и выезд, организуем уборку после каждого проживания, решаем вопросы обслуживания в рамках вашего предварительно согласованного бюджета. Вы ничего не делаете.",
-        pt: "Cuidamos de tudo: respondemos aos hóspedes em menos de 4 horas, coordenamos check-in e check-out, gerenciamos a limpeza após cada estadia e tratamos da manutenção dentro do seu orçamento pré-aprovado. Você não faz nada.",
-        de: "Wir erledigen alles: Antworten auf Gäste in unter 4 Stunden, Check-in und Check-out koordinieren, Reinigung nach jedem Aufenthalt verwalten und Wartung im Rahmen Ihres vorab genehmigten Budgets handhaben. Sie tun nichts.",
+        es: "Nos encargamos de todo: la comunicación con huéspedes se maneja con un sistema de respuesta rápida, típicamente en minutos durante horas activas (con cobertura extendida para situaciones urgentes). Coordinamos check-in y check-out, gestionamos la limpieza después de cada estancia y manejamos el mantenimiento con tu presupuesto preaprobado. Tú no haces nada.",
+        en: "We handle everything: guest communication is handled with a fast-response system, typically within minutes during active hours (extended coverage for urgent situations). We coordinate check-in and check-out, manage cleaning after every stay, and handle maintenance within your pre-approved budget. You do nothing.",
+        fr: "Nous gérons tout : la communication avec les clients est gérée via un système de réponse rapide, généralement en quelques minutes pendant les heures actives (couverture étendue pour les situations urgentes). Nous coordonnons les arrivées et départs, gérons le nettoyage après chaque séjour et traitons la maintenance dans votre budget pré-approuvé. Vous ne faites rien.",
+        ru: "Берём всё на себя: общение с гостями ведётся через систему быстрого ответа — обычно в течение нескольких минут в активные часы (расширенное покрытие для срочных ситуаций). Мы координируем заезд и выезд, организуем уборку после каждого проживания и решаем вопросы обслуживания в рамках вашего предварительно согласованного бюджета. Вы ничего не делаете.",
+        pt: "Cuidamos de tudo: a comunicação com hóspedes é feita com um sistema de resposta rápida, normalmente em minutos durante as horas ativas (cobertura estendida para situações urgentes). Coordenamos check-in e check-out, gerenciamos a limpeza após cada estadia e tratamos da manutenção dentro do seu orçamento pré-aprovado. Você não faz nada.",
+        de: "Wir erledigen alles: Die Gästekommunikation erfolgt über ein Schnellantwort-System, typischerweise innerhalb von Minuten während aktiver Zeiten (erweiterte Abdeckung für dringende Situationen). Check-in und Check-out koordinieren wir, die Reinigung nach jedem Aufenthalt wird organisiert, und Wartung erfolgt im Rahmen Ihres vorab genehmigten Budgets. Sie tun nichts.",
       },
     },
     {

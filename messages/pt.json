@@ -41,7 +41,7 @@
     "subtitle": "Escolha seu plano e entre em contato para começar.",
     "popular": "Mais Popular",
     "of_income": "da renda bruta de aluguel",
-    "subscribe": "Fale conosco",
+    "subscribe": "Começar",
     "tier1": {
       "name": "Essencial",
       "price": "18%",
@@ -55,7 +55,11 @@
         "Consultoria de listagem (Airbnb, Booking, etc.)",
         "Limite: no máximo 1 visita à propriedade por mês",
         "Limite: no máximo 2 coordenações de manutenção por mês",
-        "Suporte apenas durante o horário de atendimento (9:00 AM–7:00 PM)"
+        "Suporte apenas durante o horário de atendimento (9:00 AM–7:00 PM)",
+        "Serviços adicionais (opcionais)",
+        "Visita extra à propriedade: $25–$40 USD",
+        "Visita de emergência: $50+ USD",
+        "Coordenação adicional de manutenção: $15–$25 USD"
       ]
     },
     "tier2": {
@@ -67,7 +71,7 @@
         "✔ Inclui tudo do Essencial, além de:",
         "Gestão digital: gestão de anúncios (Airbnb, Booking, VRBO, etc.)",
         "Gestão digital: comunicação com hóspedes (pré-chegada, durante a estadia, pós-checkout)",
-        "A comunicação com hóspedes é feita com um sistema de resposta rápida, normalmente em minutos durante as horas ativas.",
+        "A comunicação com hóspedes é feita com um sistema de resposta rápida, normalmente em minutos durante as horas ativas (cobertura estendida para situações urgentes).",
         "Gestão digital: otimização de preços dinâmicos por demanda e temporada",
         "Gestão digital: desempenho e relatórios financeiros mensais",
         "Coordenação operacional: check-in e check-out com parceiros locais",
@@ -97,6 +101,7 @@
     },
     "disclaimer": "* Os resultados podem variar conforme temporada, localização, características do imóvel e condições de mercado. Os valores apresentados são estimativas baseadas em propriedades similares e não constituem garantia de renda.",
     "mxn_note": "*Pagamentos em pesos mexicanos aceitos. O equivalente em MXN é calculado à taxa Banxico na data do pagamento.",
+    "global_clause": "A Casa Concierge atua como coordenadora e gestora de serviços. A execução de serviços de terceiros (limpeza, manutenção, check-in) é responsabilidade dos respectivos prestadores.",
     "faq_alt_payment_q": "Posso pagar por transferência ou em dinheiro?",
     "faq_alt_payment_a": "Nosso processo de pagamento é simples: escolha seu plano, fale conosco e combinamos o método de pagamento — transferência SPEI ou dinheiro. Pagamento com cartão em breve.",
     "addons_title": "",

@@ -41,7 +41,7 @@
     "subtitle": "Wählen Sie Ihren Plan und kontaktieren Sie uns.",
     "popular": "Am Beliebtesten",
     "of_income": "der Bruttomieteinnahmen",
-    "subscribe": "Kontakt aufnehmen",
+    "subscribe": "Los geht's",
     "tier1": {
       "name": "Basis",
       "price": "18%",
@@ -55,7 +55,11 @@
         "Listing-Beratung (Airbnb, Booking, etc.)",
         "Limit: Maximal 1 Besuch pro Monat",
         "Limit: Maximal 2 Wartungskoordinationen pro Monat",
-        "Support nur während der Geschäftszeiten (9:00 AM – 7:00 PM)"
+        "Support nur während der Geschäftszeiten (9:00 AM – 7:00 PM)",
+        "Zusatzleistungen (optional)",
+        "Zusätzlicher Besuch der Immobilie: $25–$40 USD",
+        "Notfallbesuch: $50+ USD",
+        "Zusätzliche Wartungskoordination: $15–$25 USD"
       ]
     },
     "tier2": {
@@ -67,7 +71,7 @@
         "✔ Enthält alles aus Essential, plus:",
         "Digitale Verwaltung: Listingverwaltung (Airbnb, Booking, VRBO, etc.)",
         "Digitale Verwaltung: Gästekommunikation (pre-arrival, während des Aufenthalts, post-checkout)",
-        "Die Gästekommunikation erfolgt über ein Schnellantwort-System, typischerweise innerhalb von Minuten während aktiver Zeiten.",
+        "Die Gästekommunikation erfolgt über ein Schnellantwort-System, typischerweise innerhalb von Minuten während aktiver Zeiten (erweiterte Abdeckung für dringende Situationen).",
         "Digitale Verwaltung: Optimierung der dynamischen Preise nach Nachfrage & Saison",
         "Digitale Verwaltung: monatliche Performance- und Finanzberichte",
         "Operative Koordination: Check-in & Check-out via lokale Partner",
@@ -97,6 +101,7 @@
     },
     "disclaimer": "* Die Ergebnisse können je nach Saison, Lage, Immobilieneigenschaften und Marktbedingungen variieren. Die gezeigten Zahlen sind Schätzungen basierend auf vergleichbaren Immobilien und stellen keine Einkommensgarantie dar.",
     "mxn_note": "*Zahlungen in mexikanischen Pesos möglich. Der MXN-Betrag wird zum Banxico-Kurs am Zahlungsdatum berechnet.",
+    "global_clause": "Casa Concierge agiert als Koordinator und Service-Manager. Die Ausführung von Leistungen Dritter (Reinigung, Wartung, Check-in) liegt in der Verantwortung der jeweiligen Anbieter.",
     "faq_alt_payment_q": "Kann ich per Überweisung oder bar bezahlen?",
     "faq_alt_payment_a": "Unser Zahlungsprozess ist einfach: Wählen Sie Ihren Plan, kontaktieren Sie uns, und wir vereinbaren die Zahlungsart — SPEI-Überweisung oder Bargeld. Kartenzahlung kommt bald.",
     "addons_title": "",
