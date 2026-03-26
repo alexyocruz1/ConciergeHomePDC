@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { CookieSettingsButton } from "./CookieBanner";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -98,7 +99,10 @@ export function Footer() {
 
         <div className="mt-10 border-t border-slate-800 pt-6">
           <p className="text-center text-xs leading-relaxed text-slate-500">
-            {t("whatsapp_disclaimer")}
+            {t("whatsapp_disclaimer").replaceAll(
+              "casaconciergepdc@outlook.com",
+              CONTACT_EMAIL,
+            )}
           </p>
         </div>
 

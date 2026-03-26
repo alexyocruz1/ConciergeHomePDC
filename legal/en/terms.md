@@ -70,7 +70,7 @@ Currently, Casa Concierge PDC manages the relationship with the Client mainly th
 1. Subscribe to one of the available plans using the agreed-upon payment method (by default, credit or debit card through Stripe; or through an alternative method with prior written authorization as established in the Alternative Payment Methods clause).
 2. Complete the property onboarding form (address, access details, photographs, insurance confirmation).
 
-If the portal is enabled in the future, Casa Concierge PDC will inform the Client of the access method (e.g., invitation or access instructions). While no such portal exists, the obligation to “register” with a password for its use does not apply.
+If the portal is enabled in the future, Casa Concierge PDC will inform the Client of the access method (e.g., invitation or access instructions). While no such portal exists, the obligation to “register” for access does not apply.
 
 ---
 

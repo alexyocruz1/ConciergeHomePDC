@@ -43,7 +43,7 @@ Actualmente, Casa Concierge PDC gestiona la relación con el Cliente principalme
 1. Suscribirse a uno de los planes disponibles mediante el método de pago acordado (por defecto, tarjeta de crédito o débito a través de Stripe; o mediante método alternativo previa autorización escrita según lo establecido en la cláusula de Métodos de Pago Alternativos).
 2. Completar el formulario de incorporación de su propiedad (dirección, datos de acceso, fotografías, confirmación de seguro).
 
-En caso de habilitarse el portal, Casa Concierge PDC informará al Cliente el método de acceso (por ejemplo, invitación o instrucciones de acceso). En tanto no exista dicho portal, no aplica la obligación de “registrarse” con contraseña para su uso.
+En caso de habilitarse el portal, Casa Concierge PDC informará al Cliente el método de acceso (por ejemplo, invitación o instrucciones de acceso). En tanto no exista dicho portal, no aplica la obligación de “registrarse” para su acceso.
 
 ---
 
