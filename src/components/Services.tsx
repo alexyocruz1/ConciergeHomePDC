@@ -4,91 +4,134 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 import { PlanStepsModal } from "./PlanStepsModal";
+import { formatPercent, PLAN_PRICING } from "@/lib/plans/pricing";
 
 type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 
-const vitrinaByLocale: Record<Locale, { name: string; description: string; subtitle: string; minimum: string; features: string[]; cta: string }> = {
+const vitrinaByLocale: Record<
+  Locale,
+  {
+    name: string;
+    description: string;
+    positioning: string;
+    protection: string;
+    subtitle: string;
+    minimum: string;
+    features: string[];
+    cta: string;
+  }
+> = {
   es: {
     name: "Vitrina",
     description: "Publica tu propiedad gratis. Cobramos sólo si hay resultado.",
+    positioning: "Mejor para probar el mercado",
+    protection:
+      "Casa Concierge actúa únicamente como un servicio de marketing y referidos bajo este plan.",
     subtitle: "Comisión sobre reservas o colocaciones",
     minimum: "Sin cuota mensual",
     features: [
-      "Sin cuota mensual",
-      "10% en reservaciones de corta estancia (mín. $500 MXN)",
+      `10% en reservaciones de corta estancia (mín. $${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN por reservación)`,
       "50–75% del primer mes en arrendamientos de largo plazo",
       "2–3% en referidos de venta (pagado por la agencia)",
-      "Ideal para probar el mercado sin riesgo",
+      "Publicación de la propiedad en nuestra plataforma",
+      "Reenvío de leads al propietario",
+      "Manejo básico opcional de consultas",
+      "No incluye: visitas, showings, check-in o check-out de huéspedes, ni coordinación de mantenimiento",
     ],
     cta: "Publicar mi propiedad gratis",
   },
   en: {
     name: "Vitrina",
     description: "List your property free. We only charge when results happen.",
+    positioning: "Best for testing the market",
+    protection:
+      "Casa Concierge acts solely as a marketing and referral service under this plan.",
     subtitle: "Commission on bookings or placements",
     minimum: "No monthly fee",
     features: [
-      "No monthly fee",
-      "10% on short-term bookings (min. $500 MXN per booking)",
+      `10% on short-term bookings (min. $${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN per booking)`,
       "50–75% of first month's rent on long-term placements",
       "2–3% on sale referrals (paid by the agency, not you)",
-      "Perfect for testing the market with zero upfront risk",
+      "Property listing on our platform",
+      "Lead forwarding to owner",
+      "Optional basic inquiry handling",
+      "Not included: property visits, showings, guest check-in/out, or maintenance coordination",
     ],
     cta: "List my property for free",
   },
   fr: {
     name: "Vitrina",
     description: "Publiez votre propriété gratuitement. Nous ne facturons que sur résultats.",
+    positioning: "Idéal pour tester le marché",
+    protection:
+      "Casa Concierge agit uniquement en tant que service de marketing et de mise en relation dans le cadre de ce plan.",
     subtitle: "Commission sur réservations ou placements",
     minimum: "Pas de frais mensuel",
     features: [
-      "Pas de frais mensuel",
-      "10% sur les réservations courte durée (min. 500 MXN par réservation)",
+      `10% sur les réservations courte durée (min. ${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN par réservation)`,
       "50–75% du premier mois de loyer pour les locations longue durée",
       "2–3% sur les références de vente (payé par l'agence)",
-      "Idéal pour tester le marché sans risque",
+      "Publication de la propriété sur notre plateforme",
+      "Transfert des leads au propriétaire",
+      "Gestion basique optionnelle des demandes",
+      "Non inclus : visites, présentations (showings), check-in/out des voyageurs, ni coordination maintenance",
     ],
     cta: "Publier ma propriété gratuitement",
   },
   ru: {
     name: "Vitrina",
     description: "Разместите объявление бесплатно. Берём комиссию только с результата.",
+    positioning: "Лучше всего для теста рынка",
+    protection:
+      "В рамках этого плана Casa Concierge выступает только как маркетинговый и реферальный сервис.",
     subtitle: "Комиссия за бронирования или заселения",
     minimum: "Без ежемесячной платы",
     features: [
-      "Без ежемесячной платы",
-      "10% с краткосрочной аренды (мин. 500 MXN за бронирование)",
+      `10% с краткосрочных бронирований (мин. ${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN за бронирование)`,
       "50–75% первого месяца аренды при долгосрочном размещении",
       "2–3% с продажи (платит агентство, не вы)",
-      "Идеально для тестирования рынка без риска",
+      "Размещение объекта на нашей платформе",
+      "Передача лидов владельцу",
+      "Опциональная базовая обработка запросов",
+      "Не включает: визиты, показы, check-in/out гостей, или координацию обслуживания",
     ],
     cta: "Разместить объявление бесплатно",
   },
   pt: {
     name: "Vitrina",
     description: "Anuncie seu imóvel grátis. Cobramos apenas pelos resultados.",
+    positioning: "Melhor para testar o mercado",
+    protection:
+      "A Casa Concierge atua exclusivamente como serviço de marketing e indicação neste plano.",
     subtitle: "Comissão em reservas ou colocações",
     minimum: "Sem taxa mensal",
     features: [
-      "Sem taxa mensal",
-      "10% em reservas de curta duração (mín. 500 MXN por reserva)",
+      `10% em reservas de curta duração (mín. ${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN por reserva)`,
       "50–75% do primeiro mês em locações de longa duração",
       "2–3% em indicações de venda (pago pela agência)",
-      "Ideal para testar o mercado sem risco",
+      "Anúncio da propriedade na nossa plataforma",
+      "Encaminhamento de leads ao proprietário",
+      "Gestão básica opcional de consultas",
+      "Não inclui: visitas, apresentações (showings), check-in/out de hóspedes, nem coordenação de manutenção",
     ],
     cta: "Anunciar meu imóvel gratuitamente",
   },
   de: {
     name: "Vitrina",
     description: "Inserieren Sie kostenlos. Wir berechnen nur bei Ergebnissen.",
+    positioning: "Am besten zum Testen des Marktes",
+    protection:
+      "In diesem Plan agiert Casa Concierge ausschließlich als Marketing- und Vermittlungsservice.",
     subtitle: "Provision auf Buchungen oder Vermittlungen",
     minimum: "Keine monatliche Gebühr",
     features: [
-      "Keine monatliche Gebühr",
-      "10% auf Kurzzeitbuchungen (mind. 500 MXN pro Buchung)",
+      `10% auf Kurzzeitbuchungen (mind. ${PLAN_PRICING.vitrina.shortTermMinMxnPerBooking} MXN pro Buchung)`,
       "50–75% der ersten Monatsmiete bei Langzeitvermietung",
       "2–3% auf Verkaufsempfehlungen (von der Agentur bezahlt)",
-      "Ideal zum risikofreien Testen des Marktes",
+      "Immobilien-Eintrag auf unserer Plattform",
+      "Lead-Weiterleitung an den Eigentümer",
+      "Optionale, einfache Bearbeitung von Anfragen",
+      "Nicht enthalten: Besuche, Besichtigungen, Gäste-Check-in/out oder Wartungskoordination",
     ],
     cta: "Meine Immobilie kostenlos inserieren",
   },
@@ -115,7 +158,50 @@ export function Services() {
     },
   ];
 
-  const addons = t.raw("addons") as Array<{ name: string; price: string }>;
+  const positioningByTier: Record<"tier1" | "tier2", Record<Locale, string>> = {
+    tier1: {
+      es: "Mejor para dueños remotos",
+      en: "Best for remote owners",
+      fr: "Idéal pour les propriétaires à distance",
+      ru: "Лучше всего для удалённых владельцев",
+      pt: "Melhor para proprietários remotos",
+      de: "Am besten für Remote-Eigentümer",
+    },
+    tier2: {
+      es: "Mejor para inversionistas manos libres",
+      en: "Best for hands-off investors",
+      fr: "Idéal pour les investisseurs « mains libres »",
+      ru: "Лучше всего для инвесторов «без участия»",
+      pt: "Melhor para investidores sem preocupações",
+      de: "Am besten für Hands-off-Investoren",
+    },
+  };
+
+  function getTierPricing(tierKey: "tier1" | "tier2") {
+    const plan = tierKey === "tier1" ? PLAN_PRICING.esencial : PLAN_PRICING.fullManagement;
+    return {
+      priceText: formatPercent(plan.commissionPercent),
+      minUsd: plan.minMonthlyUsd,
+    };
+  }
+
+  function formatMinimumUsdLabel(minUsd: number) {
+    switch (locale) {
+      case "es":
+        return `Mínimo $${minUsd} USD/mes`;
+      case "fr":
+        return `Minimum $${minUsd} USD/mois`;
+      case "ru":
+        return `Минимум $${minUsd} USD/мес`;
+      case "pt":
+        return `Mínimo $${minUsd} USD/mês`;
+      case "de":
+        return `Minimum $${minUsd} USD/Monat`;
+      case "en":
+      default:
+        return `Minimum $${minUsd} USD/month`;
+    }
+  }
 
   return (
     <section id="services" className="bg-slate-50 py-20 lg:py-28">
@@ -134,6 +220,9 @@ export function Services() {
             <div className="text-center">
               <h3 className="text-xl font-bold text-slate-900">{vitrina.name}</h3>
               <p className="mt-2 text-sm text-slate-500">{vitrina.description}</p>
+              <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-emerald-700/80">
+                {vitrina.positioning}
+              </p>
             </div>
 
             <div className="mt-6 text-center">
@@ -169,6 +258,9 @@ export function Services() {
             >
               {vitrina.cta}
             </a>
+            <p className="mt-3 text-xs leading-relaxed text-slate-500">
+              {vitrina.protection}
+            </p>
             <button
               type="button"
               onClick={() => setOpenModal("vitrina")}
@@ -204,17 +296,21 @@ export function Services() {
                   <p className="mt-2 text-sm text-slate-500">
                     {t(`${tier.key}.description`)}
                   </p>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-primary-700/80">
+                    {positioningByTier[tier.key][locale] ||
+                      positioningByTier[tier.key].en}
+                  </p>
                 </div>
 
                 <div className="mt-6 text-center">
                   <span className="text-5xl font-extrabold text-primary-700">
-                    {t(`${tier.key}.price`)}
+                    {getTierPricing(tier.key).priceText}
                   </span>
                   <p className="mt-1 text-sm text-slate-500">
                     {t("of_income")}
                   </p>
                   <p className="mt-1 text-xs font-medium text-slate-400">
-                    {t(`${tier.key}.minimum`)}
+                    {formatMinimumUsdLabel(getTierPricing(tier.key).minUsd)}
                   </p>
                 </div>
 
@@ -270,32 +366,6 @@ export function Services() {
             onClose={() => setOpenModal(null)}
           />
         )}
-
-        <div className="mt-20">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-slate-900">
-              {t("addons_title")}
-            </h3>
-            <p className="mt-2 text-base text-slate-500">
-              {t("addons_subtitle")}
-            </p>
-          </div>
-          <div className="mx-auto mt-8 max-w-3xl space-y-3 sm:space-y-0 sm:divide-y sm:divide-slate-100 sm:overflow-hidden sm:rounded-2xl sm:border sm:border-slate-200">
-            {addons.map((addon: { name: string; price: string }, i: number) => (
-              <div
-                key={i}
-                className={`flex flex-col gap-1 rounded-xl border border-slate-200 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:rounded-none sm:border-0 sm:px-6 sm:py-4 ${
-                  i % 2 === 0 ? "bg-white" : "bg-white sm:bg-slate-50"
-                }`}
-              >
-                <span className="text-sm text-slate-700">{addon.name}</span>
-                <span className="text-sm font-semibold text-primary-700 sm:shrink-0 sm:text-right sm:font-medium sm:text-slate-900">
-                  {addon.price}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Legal disclaimer */}
         <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-slate-400">

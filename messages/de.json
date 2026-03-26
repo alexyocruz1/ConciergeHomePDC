@@ -45,30 +45,36 @@
     "tier1": {
       "name": "Basis",
       "price": "18%",
-      "minimum": "Minimum $120 USD/Monat",
-      "description": "Für Eigentümer, die Sicherheit und lokale Augen brauchen.",
+      "minimum": "Minimum $140 USD/Monat",
+      "description": "Für Eigentümer, die Sicherheit und lokale Aufsicht brauchen — mit minimaler Beteiligung vor Ort.",
       "features": [
-        "Monatliche Inspektion (1 Besuch/Monat mit Fotobericht)",
-        "Grundlegende Wartungskoordination",
-        "Monatlicher Eigentümerbericht",
-        "WhatsApp/E-Mail-Kontakt mit 24h-Antwortziel",
-        "Listing-Beratung (Airbnb/Booking)"
+        "Monatlicher Remote-Report (Auslastung, Zustand, Notizen)",
+        "1 Vor-Ort-Inspektion pro Monat (terminiert, bis zu 60 Minuten)",
+        "Grundlegende Wartungskoordination (remote)",
+        "Support für den Eigentümer via WhatsApp/E-Mail (24h-Antwortziel, Geschäftszeiten)",
+        "Listing-Beratung (Airbnb, Booking, etc.)",
+        "Limit: Maximal 1 Besuch pro Monat",
+        "Limit: Maximal 2 Wartungskoordinationen pro Monat",
+        "Support nur während der Geschäftszeiten (9:00 AM – 7:00 PM)"
       ]
     },
     "tier2": {
       "name": "Komplettverwaltung",
-      "price": "22%",
-      "minimum": "Minimum $140 USD/Monat",
-      "description": "Kompletter Rundum-Service. Unser beliebtester Plan.",
+      "price": "25%",
+      "minimum": "Minimum $180 USD/Monat",
+      "description": "Kompletter Rundum-Service. Wir koordinieren alle vor Ort erbrachten Dienstleistungen über vertrauenswürdige lokale Partner.",
       "features": [
         "Alles aus dem Basis-Plan",
-        "Aktive Listingverwaltung (Airbnb, VRBO, Booking)",
-        "Gästekommunikation",
-        "Check-in und Check-out Koordination",
-        "Reinigungskoordination",
-        "Dynamische Preisgestaltung",
-        "Wartungsreaktion mit vorab genehmigtem Budget",
-        "Immobilie auf unserem Webportal"
+        "Digitale Verwaltung: Listingverwaltung (Airbnb, Booking, VRBO, etc.)",
+        "Digitale Verwaltung: Gästekommunikation (pre-arrival, während des Aufenthalts, post-checkout)",
+        "Digitale Verwaltung: Optimierung der dynamischen Preise nach Nachfrage & Saison",
+        "Digitale Verwaltung: monatliche Performance- und Finanzberichte",
+        "Operative Koordination: Check-in & Check-out via lokale Partner",
+        "Operative Koordination: Reinigungskoordination bei jedem Wechsel",
+        "Operative Koordination: Wartungskoordination mit geprüften Anbietern",
+        "Alle vor Ort erbrachten Leistungen werden von Drittanbietern ausgeführt, die wir koordinieren",
+        "Reinigung, Wartung und Check-in werden dem Eigentümer in Rechnung gestellt",
+        "Casa Concierge kann eine Koordinationsmarge auf Dienstleistungen von Drittanbietern enthalten"
       ]
     },
     "tier3": {
@@ -94,12 +100,9 @@
     "addons_title": "Zusatzleistungen",
     "addons_subtitle": "Verfügbar für alle Pläne.",
     "addons": [
-      { "name": "Grundreinigung", "price": "$80 – $150 USD" },
-      { "name": "Professionelles Fotoshooting", "price": "$200 USD" },
-      { "name": "Notfall-Wartungsbesuch", "price": "$50 USD + Handwerkerkosten" },
-      { "name": "Listing-Einrichtung (Airbnb, VRBO, Booking)", "price": "$150 USD (einmalig)" },
-      { "name": "Gäste-Willkommenspaket", "price": "$40 USD pro Paket" },
-      { "name": "Social-Media-Beitrag", "price": "$30 USD pro Beitrag" }
+      { "name": "Zusätzlicher Besuch der Immobilie", "price": "$25–$40 USD" },
+      { "name": "Notfallbesuch", "price": "$50+ USD" },
+      { "name": "Zusätzliche Wartungskoordination", "price": "$15–$25 USD" }
     ]
   },
   "comparison": {
@@ -164,7 +167,7 @@
         { "feature": "Immobilienzustand über Zeit", "them": "Verfällt ohne Überwachung", "us": "Gepflegt, inspiziert, dokumentiert" },
         { "feature": "Sicherheit", "them": "Unüberwacht", "us": "Regelmäßige Besuche, Problemerkennung" },
         { "feature": "ROI der Investition", "them": "Negativ (Kosten ohne Einnahmen)", "us": "Positiv ab dem ersten Monat" },
-        { "feature": "Kosten unseres Services", "them": "—", "us": "18% (Basis) oder 22% (Komplettverwaltung) der Bruttomieteinnahmen" },
+        { "feature": "Kosten unseres Services", "them": "—", "us": "18% (Basis) oder 25% (Komplettverwaltung) der Bruttomieteinnahmen" },
         { "feature": "Nettogewinn", "them": "0 $", "us": "1.100 $ – 3.000 $+/Monat nach unserer Gebühr" }
       ]
     }

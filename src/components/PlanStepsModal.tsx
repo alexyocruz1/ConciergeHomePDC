@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { formatPercent, MIN_MONTHLY_INCOME_POTENTIAL_USD, PLAN_PRICING } from "@/lib/plans/pricing";
 
 type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 type Plan = "vitrina" | "esencial" | "gestor";
@@ -133,12 +134,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Kontaktieren Sie uns und wählen Sie den Plan",
       },
       description: {
-        es: "Escríbenos por WhatsApp o usa el formulario. Cuéntanos sobre tu propiedad. Te confirmamos en menos de 24 horas si es apta para el plan Esencial (ingreso potencial mínimo $600 USD/mes).",
-        en: "Message us on WhatsApp or use the form. Tell us about your property. We confirm within 24 hours whether it qualifies for the Essential plan (minimum income potential $600 USD/month).",
-        fr: "Écrivez-nous sur WhatsApp ou utilisez le formulaire. Parlez-nous de votre bien. Nous confirmons dans les 24 heures s'il est éligible au plan Essentiel (potentiel de revenu minimum 600 USD/mois).",
-        ru: "Напишите в WhatsApp или заполните форму. Расскажите об объекте. Подтвердим в течение 24 часов, подходит ли он для базового плана (минимальный потенциальный доход $600 USD/мес).",
-        pt: "Escreva pelo WhatsApp ou use o formulário. Conte sobre seu imóvel. Confirmamos em até 24 horas se ele se qualifica para o plano Essencial (potencial mínimo de $600 USD/mês).",
-        de: "Schreiben Sie uns auf WhatsApp oder nutzen Sie das Formular. Erzählen Sie von Ihrer Immobilie. Wir bestätigen innerhalb von 24 Stunden, ob sie für den Essential-Plan geeignet ist (Mindestpotenzial $600 USD/Monat).",
+        es: `Escríbenos por WhatsApp o usa el formulario. Cuéntanos sobre tu propiedad. Te confirmamos en menos de 24 horas si es apta para el plan Esencial (ingreso potencial mínimo $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mes).`,
+        en: `Message us on WhatsApp or use the form. Tell us about your property. We confirm within 24 hours whether it qualifies for the Essential plan (minimum income potential $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/month).`,
+        fr: `Écrivez-nous sur WhatsApp ou utilisez le formulaire. Parlez-nous de votre bien. Nous confirmons dans les 24 heures s'il est éligible au plan Essentiel (potentiel de revenu minimum $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mois).`,
+        ru: `Напишите в WhatsApp или заполните форму. Расскажите об объекте. Подтвердим в течение 24 часов, подходит ли он для базового плана (минимальный потенциальный доход $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/мес).`,
+        pt: `Escreva pelo WhatsApp ou use o formulário. Conte sobre seu imóvel. Confirmamos em até 24 horas se ele se qualifica para o plano Essencial (potencial mínimo de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mês).`,
+        de: `Schreiben Sie uns auf WhatsApp oder nutzen Sie das Formular. Erzählen Sie von Ihrer Immobilie. Wir bestätigen innerhalb von 24 Stunden, ob sie für den Essential-Plan geeignet ist (Mindestpotenzial $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/Monat).`,
       },
     },
     {
@@ -151,12 +152,24 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Schriftliche Vereinbarung",
       },
       description: {
-        es: "Te enviamos un resumen del plan: 18% sobre ingresos brutos, mínimo $120 USD/mes, servicios incluidos y excluidos. Confirmas por correo electrónico (o desde tu portal). Solo procedemos con confirmación escrita.",
-        en: "We send you a plan summary: 18% of gross income, $120 USD/month minimum, included and excluded services. You confirm by email (or through your portal). We only proceed with written confirmation.",
-        fr: "Nous vous envoyons un résumé du plan : 18% des revenus bruts, minimum 120 USD/mois, services inclus et exclus. Vous confirmez par e-mail (ou depuis votre portail). Nous ne procédons qu'avec une confirmation écrite.",
-        ru: "Отправляем сводку плана: 18% от валового дохода, минимум $120 USD/мес, включённые и не включённые услуги. Подтверждаете по электронной почте (или через ваш портал). Продолжаем только после письменного подтверждения.",
-        pt: "Enviamos um resumo do plano: 18% sobre receita bruta, mínimo $120 USD/mês, serviços incluídos e excluídos. Você confirma por e-mail (ou pelo seu portal). Só prosseguimos com confirmação por escrito.",
-        de: "Wir senden Ihnen eine Planzusammenfassung: 18% des Bruttoumsatzes, $120 USD/Monat Minimum, enthaltene und nicht enthaltene Leistungen. Sie bestätigen per E-Mail (oder über Ihr Portal). Wir gehen nur mit schriftlicher Bestätigung vor.",
+        es: `Te enviamos un resumen del plan: ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} sobre ingresos brutos, mínimo $${PLAN_PRICING.esencial.minMonthlyUsd} USD/mes, servicios incluidos y excluidos. Confirmas por correo electrónico. Solo procedemos con confirmación escrita.`,
+        en: `We send you a plan summary: ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} of gross income, $${PLAN_PRICING.esencial.minMonthlyUsd} USD/month minimum, included and excluded services. You confirm by email. We only proceed with written confirmation.`,
+        fr: `Nous vous envoyons un résumé du plan : ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} des revenus bruts, minimum $${PLAN_PRICING.esencial.minMonthlyUsd} USD/mois, services inclus et exclus. Vous confirmez par e-mail. Nous ne procédons qu'avec une confirmation écrite.`,
+        ru: `Отправляем сводку плана: ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} от валового дохода, минимум $${PLAN_PRICING.esencial.minMonthlyUsd} USD/мес, включённые и не включённые услуги. Подтверждаете по электронной почте. Продолжаем только после письменного подтверждения.`,
+        pt: `Enviamos um resumo do plano: ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} sobre receita bruta, mínimo $${PLAN_PRICING.esencial.minMonthlyUsd} USD/mês, serviços incluídos e excluídos. Você confirma por e-mail. Só prosseguimos com confirmação por escrito.`,
+        de: `Wir senden Ihnen eine Planzusammenfassung: ${formatPercent(
+          PLAN_PRICING.esencial.commissionPercent,
+        )} des Bruttoumsatzes, $${PLAN_PRICING.esencial.minMonthlyUsd} USD/Monat Minimum, enthaltene und nicht enthaltene Leistungen. Sie bestätigen per E-Mail. Wir gehen nur mit schriftlicher Bestätigung vor.`,
       },
     },
     {
@@ -169,12 +182,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Erste Zahlung und Willkommen",
       },
       description: {
-        es: "Realizas el primer pago mensual ($120 USD o equivalente en MXN al tipo de cambio Banxico). Recibes un recibo numerado en menos de 24 horas y el formulario de incorporación de tu propiedad.",
-        en: "You make the first monthly payment ($120 USD or MXN equivalent at the Banxico rate). You receive a numbered receipt within 24 hours and the property onboarding form.",
-        fr: "Vous effectuez le premier paiement mensuel (120 USD ou équivalent MXN au taux Banxico). Vous recevez un reçu numéroté dans les 24 heures et le formulaire d'intégration de votre bien.",
-        ru: "Вносите первый ежемесячный платёж ($120 USD или эквивалент в MXN по курсу Банксико). Получаете пронумерованный чек в течение 24 часов и форму для регистрации объекта.",
-        pt: "Você faz o primeiro pagamento mensal ($120 USD ou equivalente em MXN pela taxa Banxico). Recebe um recibo numerado em até 24 horas e o formulário de cadastro do imóvel.",
-        de: "Sie leisten die erste Monatszahlung ($120 USD oder MXN-Äquivalent zum Banxico-Kurs). Sie erhalten innerhalb von 24 Stunden eine nummerierte Quittung und das Immobilien-Onboarding-Formular.",
+        es: `Realizas el primer pago mensual ($${PLAN_PRICING.esencial.minMonthlyUsd} USD o equivalente en MXN al tipo de cambio Banxico). Recibes un recibo numerado en menos de 24 horas y el formulario de incorporación de tu propiedad.`,
+        en: `You make the first monthly payment ($${PLAN_PRICING.esencial.minMonthlyUsd} USD or MXN equivalent at the Banxico rate). You receive a numbered receipt within 24 hours and the property onboarding form.`,
+        fr: `Vous effectuez le premier paiement mensuel ($${PLAN_PRICING.esencial.minMonthlyUsd} USD ou équivalent MXN au taux Banxico). Vous recevez un reçu numéroté dans les 24 heures et le formulaire d'intégration de votre bien.`,
+        ru: `Вносите первый ежемесячный платёж ($${PLAN_PRICING.esencial.minMonthlyUsd} USD или эквивалент в MXN по курсу Банксико). Получаете пронумерованный чек в течение 24 часов и форму для регистрации объекта.`,
+        pt: `Você faz o primeiro pagamento mensal ($${PLAN_PRICING.esencial.minMonthlyUsd} USD ou equivalente em MXN pela taxa Banxico). Recebe um recibo numerado em até 24 horas e o formulário de cadastro do imóvel.`,
+        de: `Sie leisten die erste Monatszahlung ($${PLAN_PRICING.esencial.minMonthlyUsd} USD oder MXN-Äquivalent zum Banxico-Kurs). Sie erhalten innerhalb von 24 Stunden eine nummerierte Quittung und das Immobilien-Onboarding-Formular.`,
       },
     },
     {
@@ -261,12 +274,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Kontaktieren Sie uns und wählen Sie den Plan",
       },
       description: {
-        es: "Escríbenos por WhatsApp o usa el formulario. Cuéntanos sobre tu propiedad. Respondemos en menos de 24 horas. Evaluamos si aplica el plan Gestor (potencial mínimo $600 USD/mes).",
-        en: "Message us on WhatsApp or use the form. Tell us about your property. We reply within 24 hours and assess whether it's a fit for Full Management (minimum $600 USD/month potential).",
-        fr: "Écrivez-nous sur WhatsApp ou utilisez le formulaire. Parlez-nous de votre bien. Nous répondons dans les 24 heures et évaluons si le plan Gestion complète correspond (potentiel minimum 600 USD/mois).",
-        ru: "Напишите в WhatsApp или заполните форму. Расскажите об объекте. Ответим в течение 24 часов и оценим соответствие плану «Полное управление» (минимальный потенциал $600 USD/мес).",
-        pt: "Escreva pelo WhatsApp ou use o formulário. Conte sobre seu imóvel. Respondemos em até 24 horas e avaliamos se ele se enquadra no Full Management (potencial mínimo $600 USD/mês).",
-        de: "Schreiben Sie uns auf WhatsApp oder nutzen Sie das Formular. Erzählen Sie von Ihrer Immobilie. Wir antworten innerhalb von 24 Stunden und prüfen, ob Full Management passt (Mindestpotenzial $600 USD/Monat).",
+        es: `Escríbenos por WhatsApp o usa el formulario. Cuéntanos sobre tu propiedad. Respondemos en menos de 24 horas. Evaluamos si aplica el plan Gestor (potencial mínimo $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/mes).`,
+        en: `Message us on WhatsApp or use the form. Tell us about your property. We reply within 24 hours and assess whether it's a fit for Full Management (minimum $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/month potential).`,
+        fr: `Écrivez-nous sur WhatsApp ou utilisez le formulaire. Parlez-nous de votre bien. Nous répondons dans les 24 heures et évaluons si le plan Gestion complète correspond (potentiel minimum $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/mois).`,
+        ru: `Напишите в WhatsApp или заполните форму. Расскажите об объекте. Ответим в течение 24 часов и оценим соответствие плану «Полное управление» (минимальный потенциал $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/мес).`,
+        pt: `Escreva pelo WhatsApp ou use o formulário. Conte sobre seu imóvel. Respondemos em até 24 horas e avaliamos se ele se enquadra no Full Management (potencial mínimo $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/mês).`,
+        de: `Schreiben Sie uns auf WhatsApp oder nutzen Sie das Formular. Erzählen Sie von Ihrer Immobilie. Wir antworten innerhalb von 24 Stunden und prüfen, ob Full Management passt (Mindestpotenzial $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD/Monat).`,
       },
     },
     {
@@ -279,12 +292,24 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Schriftliche Vereinbarung",
       },
       description: {
-        es: "Te enviamos el resumen del plan Gestor: 22% sobre ingresos brutos, mínimo $140 USD/mes, todos los servicios incluidos. Acordamos también el método de pago, el presupuesto mensual de mantenimiento preaprobado y la periodicidad de remisión de ingresos (día 7 de cada mes).",
-        en: "We send you the Full Management plan summary: 22% of gross income, $140 USD/month minimum, all services included. We also agree on the payment method, pre-approved monthly maintenance budget, and income remittance schedule (day 7 of each month).",
-        fr: "Nous vous envoyons le résumé du plan Gestion complète : 22% des revenus bruts, minimum 140 USD/mois, tous les services inclus. Nous convenons aussi du mode de paiement, du budget mensuel de maintenance pré-approuvé et du calendrier de versement des revenus (7e de chaque mois).",
-        ru: "Отправляем сводку плана «Полное управление»: 22% от валового дохода, минимум $140 USD/мес, все услуги включены. Также согласовываем способ оплаты, предварительно одобренный ежемесячный бюджет на обслуживание и график выплат (7-е число каждого месяца).",
-        pt: "Enviamos o resumo do plano Full Management: 22% sobre receita bruta, mínimo $140 USD/mês, todos os serviços incluídos. Também acordamos o método de pagamento, orçamento mensal de manutenção pré-aprovado e calendário de remessa de renda (dia 7 de cada mês).",
-        de: "Wir senden Ihnen die Full-Management-Planzusammenfassung: 22% des Bruttoumsatzes, $140 USD/Monat Minimum, alle Leistungen inbegriffen. Wir vereinbaren auch Zahlungsmethode, vorab genehmigtes monatliches Wartungsbudget und Einkommensüberweisungsplan (7. jedes Monats).",
+        es: `Te enviamos el resumen del plan Gestor: ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} sobre ingresos brutos, mínimo $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/mes, todos los servicios incluidos. Acordamos también el método de pago, el presupuesto mensual de mantenimiento preaprobado y la periodicidad de remisión de ingresos (día 7 de cada mes).`,
+        en: `We send you the Full Management plan summary: ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} of gross income, $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/month minimum, all services included. We also agree on the payment method, pre-approved monthly maintenance budget, and income remittance schedule (day 7 of each month).`,
+        fr: `Nous vous envoyons le résumé du plan Gestion complète : ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} des revenus bruts, minimum $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/mois, tous les services inclus. Nous convenons aussi du mode de paiement, du budget mensuel de maintenance pré-approuvé et du calendrier de versement des revenus (7e de chaque mois).`,
+        ru: `Отправляем сводку плана «Полное управление»: ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} от валового дохода, минимум $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/мес, все услуги включены. Также согласовываем способ оплаты, предварительно одобренный ежемесячный бюджет на обслуживание и график выплат (7-е число каждого месяца).`,
+        pt: `Enviamos o resumo do plano Full Management: ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} sobre receita bruta, mínimo $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/mês, todos os serviços incluídos. Também acordamos o método de pagamento, orçamento mensal de manutenção pré-aprovado e calendário de remessa de renda (dia 7 de cada mês).`,
+        de: `Wir senden Ihnen die Full-Management-Planzusammenfassung: ${formatPercent(
+          PLAN_PRICING.fullManagement.commissionPercent,
+        )} des Bruttoumsatzes, $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD/Monat Minimum, alle Leistungen inbegriffen. Wir vereinbaren auch Zahlungsmethode, vorab genehmigtes monatliches Wartungsbudget und Einkommensüberweisungsplan (7. jedes Monats).`,
       },
     },
     {
@@ -297,12 +322,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Erste Zahlung und Willkommen",
       },
       description: {
-        es: "Realizas el primer pago ($140 USD o equivalente en MXN). Recibes recibo numerado y el formulario de incorporación completo de la propiedad.",
-        en: "You make the first payment ($140 USD or MXN equivalent). You receive a numbered receipt and the full property onboarding form.",
-        fr: "Vous effectuez le premier paiement (140 USD ou équivalent en MXN). Vous recevez un reçu numéroté et le formulaire complet d'intégration de la propriété.",
-        ru: "Вносите первый платёж ($140 USD или эквивалент в MXN). Получаете пронумерованный чек и полную форму регистрации объекта.",
-        pt: "Você faz o primeiro pagamento ($140 USD ou equivalente em MXN). Recebe um recibo numerado e o formulário completo de cadastro do imóvel.",
-        de: "Sie leisten die erste Zahlung ($140 USD oder MXN-Äquivalent). Sie erhalten eine nummerierte Quittung und das vollständige Immobilien-Onboarding-Formular.",
+        es: `Realizas el primer pago ($${PLAN_PRICING.fullManagement.minMonthlyUsd} USD o equivalente en MXN). Recibes recibo numerado y el formulario de incorporación completo de la propiedad.`,
+        en: `You make the first payment ($${PLAN_PRICING.fullManagement.minMonthlyUsd} USD or MXN equivalent). You receive a numbered receipt and the full property onboarding form.`,
+        fr: `Vous effectuez le premier paiement (${PLAN_PRICING.fullManagement.minMonthlyUsd} USD ou équivalent en MXN). Vous recevez un reçu numéroté et le formulaire complet d'intégration de la propriété.`,
+        ru: `Вносите первый платёж ($${PLAN_PRICING.fullManagement.minMonthlyUsd} USD или эквивалент в MXN). Получаете пронумерованный чек и полную форму регистрации объекта.`,
+        pt: `Você faz o primeiro pagamento ($${PLAN_PRICING.fullManagement.minMonthlyUsd} USD ou equivalente em MXN). Recebe um recibo numerado e o formulário completo de cadastro do imóvel.`,
+        de: `Sie leisten die erste Zahlung ($${PLAN_PRICING.fullManagement.minMonthlyUsd} USD oder MXN-Äquivalent). Sie erhalten eine nummerierte Quittung und das vollständige Immobilien-Onboarding-Formular.`,
       },
     },
     {
@@ -387,12 +412,12 @@ const stepsByPlan: Record<Plan, Step[]> = {
         de: "Kündigen Sie wann immer Sie möchten",
       },
       description: {
-        es: "Sin permanencia mínima. Cancelas por correo o desde tu portal en cualquier momento. El servicio continúa hasta el final del período pagado. Tus fotos se eliminan de nuestros canales en máximo 48 horas. Recibes un reporte final de tu propiedad.",
-        en: "No minimum commitment. Cancel by email or from your portal at any time. The service continues until the end of the paid period. Your photos are removed from our channels within 48 hours. You receive a final property report.",
-        fr: "Sans engagement minimum. Résiliez par e-mail ou depuis votre portail à tout moment. Le service se poursuit jusqu'à la fin de la période payée. Vos photos sont supprimées de nos canaux dans les 48 heures. Vous recevez un rapport final sur votre bien.",
-        ru: "Без минимального срока. Отменяйте по электронной почте или через портал в любое время. Сервис продолжается до конца оплаченного периода. Ваши фотографии удаляются с наших каналов в течение 48 часов. Вы получаете финальный отчёт по объекту.",
-        pt: "Sem compromisso mínimo. Cancele por e-mail ou pelo portal a qualquer momento. O serviço continua até o final do período pago. Suas fotos são removidas dos nossos canais em até 48 horas. Você recebe um relatório final do imóvel.",
-        de: "Keine Mindestlaufzeit. Kündigen Sie jederzeit per E-Mail oder über Ihr Portal. Der Service läuft bis zum Ende des bezahlten Zeitraums. Ihre Fotos werden innerhalb von 48 Stunden aus unseren Kanälen entfernt. Sie erhalten einen abschließenden Immobilienbericht.",
+        es: "Sin permanencia mínima. Cancelas por correo electrónico en cualquier momento. El servicio continúa hasta el final del período pagado. Tus fotos se eliminan de nuestros canales en máximo 48 horas. Recibes un reporte final de tu propiedad.",
+        en: "No minimum commitment. Cancel by email at any time. The service continues until the end of the paid period. Your photos are removed from our channels within 48 hours. You receive a final property report.",
+        fr: "Sans engagement minimum. Résiliez par e-mail à tout moment. Le service se poursuit jusqu'à la fin de la période payée. Vos photos sont supprimées de nos canaux dans les 48 heures. Vous recevez un rapport final sur votre bien.",
+        ru: "Без минимального срока. Отменяйте по электронной почте в любое время. Сервис продолжается до конца оплаченного периода. Ваши фотографии удаляются с наших каналов в течение 48 часов. Вы получаете финальный отчёт по объекту.",
+        pt: "Sem compromisso mínimo. Cancele por e-mail a qualquer momento. O serviço continua até o final do período pago. Suas fotos são removidas dos nossos canais em até 48 horas. Você recebe um relatório final do imóvel.",
+        de: "Keine Mindestlaufzeit. Kündigen Sie jederzeit per E-Mail. Der Service läuft bis zum Ende des bezahlten Zeitraums. Ihre Fotos werden innerhalb von 48 Stunden aus unseren Kanälen entfernt. Sie erhalten einen abschließenden Immobilienbericht.",
       },
     },
   ],

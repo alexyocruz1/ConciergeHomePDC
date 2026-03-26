@@ -45,30 +45,36 @@
     "tier1": {
       "name": "Essential",
       "price": "18%",
-      "minimum": "Minimum $120 USD/mo",
-      "description": "For owners who need peace of mind and local eyes.",
+      "minimum": "Minimum $140 USD/mo",
+      "description": "For owners who need peace of mind and local oversight with minimal on-site involvement.",
       "features": [
-        "Monthly property inspection (1 visit/month with photo report)",
-        "Basic maintenance coordination",
-        "Monthly owner report (occupancy, issues, condition)",
-        "WhatsApp/email contact with 24-hour response target",
-        "Listing consultation (Airbnb/Booking)"
+        "Monthly remote property report (occupancy, condition, notes)",
+        "1 in-person inspection per month (scheduled, up to 60 minutes)",
+        "Basic maintenance coordination (remote)",
+        "Owner support via WhatsApp/email (24-hour response target, business hours)",
+        "Listing consultation (Airbnb/Booking)",
+        "Limit: Maximum 1 property visit per month",
+        "Limit: Maximum 2 maintenance coordinations per month",
+        "Support only during business hours (9:00 AM–7:00 PM)"
       ]
     },
     "tier2": {
       "name": "Full Management",
-      "price": "22%",
-      "minimum": "Minimum $140 USD/mo",
-      "description": "Full hands-off operation. Our most popular plan.",
+      "price": "25%",
+      "minimum": "Minimum $180 USD/mo",
+      "description": "Full hands-off operation. We manage everything while coordinating all on-site services through trusted local partners.",
       "features": [
         "Everything in Essential",
-        "Active listing management (Airbnb, VRBO, Booking)",
-        "Guest communication (pre-arrival, during stay, post-checkout)",
-        "Check-in and check-out coordination",
-        "Cleaning coordination for every turnover",
-        "Dynamic pricing management by season and demand",
-        "Maintenance response with pre-approved budget",
-        "Property featured on our website portal"
+        "Digital management: listing management (Airbnb, Booking, VRBO, etc.)",
+        "Digital management: guest communication (pre-arrival, during stay, post-checkout)",
+        "Digital management: dynamic pricing optimization by demand and season",
+        "Digital management: monthly performance and financial reporting",
+        "Operational coordination: check-in & check-out via local partners",
+        "Operational coordination: cleaning coordination for every turnover",
+        "Operational coordination: maintenance coordination with vetted providers",
+        "All on-site services are executed by third-party providers we coordinate",
+        "Cleaning, maintenance, and check-in services are billed to the owner",
+        "We may include a coordination margin on third-party services"
       ]
     },
     "tier3": {
@@ -94,12 +100,9 @@
     "addons_title": "Add-On Services",
     "addons_subtitle": "Available to all plans.",
     "addons": [
-      { "name": "Deep cleaning (move-in/out or seasonal)", "price": "$80 – $150 USD" },
-      { "name": "Professional photography session", "price": "$200 USD" },
-      { "name": "Emergency maintenance visit (same day)", "price": "$50 USD + contractor cost" },
-      { "name": "Property listing setup (Airbnb, VRBO, Booking)", "price": "$150 USD (one-time)" },
-      { "name": "Guest welcome kit (branded, with local tips)", "price": "$40 USD per kit" },
-      { "name": "Social media property post (Instagram/Facebook)", "price": "$30 USD per post" }
+      { "name": "Extra property visit", "price": "$25–$40 USD" },
+      { "name": "Emergency visit", "price": "$50+ USD" },
+      { "name": "Additional maintenance coordination", "price": "$15–$25 USD" }
     ]
   },
   "comparison": {
@@ -164,7 +167,7 @@
         { "feature": "Property condition over time", "them": "Deteriorates without oversight", "us": "Maintained, inspected, documented" },
         { "feature": "Security", "them": "Unmonitored", "us": "Regular visits, issue detection" },
         { "feature": "ROI on investment", "them": "Negative (costs with no income)", "us": "Positive from month one" },
-        { "feature": "Cost of our service", "them": "—", "us": "18% (Essential) or 22% (Full Management) of gross rental income" },
+        { "feature": "Cost of our service", "them": "—", "us": "18% (Essential) or 25% (Full Management) of gross rental income" },
         { "feature": "Net gain", "them": "$0", "us": "$1,100 – $3,000+/mo after our fee" }
       ]
     }

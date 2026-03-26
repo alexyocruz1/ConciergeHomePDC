@@ -53,8 +53,8 @@ Casa Concierge PDC ofrece dos planes de suscripción mensual:
 
 | Plan | Comisión sobre ingresos brutos | Cuota mínima mensual |
 |---|---|---|
-| Esencial | 18% | $120 USD/mes |
-| Gestor | 22% | $140 USD/mes |
+| Esencial | 18% | $140 USD/mes |
+| Gestor | 25% | $180 USD/mes |
 
 **Funcionamiento del cobro:**
 - Al suscribirse, se cobra automáticamente la cuota mínima mensual del plan seleccionado a través de Stripe.

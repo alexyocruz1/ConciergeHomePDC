@@ -45,30 +45,36 @@
     "tier1": {
       "name": "Esencial",
       "price": "18%",
-      "minimum": "Mínimo $120 USD/mes",
-      "description": "Para propietarios que necesitan tranquilidad y ojos locales.",
+      "minimum": "Mínimo $140 USD/mes",
+      "description": "Para propietarios que necesitan tranquilidad y supervisión local con mínima participación en sitio.",
       "features": [
-        "Inspección mensual (1 visita/mes con reporte fotográfico)",
-        "Coordinación básica de mantenimiento",
-        "Reporte mensual al propietario",
-        "Contacto por WhatsApp/email con objetivo de respuesta en 24h",
-        "Consulta sobre listado (Airbnb/Booking)"
+        "Reporte mensual remoto de la propiedad (ocupación, condición, notas)",
+        "1 inspección presencial al mes (programada, hasta 60 minutos)",
+        "Coordinación básica de mantenimiento (remoto)",
+        "Soporte al propietario por WhatsApp/email (objetivo de respuesta en 24h, horario de atención)",
+        "Consulta sobre listado (Airbnb, Booking, etc.)",
+        "Límite: Máximo 1 visita a la propiedad por mes",
+        "Límite: Máximo 2 coordinaciones de mantenimiento por mes",
+        "Soporte solo durante horario de atención (9:00 AM–7:00 PM)"
       ]
     },
     "tier2": {
       "name": "Gestor",
-      "price": "22%",
-      "minimum": "Mínimo $140 USD/mes",
-      "description": "Operación completa sin preocupaciones. Nuestro plan más popular.",
+      "price": "25%",
+      "minimum": "Mínimo $180 USD/mes",
+      "description": "Operación completa sin preocupaciones. Coordinamos todos los servicios en sitio con socios locales de confianza.",
       "features": [
         "Todo lo incluido en Esencial",
-        "Gestión activa de listados (Airbnb, VRBO, Booking)",
-        "Comunicación con huéspedes (pre-llegada, estancia, checkout)",
-        "Coordinación de check-in y check-out",
-        "Coordinación de limpieza en cada cambio de huésped",
-        "Gestión de precios dinámicos por temporada",
-        "Respuesta a mantenimiento con presupuesto pre-aprobado",
-        "Propiedad destacada en nuestro portal web"
+        "Gestión digital: gestión de listados (Airbnb, Booking, VRBO, etc.)",
+        "Gestión digital: comunicación con huéspedes (pre-arrival, estancia, post-checkout)",
+        "Gestión digital: optimización de precios dinámicos por demanda y temporada",
+        "Gestión digital: desempeño y reportes financieros mensuales",
+        "Coordinación operativa: check-in y check-out con socios locales",
+        "Coordinación operativa: coordinación de limpieza en cada cambio",
+        "Coordinación operativa: coordinación de mantenimiento con proveedores verificados",
+        "Todos los servicios en sitio se ejecutan por terceros coordinados por Casa Concierge",
+        "Limpieza, mantenimiento y check-in se facturan al propietario",
+        "Casa Concierge puede incluir un margen de coordinación en servicios de terceros"
       ]
     },
     "tier3": {
@@ -94,12 +100,9 @@
     "addons_title": "Servicios Adicionales",
     "addons_subtitle": "Disponibles para todos los planes.",
     "addons": [
-      { "name": "Limpieza profunda (entrada/salida o estacional)", "price": "$80 – $150 USD" },
-      { "name": "Sesión de fotografía profesional", "price": "$200 USD" },
-      { "name": "Visita de mantenimiento de emergencia (mismo día)", "price": "$50 USD + costo del contratista" },
-      { "name": "Configuración de listado (Airbnb, VRBO, Booking)", "price": "$150 USD (único)" },
-      { "name": "Kit de bienvenida para huéspedes", "price": "$40 USD por kit" },
-      { "name": "Publicación en redes sociales (Instagram/Facebook)", "price": "$30 USD por publicación" }
+      { "name": "Visita extra a la propiedad", "price": "$25–$40 USD" },
+      { "name": "Visita de emergencia", "price": "$50+ USD" },
+      { "name": "Coordinación adicional de mantenimiento", "price": "$15–$25 USD" }
     ]
   },
   "comparison": {
@@ -164,7 +167,7 @@
         { "feature": "Condición de la propiedad", "them": "Se deteriora sin supervisión", "us": "Mantenida, inspeccionada, documentada" },
         { "feature": "Seguridad", "them": "Sin monitoreo", "us": "Visitas regulares, detección de problemas" },
         { "feature": "ROI de la inversión", "them": "Negativo (costos sin ingresos)", "us": "Positivo desde el primer mes" },
-        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18% (Esencial) o 22% (Gestor) del ingreso bruto de alquiler" },
+        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18% (Esencial) o 25% (Gestor) del ingreso bruto de alquiler" },
         { "feature": "Ganancia neta", "them": "$0", "us": "$1,100 – $3,000+/mes después de nuestra comisión" }
       ]
     }

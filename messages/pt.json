@@ -45,30 +45,36 @@
     "tier1": {
       "name": "Essencial",
       "price": "18%",
-      "minimum": "Mínimo $120 USD/mês",
-      "description": "Para proprietários que precisam de tranquilidade e olhos locais.",
+      "minimum": "Mínimo $140 USD/mês",
+      "description": "Para proprietários que precisam de tranquilidade e supervisão local com mínima participação no local.",
       "features": [
-        "Inspeção mensal (1 visita/mês com relatório fotográfico)",
-        "Coordenação básica de manutenção",
-        "Relatório mensal ao proprietário",
-        "Contato WhatsApp/email com objetivo de resposta em 24h",
-        "Consultoria de listagem (Airbnb/Booking)"
+        "Relatório mensal remoto da propriedade (ocupação, condição, notas)",
+        "1 inspeção presencial por mês (agendada, até 60 minutos)",
+        "Coordenação básica de manutenção (remota)",
+        "Suporte ao proprietário via WhatsApp/email (objetivo de resposta em 24h, horário de atendimento)",
+        "Consultoria de listagem (Airbnb, Booking, etc.)",
+        "Limite: no máximo 1 visita à propriedade por mês",
+        "Limite: no máximo 2 coordenações de manutenção por mês",
+        "Suporte apenas durante o horário de atendimento (9:00 AM–7:00 PM)"
       ]
     },
     "tier2": {
       "name": "Gestão Completa",
-      "price": "22%",
-      "minimum": "Mínimo $140 USD/mês",
-      "description": "Operação completa sem preocupações. Nosso plano mais popular.",
+      "price": "25%",
+      "minimum": "Mínimo $180 USD/mês",
+      "description": "Operação completa sem preocupações. Coordenamos todos os serviços no local com parceiros locais de confiança.",
       "features": [
         "Tudo incluído no Essencial",
-        "Gestão ativa de anúncios (Airbnb, VRBO, Booking)",
-        "Comunicação com hóspedes",
-        "Coordenação de check-in e check-out",
-        "Coordenação de limpeza",
-        "Gestão dinâmica de preços",
-        "Resposta de manutenção",
-        "Propriedade destacada no nosso portal"
+        "Gestão digital: gestão de anúncios (Airbnb, Booking, VRBO, etc.)",
+        "Gestão digital: comunicação com hóspedes (pré-chegada, durante a estadia, pós-checkout)",
+        "Gestão digital: otimização de preços dinâmicos por demanda e temporada",
+        "Gestão digital: desempenho e relatórios financeiros mensais",
+        "Coordenação operacional: check-in e check-out com parceiros locais",
+        "Coordenação operacional: coordenação de limpeza para cada troca",
+        "Coordenação operacional: coordenação de manutenção com fornecedores verificados",
+        "Todos os serviços no local são executados por prestadores terceiros coordenados pela Casa Concierge",
+        "Limpeza, manutenção e check-in são cobrados do proprietário",
+        "A Casa Concierge pode incluir uma margem de coordenação em serviços de terceiros"
       ]
     },
     "tier3": {
@@ -94,12 +100,9 @@
     "addons_title": "Serviços Adicionais",
     "addons_subtitle": "Disponíveis para todos os planos.",
     "addons": [
-      { "name": "Limpeza profunda", "price": "$80 – $150 USD" },
-      { "name": "Sessão fotográfica profissional", "price": "$200 USD" },
-      { "name": "Visita de manutenção de emergência", "price": "$50 USD + custo do empreiteiro" },
-      { "name": "Configuração de anúncio (Airbnb, VRBO, Booking)", "price": "$150 USD (único)" },
-      { "name": "Kit de boas-vindas para hóspedes", "price": "$40 USD por kit" },
-      { "name": "Publicação em redes sociais", "price": "$30 USD por publicação" }
+      { "name": "Visita extra à propriedade", "price": "$25–$40 USD" },
+      { "name": "Visita de emergência", "price": "$50+ USD" },
+      { "name": "Coordenação adicional de manutenção", "price": "$15–$25 USD" }
     ]
   },
   "comparison": {
@@ -164,7 +167,7 @@
         { "feature": "Condição da propriedade ao longo do tempo", "them": "Deteriora sem supervisão", "us": "Mantida, inspecionada, documentada" },
         { "feature": "Segurança", "them": "Sem monitoramento", "us": "Visitas regulares, detecção de problemas" },
         { "feature": "ROI do investimento", "them": "Negativo (custos sem renda)", "us": "Positivo desde o primeiro mês" },
-        { "feature": "Custo do nosso serviço", "them": "—", "us": "18% (Essencial) ou 22% (Gestão Completa) da receita bruta de aluguel" },
+        { "feature": "Custo do nosso serviço", "them": "—", "us": "18% (Essencial) ou 25% (Gestão Completa) da receita bruta de aluguel" },
         { "feature": "Ganho líquido", "them": "$0", "us": "$1.100 – $3.000+/mês após nossa taxa" }
       ]
     }

@@ -45,30 +45,36 @@
     "tier1": {
       "name": "Essentiel",
       "price": "18%",
-      "minimum": "Minimum $120 USD/mois",
-      "description": "Pour les propriétaires qui ont besoin de tranquillité d'esprit.",
+      "minimum": "Minimum $140 USD/mois",
+      "description": "Pour les propriétaires qui ont besoin de tranquillité d'esprit et d'une supervision locale avec une implication minimale sur place.",
       "features": [
-        "Inspection mensuelle (1 visite/mois avec rapport photo)",
-        "Coordination de maintenance de base",
-        "Rapport mensuel au propriétaire",
-        "Contact WhatsApp/email avec objectif de réponse en 24h",
-        "Consultation sur les annonces (Airbnb/Booking)"
+        "Rapport mensuel à distance (occupation, état, notes)",
+        "1 inspection en personne par mois (planifiée, jusqu'à 60 minutes)",
+        "Coordination de maintenance de base (à distance)",
+        "Support pour le propriétaire via WhatsApp/email (objectif de réponse 24h, horaires)",
+        "Consultation d'annonce (Airbnb, Booking, etc.)",
+        "Limite : Maximum 1 visite par mois",
+        "Limite : Maximum 2 coordinations de maintenance par mois",
+        "Support uniquement pendant les horaires (9:00 AM – 7:00 PM)"
       ]
     },
     "tier2": {
       "name": "Gestion Complète",
-      "price": "22%",
-      "minimum": "Minimum $140 USD/mois",
-      "description": "Opération complète sans souci. Notre plan le plus populaire.",
+      "price": "25%",
+      "minimum": "Minimum $180 USD/mois",
+      "description": "Opération complète sans souci. Nous coordonnons tous les services sur place avec des partenaires locaux de confiance.",
       "features": [
         "Tout ce qui est inclus dans Essentiel",
-        "Gestion active des annonces (Airbnb, VRBO, Booking)",
-        "Communication avec les clients",
-        "Coordination check-in et check-out",
-        "Coordination du nettoyage",
-        "Gestion dynamique des prix",
-        "Réponse maintenance avec budget pré-approuvé",
-        "Propriété mise en avant sur notre portail"
+        "Gestion numérique : gestion des annonces (Airbnb, Booking, VRBO, etc.)",
+        "Gestion numérique : communication avec les clients (pré-arrivée, séjour, post-checkout)",
+        "Gestion numérique : optimisation des prix dynamiques selon demande et saison",
+        "Gestion numérique : performances et reporting financier mensuels",
+        "Coordination opérationnelle : check-in & check-out via partenaires locaux",
+        "Coordination opérationnelle : coordination du nettoyage pour chaque rotation",
+        "Coordination opérationnelle : coordination maintenance avec des prestataires vérifiés",
+        "Tous les services sur place sont exécutés par des prestataires tiers que nous coordonnons",
+        "Le nettoyage, la maintenance et le check-in sont facturés au propriétaire",
+        "Casa Concierge peut inclure une marge de coordination sur les services tiers"
       ]
     },
     "tier3": {
@@ -94,12 +100,9 @@
     "addons_title": "Services Supplémentaires",
     "addons_subtitle": "Disponibles pour tous les plans.",
     "addons": [
-      { "name": "Nettoyage en profondeur", "price": "$80 – $150 USD" },
-      { "name": "Séance photo professionnelle", "price": "$200 USD" },
-      { "name": "Visite de maintenance d'urgence", "price": "$50 USD + coût entrepreneur" },
-      { "name": "Configuration d'annonce (Airbnb, VRBO, Booking)", "price": "$150 USD (unique)" },
-      { "name": "Kit de bienvenue pour les clients", "price": "$40 USD par kit" },
-      { "name": "Publication sur les réseaux sociaux", "price": "$30 USD par publication" }
+      { "name": "Visite supplémentaire", "price": "$25–$40 USD" },
+      { "name": "Visite d'urgence", "price": "$50+ USD" },
+      { "name": "Coordination de maintenance supplémentaire", "price": "$15–$25 USD" }
     ]
   },
   "comparison": {
@@ -164,7 +167,7 @@
         { "feature": "État de la propriété dans le temps", "them": "Se dégrade sans surveillance", "us": "Entretenue, inspectée, documentée" },
         { "feature": "Sécurité", "them": "Non surveillée", "us": "Visites régulières, détection des problèmes" },
         { "feature": "ROI sur l'investissement", "them": "Négatif (coûts sans revenus)", "us": "Positif dès le premier mois" },
-        { "feature": "Coût de notre service", "them": "—", "us": "18% (Essentiel) ou 22% (Gestion complète) des revenus locatifs bruts" },
+        { "feature": "Coût de notre service", "them": "—", "us": "18% (Essentiel) ou 25% (Gestion complète) des revenus locatifs bruts" },
         { "feature": "Gain net", "them": "0 $", "us": "1 100 $ – 3 000 $/mois et plus après nos frais" }
       ]
     }

@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { useState } from "react";
+import { formatPercent, MIN_MONTHLY_INCOME_POTENTIAL_USD, PLAN_PRICING } from "@/lib/plans/pricing";
 
 type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 type FaqItem = { key: string; q: string; a: string };
@@ -13,6 +14,8 @@ type FaqSourceItem = {
   question: Record<Locale, string>;
   answer: Record<Locale, string>;
 };
+
+const SERVICE_ZONES_TEXT = PLAN_PRICING.serviceArea.join(", ");
 
 const CATEGORIES: Category[] = [
   {
@@ -105,12 +108,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Welche Gebiete decken Sie ab?",
     },
     answer: {
-      es: "Operamos principalmente en Playa del Carmen y la Riviera Maya, incluyendo Tulum, Puerto Morelos, Akumal y zonas residenciales como Mayakoba. Si tu propiedad está fuera de estas áreas, contáctanos igualmente — evaluamos cada caso individualmente.",
-      en: "We operate primarily in Playa del Carmen and the Riviera Maya, including Tulum, Puerto Morelos, Akumal, and residential areas like Mayakoba. If your property is outside these areas, contact us anyway - we evaluate each case individually.",
-      fr: "Nous operons principalement a Playa del Carmen et sur la Riviera Maya, incluant Tulum, Puerto Morelos, Akumal et des zones residentielles comme Mayakoba. Si votre propriete est en dehors de ces zones, contactez-nous quand meme - nous evaluons chaque cas individuellement.",
-      ru: "Мы работаем преимущественно в Плая-дель-Кармен и на Ривьера-Майя, включая Тулум, Пуэрто-Морелос, Акумаль и жилые комплексы, например Майакоба. Если ваша недвижимость находится за пределами этих зон - свяжитесь с нами, мы рассматриваем каждый случай индивидуально.",
-      pt: "Atuamos principalmente em Playa del Carmen e na Riviera Maya, incluindo Tulum, Puerto Morelos, Akumal e areas residenciais como Mayakoba. Se seu imovel estiver fora dessas areas, entre em contato mesmo assim - avaliamos cada caso individualmente.",
-      de: "Wir sind hauptsachlich in Playa del Carmen und der Riviera Maya tatig, einschliesslich Tulum, Puerto Morelos, Akumal und Wohngebieten wie Mayakoba. Wenn Ihre Immobilie ausserhalb dieser Gebiete liegt, kontaktieren Sie uns trotzdem - wir prufen jeden Fall individuell.",
+      es: `Actualmente, nuestras gestiones se limitan a zonas seleccionadas en Playa del Carmen para asegurar eficiencia y calidad: ${SERVICE_ZONES_TEXT}. Propiedades fuera de estas áreas pueden ser evaluadas caso por caso.`,
+      en: `Currently, our services are limited to selected zones in Playa del Carmen to ensure efficiency and quality: ${SERVICE_ZONES_TEXT}. Properties outside these areas may be evaluated case-by-case.`,
+      fr: `Actuellement, nos services sont limités à des zones sélectionnées à Playa del Carmen afin d'assurer efficacité et qualité : ${SERVICE_ZONES_TEXT}. Les propriétés en dehors de ces zones peuvent être évaluées au cas par cas.`,
+      ru: `В настоящее время наши услуги ограничены выбранными зонами в Плая-дель-Кармен: ${SERVICE_ZONES_TEXT}. Объекты за пределами этих зон могут быть рассмотрены в индивидуальном порядке.`,
+      pt: `Atualmente, nossos serviços são limitados a áreas selecionadas em Playa del Carmen para garantir eficiência e qualidade: ${SERVICE_ZONES_TEXT}. Propriedades fora dessas áreas podem ser avaliadas caso a caso.`,
+      de: `Aktuell sind unsere Dienstleistungen auf ausgewählte Zonen in Playa del Carmen begrenzt, um Effizienz und Qualität sicherzustellen: ${SERVICE_ZONES_TEXT}. Immobilien außerhalb dieser Gebiete können im Einzelfall geprüft werden.`,
     },
   },
   {
@@ -125,12 +128,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Welche Arten von Immobilien verwalten Sie?",
     },
     answer: {
-      es: "Gestionamos departamentos, condominios, casas y villas vacacionales. La propiedad debe tener un potencial de ingreso mensual mínimo de $600 USD para que la gestión sea rentable para ambas partes. Si no estás seguro, cuéntanos sobre tu propiedad y te damos una evaluación honesta.",
-      en: "We manage apartments, condos, houses, and vacation villas. The property should have a minimum monthly income potential of $600 USD for management to make financial sense for both sides. If you're not sure, tell us about your property and we'll give you an honest assessment.",
-      fr: "Nous gerons des appartements, condos, maisons et villas de vacances. La propriete doit avoir un potentiel de revenu mensuel minimum de 600 USD pour que la gestion soit rentable des deux cotes. Si vous n'etes pas sur, parlez-nous de votre propriete et nous vous donnerons une evaluation honnete.",
-      ru: "Мы управляем квартирами, кондоминиумами, домами и туристическими виллами. Для обоюдной выгоды объект должен приносить не менее $600 USD в месяц. Если не уверены - расскажите о своей недвижимости, и мы честно оценим её потенциал.",
-      pt: "Gerenciamos apartamentos, condominios, casas e vilas de ferias. O imovel deve ter um potencial de renda mensal minimo de $600 USD para que a gestao seja financeiramente viavel para ambas as partes. Se nao tiver certeza, fale sobre seu imovel e faremos uma avaliacao honesta.",
-      de: "Wir verwalten Apartments, Eigentumswohnungen, Hauser und Ferienvillen. Die Immobilie sollte ein monatliches Einkommenspotenzial von mindestens $600 USD haben. Falls Sie unsicher sind, erzahlen Sie uns von Ihrer Immobilie - wir geben Ihnen eine ehrliche Einschatzung.",
+      es: `Gestionamos departamentos, condominios, casas y villas vacacionales. La propiedad debe tener un potencial de ingreso mensual mínimo de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD para que la gestión sea rentable para ambas partes. Para el plan Esencial, el mínimo es de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mes. Si no estás seguro, cuéntanos sobre tu propiedad y te damos una evaluación honesta.`,
+      en: `We manage apartments, condos, houses, and vacation villas. The property should have a minimum monthly income potential of $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD for management to make financial sense for both sides. For the Essential plan, the minimum is $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/month. If you're not sure, tell us about your property and we'll give you an honest assessment.`,
+      fr: `Nous gerons des appartements, condos, maisons et villas de vacances. La propriete doit avoir un potentiel de revenu mensuel minimum de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD pour que la gestion soit rentable des deux cotes. Pour le plan Essentiel, le minimum est de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mois. Si vous n'etes pas sur, parlez-nous de votre propriete et nous vous donnerons une evaluation honnete.`,
+      ru: `Мы управляем квартирами, кондоминиумами, домами и туристическими виллами. Для обоюдной выгоды объект должен приносить не менее $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD в месяц. Для плана Esencial минимальный порог — $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/мес. Если не уверены - расскажите о своей недвижимости, и мы честно оценим её потенциал.`,
+      pt: `Gerenciamos apartamentos, condominios, casas e vilas de ferias. O imovel deve ter um potencial de renda mensal minimo de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD para que a gestao seja financeiramente viavel para ambas as partes. Para o plano Essencial, o mínimo é de $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/mês. Se nao tiver certeza, fale sobre seu imovel e faremos uma avaliacao honesta.`,
+      de: `Wir verwalten Apartments, Eigentumswohnungen, Hauser und Ferienvillen. Die Immobilie sollte ein monatliches Einkommenspotenzial von mindestens $${MIN_MONTHLY_INCOME_POTENTIAL_USD.fullManagement} USD haben. Für den Essential-Plan ist das Minimum $${MIN_MONTHLY_INCOME_POTENTIAL_USD.esencial} USD/Monat. Falls Sie unsicher sind, erzahlen Sie uns von Ihrer Immobilie - wir geben Ihnen eine ehrliche Einschatzung.`,
     },
   },
   {
@@ -185,12 +188,24 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Wie funktioniert die Abrechnung genau?",
     },
     answer: {
-      es: "Cobramos un porcentaje de los ingresos brutos de renta — 18% o 22% según el plan. Hay una cuota mínima mensual ($120 o $140 USD) que solo aplica si el porcentaje resulta menor. Si tu propiedad no genera ingresos, casi no pagas. Al cierre de cada mes recibes un desglose transparente: ingresos, nuestra comisión y tu ingreso neto.",
-      en: "We charge a percentage of your gross rental income — 18% or 22% depending on the plan. There's a monthly minimum ($120 or $140 USD) that only applies if the percentage comes out lower. If your property earns nothing, you pay almost nothing. At month end you receive a transparent breakdown: income, our fee, and your net.",
-      fr: "Nous facturons un pourcentage des revenus locatifs bruts — 18 % ou 22 % selon le plan. Il y a un minimum mensuel (120 ou 140 USD) qui ne s'applique que si le pourcentage est inférieur. Si votre propriété ne génère rien, vous payez presque rien. En fin de mois vous recevez un relevé transparent : revenus, notre commission et votre net.",
-      ru: "Берём процент от валового дохода от аренды — 18% или 22% в зависимости от плана. Есть ежемесячный минимум ($120 или $140 USD), который применяется только если процент ниже него. Если недвижимость не приносит дохода — платёж минимален. В конце месяца вы получаете прозрачный отчёт: доходы, наша комиссия и ваша выплата.",
-      pt: "Cobramos uma porcentagem da receita bruta de aluguel — 18% ou 22% dependendo do plano. Há um mínimo mensal ($120 ou $140 USD) que só se aplica se a porcentagem for menor. Se seu imóvel não gerar renda, você quase não paga. No fim do mês você recebe um demonstrativo transparente: receitas, nossa comissão e seu líquido.",
-      de: "Wir berechnen einen Prozentsatz der Bruttomieteinnahmen — 18 % oder 22 % je nach Plan. Es gibt ein monatliches Minimum ($120 oder $140 USD), das nur gilt, wenn der Prozentsatz darunter liegt. Verdient Ihre Immobilie nichts, zahlen Sie fast nichts. Am Monatsende erhalten Sie eine transparente Aufstellung: Einnahmen, unsere Provision und Ihr Nettobetrag.",
+      es: `Cobramos un porcentaje de los ingresos brutos de renta — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} o ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} según el plan. Hay una cuota mínima mensual ($${PLAN_PRICING.esencial.minMonthlyUsd} o $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD) que solo aplica si el porcentaje resulta menor. Si tu propiedad no genera ingresos, casi no pagas. Al cierre de cada mes recibes un desglose transparente: ingresos, nuestra comisión y tu ingreso neto.`,
+      en: `We charge a percentage of your gross rental income — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} or ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} depending on the plan. There's a monthly minimum ($${PLAN_PRICING.esencial.minMonthlyUsd} or $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD) that only applies if the percentage comes out lower. If your property earns nothing, you pay almost nothing. At month end you receive a transparent breakdown: income, our fee, and your net.`,
+      fr: `Nous facturons un pourcentage des revenus locatifs bruts — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} ou ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} selon le plan. Il y a un minimum mensuel ($${PLAN_PRICING.esencial.minMonthlyUsd} ou $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD) qui ne s'applique que si le pourcentage est inférieur. Si votre propriété ne génère rien, vous payez presque rien. En fin de mois vous recevez un relevé transparent : revenus, notre commission et votre net.`,
+      ru: `Берём процент от валового дохода от аренды — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} или ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} в зависимости от плана. Есть ежемесячный минимум ($${PLAN_PRICING.esencial.minMonthlyUsd} или $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD), который применяется только если процент ниже него. Если недвижимость не приносит дохода — платёж минимален. В конце месяца вы получаете прозрачный отчёт: доходы, наша комиссия и ваша выплата.`,
+      pt: `Cobramos uma porcentagem da receita bruta de aluguel — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} ou ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} dependendo do plano. Há um mínimo mensal ($${PLAN_PRICING.esencial.minMonthlyUsd} ou $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD) que só se aplica se a porcentagem for menor. Se seu imóvel não gerar renda, você quase não paga. No fim do mês você recebe um demonstrativo transparente: receitas, nossa comissão e seu líquido.`,
+      de: `Wir berechnen einen Prozentsatz der Bruttomieteinnahmen — ${formatPercent(
+        PLAN_PRICING.esencial.commissionPercent,
+      )} oder ${formatPercent(PLAN_PRICING.fullManagement.commissionPercent)} je nach Plan. Es gibt ein monatliches Minimum ($${PLAN_PRICING.esencial.minMonthlyUsd} oder $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD), das nur gilt, wenn der Prozentsatz darunter liegt. Verdient Ihre Immobilie nichts, zahlen Sie fast nichts. Am Monatsende erhalten Sie eine transparente Aufstellung: Einnahmen, unsere Provision und Ihr Nettobetrag.`,
     },
   },
   {
@@ -225,12 +240,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Was passiert, wenn meine Immobilie in einem Monat keine Einnahmen erzielt?",
     },
     answer: {
-      es: "Sólo pagas la cuota mínima mensual de tu plan ($120 o $140 USD). Cubre nuestra visita de inspección, el reporte mensual y la disponibilidad continua del equipo. Sin penalizaciones ni cargos adicionales.",
-      en: "You only pay the monthly minimum fee for your plan ($120 or $140 USD). This covers our inspection visit, monthly report, and the team's continued availability. No penalties, no extra charges.",
-      fr: "Vous ne payez que la redevance mensuelle minimale de votre plan (120 ou 140 USD). Elle couvre notre visite d'inspection, le rapport mensuel et la disponibilité continue de l'équipe. Pas de pénalités, pas de frais supplémentaires.",
-      ru: "Вы платите только ежемесячный минимум по вашему плану ($120 или $140 USD). Он покрывает инспекционный визит, ежемесячный отчёт и постоянную доступность команды. Никаких штрафов и дополнительных платежей.",
-      pt: "Você paga apenas a taxa mínima mensal do seu plano ($120 ou $140 USD). Isso cobre nossa visita de inspeção, relatório mensal e disponibilidade contínua da equipe. Sem penalidades nem cobranças extras.",
-      de: "Sie zahlen nur die monatliche Mindestgebühr Ihres Plans ($120 oder $140 USD). Diese deckt unseren Inspektionsbesuch, den Monatsbericht und die kontinuierliche Verfügbarkeit des Teams. Keine Strafen, keine zusätzlichen Gebühren.",
+      es: `Sólo pagas la cuota mínima mensual de tu plan ($${PLAN_PRICING.esencial.minMonthlyUsd} o $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). Cubre nuestra visita de inspección, el reporte mensual y la disponibilidad continua del equipo. Sin penalizaciones ni cargos adicionales.`,
+      en: `You only pay the monthly minimum fee for your plan ($${PLAN_PRICING.esencial.minMonthlyUsd} or $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). This covers our inspection visit, monthly report, and the team's continued availability. No penalties, no extra charges.`,
+      fr: `Vous ne payez que la redevance mensuelle minimale de votre plan ($${PLAN_PRICING.esencial.minMonthlyUsd} ou $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). Elle couvre notre visite d'inspection, le rapport mensuel et la disponibilité continue de l'équipe. Pas de pénalités, pas de frais supplémentaires.`,
+      ru: `Вы платите только ежемесячный минимум по вашему плану ($${PLAN_PRICING.esencial.minMonthlyUsd} или $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). Он покрывает инспекционный визит, ежемесячный отчёт и постоянную доступность команды. Никаких штрафов и дополнительных платежей.`,
+      pt: `Você paga apenas a taxa mínima mensal do seu plano ($${PLAN_PRICING.esencial.minMonthlyUsd} ou $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). Isso cobre nossa visita de inspeção, relatório mensal e disponibilidade contínua da equipe. Sem penalidades nem cobranças extras.`,
+      de: `Sie zahlen nur die monatliche Mindestgebühr Ihres Plans ($${PLAN_PRICING.esencial.minMonthlyUsd} oder $${PLAN_PRICING.fullManagement.minMonthlyUsd} USD). Diese deckt unseren Inspektionsbesuch, den Monatsbericht und die kontinuierliche Verfügbarkeit des Teams. Keine Strafen, keine zusätzlichen Gebühren.`,
     },
   },
   {
@@ -245,12 +260,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Kann ich jederzeit kundigen?",
     },
     answer: {
-      es: "Sí. Puedes cancelar en cualquier momento por correo o desde tu portal. El servicio continúa activo hasta el final del periodo facturado — sin permanencia mínima ni penalizaciones. Al cancelar, tus fotografías se eliminan de nuestro portal en máximo 48 horas y recibes un reporte final de tu propiedad.",
-      en: "Yes. You can cancel at any time by email or from your portal. The service remains active until the end of the billed period - no minimum commitment, no cancellation fee. Upon cancellation, your photos are removed from our portal within 48 hours and you receive a final property report.",
-      fr: "Oui. Vous pouvez annuler a tout moment par e-mail ou depuis votre portail. Le service reste actif jusqu'a la fin de la periode facturee - sans engagement minimum ni frais d'annulation. A l'annulation, vos photos sont supprimees de notre portail dans les 48 heures et vous recevez un rapport final.",
-      ru: "Да. Можно отменить в любое время по электронной почте или через портал. Сервис остаётся активным до конца оплаченного периода - без минимального срока и штрафов. После отмены ваши фотографии удаляются с портала в течение 48 часов, а вы получаете финальный отчёт.",
-      pt: "Sim. Voce pode cancelar a qualquer momento por e-mail ou pelo portal. O servico permanece ativo ate o final do periodo faturado - sem compromisso minimo nem multa. Ao cancelar, suas fotos sao removidas do portal em ate 48 horas e voce recebe um relatorio final.",
-      de: "Ja. Sie konnen jederzeit per E-Mail oder uber Ihr Portal kundigen. Der Service bleibt bis zum Ende des abgerechneten Zeitraums aktiv - keine Mindestlaufzeit, keine Kundigungsgebuhr. Bei Kundigung werden Ihre Fotos innerhalb von 48 Stunden aus unserem Portal entfernt und Sie erhalten einen Abschlussbericht.",
+      es: "Sí. Puedes cancelar en cualquier momento por correo electrónico. El servicio continúa activo hasta el final del periodo facturado — sin permanencia mínima ni penalizaciones. Al cancelar, tus fotografías se eliminan de nuestro portal en máximo 48 horas y recibes un reporte final de tu propiedad.",
+      en: "Yes. You can cancel at any time by email. The service remains active until the end of the billed period - no minimum commitment, no cancellation fee. Upon cancellation, your photos are removed from our portal within 48 hours and you receive a final property report.",
+      fr: "Oui. Vous pouvez annuler a tout moment par e-mail. Le service reste actif jusqu'a la fin de la periode facturee - sans engagement minimum ni frais d'annulation. A l'annulation, vos photos sont supprimees de notre portail dans les 48 heures et vous recevez un rapport final.",
+      ru: "Да. Можно отменить в любое время по электронной почте. Сервис остаётся активным до конца оплаченного периода - без минимального срока и штрафов. После отмены ваши фотографии удаляются с портала в течение 48 часов, а вы получаете финальный отчёт.",
+      pt: "Sim. Voce pode cancelar a qualquer momento por e-mail. O servico permanece ativo ate o final do periodo faturado - sem compromisso minimo nem multa. Ao cancelar, suas fotos sao removidas do portal em ate 48 horas e voce recebe um relatorio final.",
+      de: "Ja. Sie konnen jederzeit per E-Mail kundigen. Der Service bleibt bis zum Ende des abgerechneten Zeitraums aktiv - keine Mindestlaufzeit, keine Kundigungsgebuhr. Bei Kundigung werden Ihre Fotos innerhalb von 48 Stunden aus unserem Portal entfernt und Sie erhalten einen Abschlussbericht.",
     },
   },
   {
@@ -425,12 +440,12 @@ const FAQ_ITEMS: FaqSourceItem[] = [
       de: "Konnen wir Meetings zur Leistungsuberprufung haben?",
     },
     answer: {
-      es: "Sí. Puedes solicitar una llamada en cualquier momento y respondemos en el plazo acordado. También puedes escribirnos por correo o portal para revisar cualquier aspecto sin necesidad de agendar una reunión formal.",
-      en: "Yes. You can request a call at any time and we respond within the agreed timeframe. You can also reach us by email or portal to review any aspect without needing to schedule a formal meeting.",
-      fr: "Oui. Vous pouvez demander un appel à tout moment et nous répondons dans les délais convenus. Vous pouvez aussi nous contacter par e-mail ou via le portail pour examiner n'importe quel aspect sans réunion formelle.",
-      ru: "Да. Вы можете запросить звонок в любое время — отвечаем в согласованные сроки. Также можно написать по электронной почте или через портал, чтобы обсудить любой вопрос без формальной встречи.",
-      pt: "Sim. Você pode solicitar uma chamada a qualquer momento e respondemos no prazo acordado. Também pode nos contatar por e-mail ou portal para revisar qualquer aspecto sem agendar reunião formal.",
-      de: "Ja. Sie können jederzeit ein Gespräch anfragen — wir antworten innerhalb der vereinbarten Frist. Sie können uns auch per E-Mail oder Portal kontaktieren, ohne ein formelles Meeting planen zu müssen.",
+      es: "Sí. Puedes solicitar una llamada en cualquier momento y respondemos en el plazo acordado. También puedes escribirnos por correo electrónico para revisar cualquier aspecto sin necesidad de agendar una reunión formal.",
+      en: "Yes. You can request a call at any time and we respond within the agreed timeframe. You can also reach us by email to review any aspect without needing to schedule a formal meeting.",
+      fr: "Oui. Vous pouvez demander un appel à tout moment et nous répondons dans les délais convenus. Vous pouvez aussi nous contacter par e-mail pour examiner n'importe quel aspect sans réunion formelle.",
+      ru: "Да. Вы можете запросить звонок в любое время — отвечаем в согласованные сроки. Также можно написать по электронной почте, чтобы обсудить любой вопрос без формальной встречи.",
+      pt: "Sim. Você pode solicitar uma chamada a qualquer momento e respondemos no prazo acordado. Também pode nos contatar por e-mail para revisar qualquer aspecto sem agendar reunião formal.",
+      de: "Ja. Sie können jederzeit ein Gespräch anfragen — wir antworten innerhalb der vereinbarten Frist. Sie können uns auch per E-Mail kontaktieren, ohne ein formelles Meeting planen zu müssen.",
     },
   },
   {
