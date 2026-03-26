@@ -64,9 +64,10 @@
       "minimum": "Minimum $180 USD/mo",
       "description": "Full hands-off operation. We manage everything while coordinating all on-site services through trusted local partners.",
       "features": [
-        "Everything in Essential",
+        "✔ Includes everything in Essential, plus:",
         "Digital management: listing management (Airbnb, Booking, VRBO, etc.)",
         "Digital management: guest communication (pre-arrival, during stay, post-checkout)",
+        "Guest communication is handled with a fast-response system, typically within minutes during active hours.",
         "Digital management: dynamic pricing optimization by demand and season",
         "Digital management: monthly performance and financial reporting",
         "Operational coordination: check-in & check-out via local partners",
@@ -74,7 +75,8 @@
         "Operational coordination: maintenance coordination with vetted providers",
         "All on-site services are executed by third-party providers we coordinate",
         "Cleaning, maintenance, and check-in services are billed to the owner",
-        "We may include a coordination margin on third-party services"
+        "We may include a coordination margin on third-party services",
+        "Emergency situations (e.g. major maintenance issues) are handled based on urgency and may involve additional coordination fees if outside standard scope."
       ]
     },
     "tier3": {
@@ -97,13 +99,9 @@
     "mxn_note": "*Mexican peso payments accepted. MXN equivalent calculated at the Banxico rate on the payment date.",
     "faq_alt_payment_q": "Can I pay by transfer or cash?",
     "faq_alt_payment_a": "Our payment process is simple: choose your plan, contact us, and we agree on the payment method — SPEI transfer or cash. Card payments coming soon.",
-    "addons_title": "Add-On Services",
-    "addons_subtitle": "Available to all plans.",
-    "addons": [
-      { "name": "Extra property visit", "price": "$25–$40 USD" },
-      { "name": "Emergency visit", "price": "$50+ USD" },
-      { "name": "Additional maintenance coordination", "price": "$15–$25 USD" }
-    ]
+    "addons_title": "",
+    "addons_subtitle": "",
+    "addons": []
   },
   "comparison": {
     "title": "How We Compare",
@@ -341,7 +339,7 @@
     "plan_esencial": "Essential",
     "plan_gestor": "Manager",
     "whatsapp_disclaimer": "WhatsApp communications are operational only. For formal requests or claims: casaconciergepdc@outlook.com",
-    "copyright": "© {year} Casa Concierge PDC. All rights reserved.",
+    "copyright": "© {year} {brand}. All rights reserved.",
     "cookie_settings": "Cookie Settings"
   },
   "cookies_banner": {

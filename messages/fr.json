@@ -64,9 +64,10 @@
       "minimum": "Minimum $180 USD/mois",
       "description": "Opération complète sans souci. Nous coordonnons tous les services sur place avec des partenaires locaux de confiance.",
       "features": [
-        "Tout ce qui est inclus dans Essentiel",
+        "✔ Inclut tout ce qui est dans Essentiel, plus :",
         "Gestion numérique : gestion des annonces (Airbnb, Booking, VRBO, etc.)",
         "Gestion numérique : communication avec les clients (pré-arrivée, séjour, post-checkout)",
+        "La communication avec les clients est gérée via un système de réponse rapide, généralement en quelques minutes pendant les heures actives.",
         "Gestion numérique : optimisation des prix dynamiques selon demande et saison",
         "Gestion numérique : performances et reporting financier mensuels",
         "Coordination opérationnelle : check-in & check-out via partenaires locaux",
@@ -74,7 +75,8 @@
         "Coordination opérationnelle : coordination maintenance avec des prestataires vérifiés",
         "Tous les services sur place sont exécutés par des prestataires tiers que nous coordonnons",
         "Le nettoyage, la maintenance et le check-in sont facturés au propriétaire",
-        "Casa Concierge peut inclure une marge de coordination sur les services tiers"
+        "Casa Concierge peut inclure une marge de coordination sur les services tiers",
+        "Les situations d'urgence (ex. problèmes majeurs de maintenance) sont traitées selon l'urgence et peuvent impliquer des frais de coordination supplémentaires si elles sortent du périmètre standard."
       ]
     },
     "tier3": {
@@ -97,13 +99,9 @@
     "mxn_note": "*Paiements en pesos mexicains acceptés. L'équivalent MXN est calculé au taux Banxico en vigueur à la date de paiement.",
     "faq_alt_payment_q": "Puis-je payer par virement ou en espèces ?",
     "faq_alt_payment_a": "Notre processus de paiement est simple : choisissez votre plan, contactez-nous, et nous convenons du mode de paiement — virement SPEI ou espèces. Paiement par carte bientôt disponible.",
-    "addons_title": "Services Supplémentaires",
-    "addons_subtitle": "Disponibles pour tous les plans.",
-    "addons": [
-      { "name": "Visite supplémentaire", "price": "$25–$40 USD" },
-      { "name": "Visite d'urgence", "price": "$50+ USD" },
-      { "name": "Coordination de maintenance supplémentaire", "price": "$15–$25 USD" }
-    ]
+    "addons_title": "",
+    "addons_subtitle": "",
+    "addons": []
   },
   "comparison": {
     "title": "Comment Nous Nous Comparons",
@@ -341,7 +339,7 @@
     "plan_esencial": "Essentiel",
     "plan_gestor": "Gestion",
     "whatsapp_disclaimer": "Les communications WhatsApp sont à caractère opérationnel uniquement. Pour les réclamations ou accords formels : casaconciergepdc@outlook.com",
-    "copyright": "© {year} Casa Concierge PDC. Tous droits réservés.",
+    "copyright": "© {year} {brand}. Tous droits réservés.",
     "cookie_settings": "Paramètres des Cookies"
   },
   "cookies_banner": {

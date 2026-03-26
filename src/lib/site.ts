@@ -5,7 +5,7 @@ export const CANONICAL_SITE_URL = "https://www.casaconcierge.co";
 export const CONTACT_EMAIL = "casaconciergepdc@outlook.com";
 
 /** Brand name shown to visitors (legal, footer, etc). */
-export const BRAND_NAME = "Casa Concierge PDC";
+export const BRAND_NAME = "Casa Concierge Co.";
 
 /** Legal representative / company entity name (legal documents). */
 export const LEGAL_REPRESENTATIVE_NAME = "Casa Concierge Co.";

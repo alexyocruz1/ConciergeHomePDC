@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { CookieSettingsButton } from "./CookieBanner";
-import { CONTACT_EMAIL } from "@/lib/site";
+import { BRAND_NAME, CONTACT_EMAIL } from "@/lib/site";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -20,7 +20,7 @@ export function Footer() {
                 C
               </div>
               <span className="text-lg font-bold text-white">
-                Casa Concierge PDC
+                {BRAND_NAME}
               </span>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
@@ -108,7 +108,7 @@ export function Footer() {
 
         <div className="mt-4 border-t border-slate-800 pt-6">
           <p className="text-center text-sm text-slate-500">
-            {t("copyright", { year: year.toString() })}
+            {t("copyright", { year: year.toString(), brand: BRAND_NAME })}
           </p>
         </div>
       </div>

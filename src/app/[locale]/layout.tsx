@@ -10,7 +10,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { getCachedActivePropertyCount } from "@/lib/properties/queries";
-import { CANONICAL_SITE_URL } from "@/lib/site";
+import { BRAND_NAME, CANONICAL_SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     metadataBase: new URL(siteUrl),
-    title: meta?.title || "Casa Concierge PDC",
+    title: meta?.title || BRAND_NAME,
     description: meta?.description || "",
     icons: {
       icon: [
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ),
     },
     openGraph: {
-      title: meta?.title || "Casa Concierge PDC",
+      title: meta?.title || BRAND_NAME,
       description: meta?.description || "",
       url: localeUrl,
       type: "website",
@@ -81,13 +81,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: meta?.title || "Casa Concierge PDC",
+          alt: meta?.title || BRAND_NAME,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: meta?.title || "Casa Concierge PDC",
+      title: meta?.title || BRAND_NAME,
       description: meta?.description || "",
       images: [imageUrl],
     },

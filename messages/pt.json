@@ -64,9 +64,10 @@
       "minimum": "Mínimo $180 USD/mês",
       "description": "Operação completa sem preocupações. Coordenamos todos os serviços no local com parceiros locais de confiança.",
       "features": [
-        "Tudo incluído no Essencial",
+        "✔ Inclui tudo do Essencial, além de:",
         "Gestão digital: gestão de anúncios (Airbnb, Booking, VRBO, etc.)",
         "Gestão digital: comunicação com hóspedes (pré-chegada, durante a estadia, pós-checkout)",
+        "A comunicação com hóspedes é feita com um sistema de resposta rápida, normalmente em minutos durante as horas ativas.",
         "Gestão digital: otimização de preços dinâmicos por demanda e temporada",
         "Gestão digital: desempenho e relatórios financeiros mensais",
         "Coordenação operacional: check-in e check-out com parceiros locais",
@@ -74,7 +75,8 @@
         "Coordenação operacional: coordenação de manutenção com fornecedores verificados",
         "Todos os serviços no local são executados por prestadores terceiros coordenados pela Casa Concierge",
         "Limpeza, manutenção e check-in são cobrados do proprietário",
-        "A Casa Concierge pode incluir uma margem de coordenação em serviços de terceiros"
+        "A Casa Concierge pode incluir uma margem de coordenação em serviços de terceiros",
+        "Situações de emergência (ex. problemas grandes de manutenção) são tratadas conforme a urgência e podem envolver taxas adicionais de coordenação se estiverem fora do escopo padrão."
       ]
     },
     "tier3": {
@@ -97,13 +99,9 @@
     "mxn_note": "*Pagamentos em pesos mexicanos aceitos. O equivalente em MXN é calculado à taxa Banxico na data do pagamento.",
     "faq_alt_payment_q": "Posso pagar por transferência ou em dinheiro?",
     "faq_alt_payment_a": "Nosso processo de pagamento é simples: escolha seu plano, fale conosco e combinamos o método de pagamento — transferência SPEI ou dinheiro. Pagamento com cartão em breve.",
-    "addons_title": "Serviços Adicionais",
-    "addons_subtitle": "Disponíveis para todos os planos.",
-    "addons": [
-      { "name": "Visita extra à propriedade", "price": "$25–$40 USD" },
-      { "name": "Visita de emergência", "price": "$50+ USD" },
-      { "name": "Coordenação adicional de manutenção", "price": "$15–$25 USD" }
-    ]
+    "addons_title": "",
+    "addons_subtitle": "",
+    "addons": []
   },
   "comparison": {
     "title": "Como Nosso Serviço Se Compara",
@@ -341,7 +339,7 @@
     "plan_esencial": "Essencial",
     "plan_gestor": "Gestor",
     "whatsapp_disclaimer": "As comunicações por WhatsApp são de caráter operacional. Para reclamações ou acordos formais: casaconciergepdc@outlook.com",
-    "copyright": "© {year} Casa Concierge PDC. Todos os direitos reservados.",
+    "copyright": "© {year} {brand}. Todos os direitos reservados.",
     "cookie_settings": "Configurações de Cookies"
   },
   "cookies_banner": {

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { headers } from "next/headers";
 import "../globals.css";
-import { CANONICAL_SITE_URL } from "@/lib/site";
+import { BRAND_NAME, CANONICAL_SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -22,7 +22,7 @@ async function getSiteUrl(): Promise<string> {
 }
 
 const baseMetadata: Metadata = {
-  title: "Casa Concierge PDC — Property Management, Riviera Maya",
+  title: `${BRAND_NAME} — Property Management, Riviera Maya`,
   description:
     "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
   icons: {
@@ -34,7 +34,7 @@ const baseMetadata: Metadata = {
     other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
   openGraph: {
-    title: "Casa Concierge PDC — Property Management, Riviera Maya",
+    title: `${BRAND_NAME} — Property Management, Riviera Maya`,
     description:
       "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
     url: "/",
@@ -44,13 +44,13 @@ const baseMetadata: Metadata = {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Casa Concierge PDC — Vacation Property Management in Playa del Carmen",
+        alt: `${BRAND_NAME} — Vacation Property Management in Playa del Carmen`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Casa Concierge PDC — Property Management, Riviera Maya",
+    title: `${BRAND_NAME} — Property Management, Riviera Maya`,
     description:
       "We manage your vacation property in the Riviera Maya. Local bilingual team. Only charge on rental income. Available in 6 languages.",
     images: [DEFAULT_OG_IMAGE],

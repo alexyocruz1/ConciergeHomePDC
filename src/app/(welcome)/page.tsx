@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { BRAND_NAME } from "@/lib/site";
 
 const languages = [
   { code: "es", flag: "🇲🇽", label: "Español", welcome: "Bienvenido" },
@@ -65,7 +66,7 @@ export default function WelcomePage() {
         </div>
 
         <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary-300 sm:text-base">
-          Casa Concierge PDC
+          {BRAND_NAME}
         </p>
 
         <div className="mt-10 h-24 flex items-center justify-center sm:h-28">

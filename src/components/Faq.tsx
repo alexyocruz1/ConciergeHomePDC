@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { useState } from "react";
 import { formatPercent, MIN_MONTHLY_INCOME_POTENTIAL_USD, PLAN_PRICING } from "@/lib/plans/pricing";
+import { BRAND_NAME } from "@/lib/site";
 
 type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 type FaqItem = { key: string; q: string; a: string };
@@ -471,7 +472,8 @@ const FAQ_ITEMS: FaqSourceItem[] = [
 ];
 
 function polishText(locale: Locale, text: string): string {
-  if (locale === "en" || locale === "ru") return text;
+  let polished = text.replaceAll("Casa Concierge PDC", BRAND_NAME);
+  if (locale === "en" || locale === "ru") return polished;
 
   const shared: Array<[string, string]> = [
     [" - ", " — "],
@@ -575,7 +577,6 @@ function polishText(locale: Locale, text: string): string {
   ];
 
   const rules = locale === "es" ? es : locale === "fr" ? fr : locale === "pt" ? pt : de;
-  let polished = text;
   for (const [from, to] of shared) polished = polished.replaceAll(from, to);
   for (const [from, to] of rules) polished = polished.replaceAll(from, to);
   return polished;

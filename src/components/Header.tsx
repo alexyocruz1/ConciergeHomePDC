@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
 import { useState, useEffect } from "react";
+import { BRAND_NAME } from "@/lib/site";
 
 type HeaderProps = {
   showPropertiesLink?: boolean;
@@ -58,7 +59,7 @@ export function Header({ showPropertiesLink = false }: HeaderProps) {
                 scrolled ? "text-slate-900" : "text-white"
               }`}
             >
-              Casa Concierge
+              {BRAND_NAME}
             </span>
           </Link>
 

@@ -9,7 +9,7 @@ import { formatUsd, parseNumeric } from "@/lib/properties/format";
 import { PropertyGallery } from "@/components/properties/PropertyGallery";
 import { PropertyCard } from "@/components/properties/PropertyCard";
 import { ShareButton } from "@/components/properties/ShareButton";
-import { WHATSAPP_WA_ME_NUMBER } from "@/lib/site";
+import { BRAND_NAME, WHATSAPP_WA_ME_NUMBER } from "@/lib/site";
 
 export const revalidate = 60;
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const property = await getPropertyBySlug(slug);
   if (!property) {
-    return { title: "Casa Concierge PDC" };
+    return { title: BRAND_NAME };
   }
   const name = getLocalizedText(property.nickname, locale, "Property");
   const loc = getLocalizedText(property.location_display, locale, "");
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     night != null ? `From ${formatUsd(night)}/night.` : "";
   const image = property.photos?.[0];
   return {
-    title: `${name} — ${loc} | Casa Concierge PDC`,
+    title: `${name} — ${loc} | ${BRAND_NAME}`,
     description: `${desc} ${priceBit} ${t("managed_by")}`,
     openGraph: image
       ? {

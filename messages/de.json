@@ -64,9 +64,10 @@
       "minimum": "Minimum $180 USD/Monat",
       "description": "Kompletter Rundum-Service. Wir koordinieren alle vor Ort erbrachten Dienstleistungen über vertrauenswürdige lokale Partner.",
       "features": [
-        "Alles aus dem Basis-Plan",
+        "✔ Enthält alles aus Essential, plus:",
         "Digitale Verwaltung: Listingverwaltung (Airbnb, Booking, VRBO, etc.)",
         "Digitale Verwaltung: Gästekommunikation (pre-arrival, während des Aufenthalts, post-checkout)",
+        "Die Gästekommunikation erfolgt über ein Schnellantwort-System, typischerweise innerhalb von Minuten während aktiver Zeiten.",
         "Digitale Verwaltung: Optimierung der dynamischen Preise nach Nachfrage & Saison",
         "Digitale Verwaltung: monatliche Performance- und Finanzberichte",
         "Operative Koordination: Check-in & Check-out via lokale Partner",
@@ -74,7 +75,8 @@
         "Operative Koordination: Wartungskoordination mit geprüften Anbietern",
         "Alle vor Ort erbrachten Leistungen werden von Drittanbietern ausgeführt, die wir koordinieren",
         "Reinigung, Wartung und Check-in werden dem Eigentümer in Rechnung gestellt",
-        "Casa Concierge kann eine Koordinationsmarge auf Dienstleistungen von Drittanbietern enthalten"
+        "Casa Concierge kann eine Koordinationsmarge auf Dienstleistungen von Drittanbietern enthalten",
+        "Notfälle (z. B. größere Wartungsprobleme) werden je nach Dringlichkeit behandelt und können zusätzliche Koordinationsgebühren verursachen, wenn sie außerhalb des Standardscopes liegen."
       ]
     },
     "tier3": {
@@ -97,13 +99,9 @@
     "mxn_note": "*Zahlungen in mexikanischen Pesos möglich. Der MXN-Betrag wird zum Banxico-Kurs am Zahlungsdatum berechnet.",
     "faq_alt_payment_q": "Kann ich per Überweisung oder bar bezahlen?",
     "faq_alt_payment_a": "Unser Zahlungsprozess ist einfach: Wählen Sie Ihren Plan, kontaktieren Sie uns, und wir vereinbaren die Zahlungsart — SPEI-Überweisung oder Bargeld. Kartenzahlung kommt bald.",
-    "addons_title": "Zusatzleistungen",
-    "addons_subtitle": "Verfügbar für alle Pläne.",
-    "addons": [
-      { "name": "Zusätzlicher Besuch der Immobilie", "price": "$25–$40 USD" },
-      { "name": "Notfallbesuch", "price": "$50+ USD" },
-      { "name": "Zusätzliche Wartungskoordination", "price": "$15–$25 USD" }
-    ]
+    "addons_title": "",
+    "addons_subtitle": "",
+    "addons": []
   },
   "comparison": {
     "title": "Wie Wir Uns Vergleichen",
@@ -341,7 +339,7 @@
     "plan_esencial": "Essential",
     "plan_gestor": "Manager",
     "whatsapp_disclaimer": "WhatsApp-Kommunikation ist rein operativer Natur. Für formelle Anfragen oder Beschwerden: casaconciergepdc@outlook.com",
-    "copyright": "© {year} Casa Concierge PDC. Alle Rechte vorbehalten.",
+    "copyright": "© {year} {brand}. Alle Rechte vorbehalten.",
     "cookie_settings": "Cookie-Einstellungen"
   },
   "cookies_banner": {
