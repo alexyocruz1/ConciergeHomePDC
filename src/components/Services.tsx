@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
+import { PlanStepsModal } from "./PlanStepsModal";
 
 type Locale = "es" | "en" | "fr" | "ru" | "pt" | "de";
 
@@ -94,8 +96,10 @@ const vitrinaByLocale: Record<Locale, { name: string; description: string; subti
 
 export function Services() {
   const t = useTranslations("services");
+  const tPlanSteps = useTranslations("planSteps");
   const locale = useLocale() as Locale;
   const vitrina = vitrinaByLocale[locale] || vitrinaByLocale.en;
+  const [openModal, setOpenModal] = useState<"vitrina" | "esencial" | "gestor" | null>(null);
 
   /* Premium Concierge (tier3) is defined in messages for a future launch — keep translations, re-add here when ready. */
   const tiers = [
@@ -165,6 +169,13 @@ export function Services() {
             >
               {vitrina.cta}
             </a>
+            <button
+              type="button"
+              onClick={() => setOpenModal("vitrina")}
+              className="mt-2 w-full text-center text-xs font-medium text-slate-500 underline underline-offset-2 hover:text-slate-700"
+            >
+              {tPlanSteps("trigger_link")}
+            </button>
           </div>
 
           {tiers.map((tier) => {
@@ -238,10 +249,27 @@ export function Services() {
                 >
                   {t("subscribe")}
                 </a>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setOpenModal(tier.key === "tier1" ? "esencial" : "gestor")
+                  }
+                  className="mt-2 w-full text-center text-xs font-medium text-slate-500 underline underline-offset-2 hover:text-slate-700"
+                >
+                  {tPlanSteps("trigger_link")}
+                </button>
               </div>
             );
           })}
         </div>
+
+        {openModal && (
+          <PlanStepsModal
+            plan={openModal}
+            open={true}
+            onClose={() => setOpenModal(null)}
+          />
+        )}
 
         <div className="mt-20">
           <div className="text-center">

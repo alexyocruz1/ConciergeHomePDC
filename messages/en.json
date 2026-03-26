@@ -164,7 +164,7 @@
         { "feature": "Property condition over time", "them": "Deteriorates without oversight", "us": "Maintained, inspected, documented" },
         { "feature": "Security", "them": "Unmonitored", "us": "Regular visits, issue detection" },
         { "feature": "ROI on investment", "them": "Negative (costs with no income)", "us": "Positive from month one" },
-        { "feature": "Cost of our service", "them": "—", "us": "18–22% of income generated" },
+        { "feature": "Cost of our service", "them": "—", "us": "18% (Essential) or 22% (Full Management) of gross rental income" },
         { "feature": "Net gain", "them": "$0", "us": "$1,100 – $3,000+/mo after our fee" }
       ]
     }
@@ -320,6 +320,14 @@
     "amenity_pets": "Pet-friendly",
     "amenity_workspace": "Workspace",
     "share_property": "Share this property"
+  },
+  "planSteps": {
+    "trigger_link": "What are the steps?",
+    "modal_title_vitrina": "Vitrina — What are the steps?",
+    "modal_title_esencial": "Essential — What are the steps?",
+    "modal_title_gestor": "Full Management — What are the steps?",
+    "modal_cta": "Contact Us →",
+    "modal_close": "Close"
   },
   "footer": {
     "tagline": "Professional property management in Playa del Carmen and the Riviera Maya.",

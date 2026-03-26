@@ -164,7 +164,7 @@
         { "feature": "Condición de la propiedad", "them": "Se deteriora sin supervisión", "us": "Mantenida, inspeccionada, documentada" },
         { "feature": "Seguridad", "them": "Sin monitoreo", "us": "Visitas regulares, detección de problemas" },
         { "feature": "ROI de la inversión", "them": "Negativo (costos sin ingresos)", "us": "Positivo desde el primer mes" },
-        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18–22% de los ingresos generados" },
+        { "feature": "Costo de nuestro servicio", "them": "—", "us": "18% (Esencial) o 22% (Gestor) del ingreso bruto de alquiler" },
         { "feature": "Ganancia neta", "them": "$0", "us": "$1,100 – $3,000+/mes después de nuestra comisión" }
       ]
     }
@@ -320,6 +320,14 @@
     "amenity_pets": "Mascotas",
     "amenity_workspace": "Espacio de trabajo",
     "share_property": "Compartir esta propiedad"
+  },
+  "planSteps": {
+    "trigger_link": "¿Cuáles son los pasos?",
+    "modal_title_vitrina": "Vitrina — ¿Cuáles son los pasos?",
+    "modal_title_esencial": "Plan Esencial — ¿Cuáles son los pasos?",
+    "modal_title_gestor": "Plan Gestor — ¿Cuáles son los pasos?",
+    "modal_cta": "Contáctanos →",
+    "modal_close": "Cerrar"
   },
   "footer": {
     "tagline": "Gestión profesional de propiedades en Playa del Carmen y la Riviera Maya.",

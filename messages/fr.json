@@ -164,7 +164,7 @@
         { "feature": "État de la propriété dans le temps", "them": "Se dégrade sans surveillance", "us": "Entretenue, inspectée, documentée" },
         { "feature": "Sécurité", "them": "Non surveillée", "us": "Visites régulières, détection des problèmes" },
         { "feature": "ROI sur l'investissement", "them": "Négatif (coûts sans revenus)", "us": "Positif dès le premier mois" },
-        { "feature": "Coût de notre service", "them": "—", "us": "18–22% des revenus générés" },
+        { "feature": "Coût de notre service", "them": "—", "us": "18% (Essentiel) ou 22% (Gestion complète) des revenus locatifs bruts" },
         { "feature": "Gain net", "them": "0 $", "us": "1 100 $ – 3 000 $/mois et plus après nos frais" }
       ]
     }
@@ -320,6 +320,14 @@
     "amenity_pets": "Animaux",
     "amenity_workspace": "Espace bureau",
     "share_property": "Partager cette propriété"
+  },
+  "planSteps": {
+    "trigger_link": "Quelles sont les étapes ?",
+    "modal_title_vitrina": "Vitrina — Quelles sont les étapes ?",
+    "modal_title_esencial": "Essentiel — Quelles sont les étapes ?",
+    "modal_title_gestor": "Gestion Complète — Quelles sont les étapes ?",
+    "modal_cta": "Nous contacter →",
+    "modal_close": "Fermer"
   },
   "footer": {
     "tagline": "Gestion professionnelle de propriétés à Playa del Carmen et la Riviera Maya.",

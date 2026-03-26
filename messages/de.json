@@ -164,7 +164,7 @@
         { "feature": "Immobilienzustand über Zeit", "them": "Verfällt ohne Überwachung", "us": "Gepflegt, inspiziert, dokumentiert" },
         { "feature": "Sicherheit", "them": "Unüberwacht", "us": "Regelmäßige Besuche, Problemerkennung" },
         { "feature": "ROI der Investition", "them": "Negativ (Kosten ohne Einnahmen)", "us": "Positiv ab dem ersten Monat" },
-        { "feature": "Kosten unseres Services", "them": "—", "us": "18–22 % der erzielten Einnahmen" },
+        { "feature": "Kosten unseres Services", "them": "—", "us": "18% (Basis) oder 22% (Komplettverwaltung) der Bruttomieteinnahmen" },
         { "feature": "Nettogewinn", "them": "0 $", "us": "1.100 $ – 3.000 $+/Monat nach unserer Gebühr" }
       ]
     }
@@ -320,6 +320,14 @@
     "amenity_pets": "Haustiere",
     "amenity_workspace": "Arbeitsplatz",
     "share_property": "Diese Immobilie teilen"
+  },
+  "planSteps": {
+    "trigger_link": "Wie läuft der Prozess ab?",
+    "modal_title_vitrina": "Vitrina — Wie läuft der Prozess ab?",
+    "modal_title_esencial": "Essential — Wie läuft der Prozess ab?",
+    "modal_title_gestor": "Full Management — Wie läuft der Prozess ab?",
+    "modal_cta": "Kontakt aufnehmen →",
+    "modal_close": "Schließen"
   },
   "footer": {
     "tagline": "Professionelle Immobilienverwaltung in Playa del Carmen und der Riviera Maya.",
