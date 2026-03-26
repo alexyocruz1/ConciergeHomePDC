@@ -1,5 +1,5 @@
 # Cookie Policy
-**Version 1.1 — Abril 2026**
+**Version 1.1 — April 2026**
 
 **Casa Concierge PDC**
 Legal representative: Casa Concierge Co.

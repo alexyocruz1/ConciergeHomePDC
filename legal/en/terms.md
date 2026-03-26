@@ -1,5 +1,5 @@
 # Terms of Service
-**Version 1.3 — Abril 2026**
+**Version 1.3 — April 2026**
 
 **Casa Concierge PDC**
 Legal representative: Casa Concierge Co.
