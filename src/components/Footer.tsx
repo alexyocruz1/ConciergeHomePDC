@@ -45,14 +45,19 @@ export function Footer() {
               {nav("services")}
             </h3>
             <ul className="mt-4 space-y-3">
+            <li>
+              <a href="#services" className="text-sm text-slate-400 transition-colors hover:text-white">
+                {t("plan_vitrina")}
+              </a>
+            </li>
               <li>
                 <a href="#services" className="text-sm text-slate-400 transition-colors hover:text-white">
-                  Esencial
+                  {t("plan_esencial")}
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-sm text-slate-400 transition-colors hover:text-white">
-                  Gestor
+                  {t("plan_gestor")}
                 </a>
               </li>
               {/* Premium Concierge — re-enable when tier3 is live in Services */}
