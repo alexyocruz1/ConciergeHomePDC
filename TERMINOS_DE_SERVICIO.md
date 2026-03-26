@@ -36,13 +36,14 @@ Los servicios específicos incluidos en cada plan se detallan en la página de p
 
 ## 3. Registro y Cuenta
 
-Para acceder al portal de propietarios, el Cliente debe:
+Actualmente, Casa Concierge PDC gestiona la relación con el Cliente principalmente mediante comunicaciones por correo electrónico y/o WhatsApp, y la activación del servicio se realiza a través del proceso de suscripción e incorporación de la propiedad.
 
-1. Registrarse con nombre completo, correo electrónico válido y contraseña segura.
-2. Suscribirse a uno de los planes disponibles mediante el método de pago acordado (por defecto, tarjeta de crédito o débito a través de Stripe; o mediante método alternativo previa autorización escrita según lo establecido en la cláusula de Métodos de Pago Alternativos).
-3. Completar el formulario de incorporación de su propiedad (dirección, datos de acceso, fotografías, confirmación de seguro).
+**Acceso a un “portal de propietarios” (si en el futuro se habilita):** para acceder a dicho portal, el Cliente deberá:
 
-El Cliente es responsable de mantener la confidencialidad de sus credenciales de acceso. Casa Concierge PDC no se hace responsable por accesos no autorizados derivados de negligencia del Cliente.
+1. Suscribirse a uno de los planes disponibles mediante el método de pago acordado (por defecto, tarjeta de crédito o débito a través de Stripe; o mediante método alternativo previa autorización escrita según lo establecido en la cláusula de Métodos de Pago Alternativos).
+2. Completar el formulario de incorporación de su propiedad (dirección, datos de acceso, fotografías, confirmación de seguro).
+
+En caso de habilitarse el portal, Casa Concierge PDC informará al Cliente el método de acceso (por ejemplo, invitación o instrucciones de acceso). En tanto no exista dicho portal, no aplica la obligación de “registrarse” con contraseña para su uso.
 
 ---
 
@@ -106,7 +107,7 @@ A solicitud del Cliente y mediante **acuerdo previo y escrito**, Casa Concierge 
 
 ## 7. Cancelación del Servicio
 
-El Cliente puede cancelar su suscripción en cualquier momento desde su portal de propietario o mediante solicitud a [casaconciergepdc@outlook.com].
+El Cliente puede cancelar su suscripción en cualquier momento mediante solicitud a [casaconciergepdc@outlook.com]. En caso de que en el futuro se habilite un portal de propietarios, también podrá cancelarse desde dicho portal si así se indica.
 
 **Efectos de la cancelación:**
 - El servicio continúa activo hasta el último día del período de facturación en curso.
@@ -185,7 +186,7 @@ Las comunicaciones a través de **WhatsApp son de carácter operativo** y no con
 
 Cualquier acuerdo, modificación de servicio, reclamación, notificación de cancelación o solicitud formal debe realizarse por **correo electrónico** a [casaconciergepdc@outlook.com] para tener validez contractual.
 
-Para asuntos de mayor importancia, el portal de propietarios cuenta con un canal de mensajería oficial, con registro de fecha y hora, que constituye el medio de comunicación formal preferido entre las partes.
+En caso de que, en el futuro, se habilite un portal de propietarios, dicho portal podrá incluir un canal de mensajería oficial con registro de fecha y hora como medio de comunicación formal preferido entre las partes.
 
 ---
 

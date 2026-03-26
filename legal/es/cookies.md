@@ -18,7 +18,7 @@ Las cookies son pequeños archivos de texto que un sitio web almacena en su disp
 
 Casa Concierge PDC utiliza cookies para:
 
-- Mantener su sesión activa en el portal de propietarios
+- Mantener su sesión activa para funciones autenticadas del sitio (si están disponibles)
 - Recordar sus preferencias de idioma
 - Analizar cómo los visitantes usan el sitio para mejorarlo
 - Medir el rendimiento de nuestras páginas
@@ -40,7 +40,7 @@ En consecuencia, **ninguna cookie no esencial se cargará en su dispositivo sin 
 ## 4. Tipos de Cookies que Utilizamos
 
 ### 4.1 Cookies Estrictamente Necesarias
-Estas cookies son indispensables para que el sitio funcione correctamente. Sin ellas, no podrá iniciar sesión ni navegar por el portal de propietarios.
+Estas cookies son indispensables para que el sitio funcione correctamente. Sin ellas, es posible que no pueda acceder a funciones que requieren inicio de sesión (si están disponibles).
 
 | Cookie | Función | Duración |
 |---|---|---|
@@ -121,7 +121,7 @@ También puede controlar las cookies directamente desde la configuración de su 
 - **Firefox:** Opciones → Privacidad y seguridad
 - **Edge:** Configuración → Privacidad, búsqueda y servicios
 
-> ⚠️ **Tenga en cuenta:** Desactivar todas las cookies puede afectar el funcionamiento del sitio. En particular, si bloquea las cookies necesarias, no podrá iniciar sesión en el portal de propietarios.
+> ⚠️ **Tenga en cuenta:** Desactivar todas las cookies puede afectar el funcionamiento del sitio. En particular, si bloquea las cookies necesarias, es posible que no pueda acceder a funciones que requieren inicio de sesión (si están disponibles).
 
 ---
 

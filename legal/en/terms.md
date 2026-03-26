@@ -63,13 +63,14 @@ Commission is due before key handover or lease signature for transactions origin
 
 ## 3. Registration and Account
 
-To access the owner portal, the Client must:
+Currently, Casa Concierge PDC manages the relationship with the Client mainly through communications by email and/or WhatsApp, and service activation is carried out through the subscription and property onboarding process.
 
-1. Register with their full name, a valid email address, and a secure password.
-2. Subscribe to one of the available plans using the agreed-upon payment method (by default, credit or debit card through Stripe; or through an alternative method with prior written authorization as established in the Alternative Payment Methods clause).
-3. Complete the property onboarding form (address, access details, photographs, insurance confirmation).
+**Access to an “owner portal” (if enabled in the future):** to access such a portal, the Client will need to:
 
-The Client is responsible for maintaining the confidentiality of their login credentials. Casa Concierge PDC is not liable for unauthorized access resulting from the Client's negligence.
+1. Subscribe to one of the available plans using the agreed-upon payment method (by default, credit or debit card through Stripe; or through an alternative method with prior written authorization as established in the Alternative Payment Methods clause).
+2. Complete the property onboarding form (address, access details, photographs, insurance confirmation).
+
+If the portal is enabled in the future, Casa Concierge PDC will inform the Client of the access method (e.g., invitation or access instructions). While no such portal exists, the obligation to “register” with a password for its use does not apply.
 
 ---
 
@@ -141,7 +142,7 @@ At the Client's request and through a **prior written agreement**, Casa Concierg
 
 ## 7. Cancellation of Service
 
-The Client may cancel their subscription at any time from their owner portal or by submitting a request to [casaconciergepdc@outlook.com].
+The Client may cancel their subscription at any time by submitting a request to [casaconciergepdc@outlook.com]. If an owner portal is enabled in the future, cancellation may also be possible through that portal if indicated.
 
 **Effects of cancellation:**
 - The service remains active until the last day of the current billing period.
@@ -223,7 +224,7 @@ Communications through **WhatsApp are operational in nature** and do not constit
 
 Any agreement, service modification, complaint, cancellation notice, or formal request must be made via **email** to [casaconciergepdc@outlook.com] to have contractual validity.
 
-For matters of greater importance, the owner portal includes an official messaging channel with date and time stamps, which constitutes the preferred formal communication medium between the parties.
+In case the owner portal is enabled in the future, it may include an official messaging channel with date and time stamps as the preferred formal communication medium between the parties.
 
 ---
 
