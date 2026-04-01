@@ -242,4 +242,4 @@ Para dudas, aclaraciones o notificaciones relacionadas con estos Términos:
 Representante legal: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: +52 984 450 5332 *(solo consultas operativas)*
+💬 WhatsApp: +52 ‪984 481 7579‬ *(solo consultas operativas)*

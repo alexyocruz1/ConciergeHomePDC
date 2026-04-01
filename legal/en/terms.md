@@ -280,4 +280,4 @@ For questions, clarifications, or notifications related to these Terms:
 Legal representative: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: +52 984 450 5332 *(operational inquiries only)*
+💬 WhatsApp: +52 ‪984 481 7579‬ *(operational inquiries only)*

@@ -174,4 +174,4 @@ If you have questions about this Privacy Policy, you may contact us at:
 Legal representative: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: +52 984 450 5332
+💬 WhatsApp: +52 ‪984 481 7579‬

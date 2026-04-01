@@ -10,8 +10,8 @@ export const BRAND_NAME = "Casa Concierge Co.";
 /** Legal representative / company entity name (legal documents). */
 export const LEGAL_REPRESENTATIVE_NAME = "Casa Concierge Co.";
 
-/** WhatsApp click-to-chat: digits only (no +), for wa.me. Mexico +52 984 450 5332 */
-export const WHATSAPP_WA_ME_NUMBER = "529844505332";
+/** WhatsApp click-to-chat: digits only (no +), for wa.me. Mexico +52 984 481 7579 */
+export const WHATSAPP_WA_ME_NUMBER = "529844817579";
 
 /** Human-readable WhatsApp number for UI. */
-export const WHATSAPP_PHONE_DISPLAY = "+52 984 450 5332";
+export const WHATSAPP_PHONE_DISPLAY = "+52 984 481 7579";

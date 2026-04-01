@@ -151,4 +151,4 @@ Si tiene preguntas sobre el uso de cookies en nuestro sitio, contáctenos:
 Representante legal: Casa Concierge Co.
 📍 Playa del Carmen, Quintana Roo, México
 📧 [casaconciergepdc@outlook.com]
-💬 WhatsApp: +52 984 450 5332
+💬 WhatsApp: +52 ‪984 481 7579‬

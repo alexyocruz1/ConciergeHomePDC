@@ -33,7 +33,7 @@ function applyLegalReplacements(content: string): string {
     .replaceAll("casaconciergepdc@outlook.com", CONTACT_EMAIL);
 
   // WhatsApp display number
-  content = content.replaceAll("+52 984 450 5332", WHATSAPP_PHONE_DISPLAY);
+  content = content.replaceAll("+52 ‪984 481 7579‬", WHATSAPP_PHONE_DISPLAY);
 
   return content;
 }
